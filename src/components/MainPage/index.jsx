@@ -1,4 +1,10 @@
+import Home from '../Home/index';
+
 function MainPage() {
-  return <>Ceci est ma MainPage </>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 export default MainPage;
