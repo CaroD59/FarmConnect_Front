@@ -16,7 +16,7 @@ function Header() {
               <NavLink to="/marketplace">Marketplace</NavLink>
             </li>
             <li>
-              <NavLink to="/Contact">Contact</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </nav>
