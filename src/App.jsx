@@ -1,9 +1,13 @@
-import SampleComponent from './components/SampleComponent';
+import Login from './components/Login/index';
+import Registration from './components/Registration/index';
+import Cockpit from './components/Cockpit/index';
 
 function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <Login />
+      <Registration />
+      <Cockpit />
     </div>
   );
 }
