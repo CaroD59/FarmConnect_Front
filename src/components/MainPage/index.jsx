@@ -1,4 +1,6 @@
+import MyProfil from '../MyProfil/index';
+
 function MainPage() {
-  return <>Ceci est ma MainPage </>;
+  return <MyProfil />;
 }
 export default MainPage;
