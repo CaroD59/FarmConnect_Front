@@ -1,6 +1,14 @@
-import MyProfil from '../MyProfil/index';
+import Home from '../Home/index';
+import MarketPlace from '../MarketPlace/index';
+import Contact from '../Contact/index';
 
 function MainPage() {
-  return <MyProfil />;
+  return (
+    <div className="MainPage">
+      <Home />
+      <MarketPlace />
+      <Contact />
+    </div>
+  );
 }
 export default MainPage;
