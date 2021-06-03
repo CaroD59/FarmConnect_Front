@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import LoginForm from './LoginForm';
 
 export default function Login() {
+  const Background = styled.div`
+    background-image: url(./Images/welcomefont.png);
+    background-size: cover;
+    height: 100vh;
+  `;
   const adminUser = {
     email: 'dorchies.c@gmail.com',
     password: 'lol123',
@@ -29,17 +35,19 @@ export default function Login() {
   };
 
   return (
-    <div>
-      {user.email !== '' ? (
-        <div>
-          <h2>Welcome</h2>
-          <button type="button" onClick={Loggedout}>
-            Logout
-          </button>
-        </div>
-      ) : (
-        <LoginForm Loggedin={Loggedin} error={error} />
-      )}
-    </div>
+    <Background>
+      <div>
+        {user.email !== '' ? (
+          <div>
+            <h2>Welcome</h2>
+            <button type="button" onClick={Loggedout}>
+              Logout
+            </button>
+          </div>
+        ) : (
+          <LoginForm Loggedin={Loggedin} error={error} />
+        )}
+      </div>
+    </Background>
   );
 }

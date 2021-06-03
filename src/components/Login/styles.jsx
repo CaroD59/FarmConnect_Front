@@ -5,8 +5,9 @@ const LogForm = styled.div`
   width: 500px;
   height: 600px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  position: relative;
+  top: 50px;
   background-color: white;
 
   .FarmConnectLogo {
