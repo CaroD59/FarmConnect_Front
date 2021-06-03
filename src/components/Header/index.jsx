@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import StyledHeader from './styles';
 
 function Header() {
@@ -38,16 +38,16 @@ function Header() {
         <div className="Pages">
           <ul>
             <li className="Home">
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li className="MyApps">
-              <Link to="/my-apps">Mes Services</Link>
+              <NavLink to="/my-apps">Mes Services</NavLink>
             </li>
             <li className="Marketplace">
-              <Link to="/marketplace">Marketplace</Link>
+              <NavLink to="/marketplace">Marketplace</NavLink>
             </li>
             <li className="Contact">
-              <Link to="/contact">Contact</Link>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
