@@ -1,11 +1,12 @@
-import { BrowserRouter as NavLink } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Link } from 'react-router-dom';
 import StyledHeader from './styles';
 
 function Header() {
   return (
     <StyledHeader>
       <nav className="NavBar">
-        <ul>
+        <div className="LogoContainer">
           <svg width="256" height="39">
             <rect
               y="0.903198"
@@ -33,19 +34,23 @@ function Header() {
               />
             </defs>
           </svg>
-          <li className="Home">
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li className="MyApps">
-            <NavLink to="/my-apps">Mes Services</NavLink>
-          </li>
-          <li className="Marketplace">
-            <NavLink to="/marketplace">Marketplace</NavLink>
-          </li>
-          <li className="Contact">
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-        </ul>
+        </div>
+        <div className="Pages">
+          <ul>
+            <li className="Home">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="MyApps">
+              <Link to="/my-apps">Mes Services</Link>
+            </li>
+            <li className="Marketplace">
+              <Link to="/marketplace">Marketplace</Link>
+            </li>
+            <li className="Contact">
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </StyledHeader>
   );
