@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import LoginForm from './LoginForm';
+import Background from './stylesIndex';
 
 export default function Login() {
-  const Background = styled.div`
-    background-image: url(./Images/welcomefont.png);
-    background-size: cover;
-    height: 100vh;
-  `;
   const adminUser = {
     email: 'dorchies.c@gmail.com',
     password: 'lol123',
@@ -17,12 +12,10 @@ export default function Login() {
   const [error, setError] = useState('');
 
   const Loggedin = (details) => {
-    console.log(details);
     if (
       details.email === adminUser.email &&
       details.password === adminUser.password
     ) {
-      console.log('Logged in o/');
       setUser({
         email: details.email,
       });
