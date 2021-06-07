@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import LogForm from './styles';
+import { LogForm } from './styles';
 
 export default function LoginForm({ Loggedin, error }) {
   const [details, setDetails] = useState({ email: '', password: '' });

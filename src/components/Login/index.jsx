@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
-import Background from './stylesIndex';
+import { Background } from './styles';
 
 export default function Login() {
   const adminUser = {

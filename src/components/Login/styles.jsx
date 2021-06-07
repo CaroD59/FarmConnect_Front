@@ -82,4 +82,10 @@ const LogForm = styled.div`
   }
 `;
 
-export default LogForm;
+const Background = styled.div`
+  background-image: url(./Images/welcomefont.png);
+  background-size: cover;
+  height: 100vh;
+`;
+
+export { LogForm, Background };
