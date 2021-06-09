@@ -17,7 +17,7 @@ const StyledHome = styled.section`
       font-family: Verdana;
       font-weight: lighter;
       font-size: 35px;
-      color: #7171ec;
+      color: rgba(34, 53, 148, 1);
       margin-left: 20px;
     }
     .infos {
