@@ -1,15 +1,17 @@
+import StyledFooter from './styles';
+
 function Footer() {
   return (
-    <>
+    <StyledFooter>
       <div className="Header">
-        <div className="footer_informations">
+        <div className="Footer_informations">
           <ul>
             <li>Politique de Confidientalité</li>
             <li>Mentions Légales</li>
             <li>CGU</li>
           </ul>
         </div>
-        <div className="contact">
+        <div className="Footer_informations">
           <ul>
             <li>Qui sommes-nous ?</li>
             <li>On parle de nous</li>
@@ -17,7 +19,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-    </>
+    </StyledFooter>
   );
 }
 export default Footer;

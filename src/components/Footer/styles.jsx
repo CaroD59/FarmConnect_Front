@@ -3,11 +3,16 @@ import styled from 'styled-components';
 const StyledFooter = styled.div`
   .Header {
     display: flex;
-    justify-content: flex-start;
     border: black solid 2px;
-    .footer_information {
+    .Footer_informations {
+      border: green solid 2px;
+      width: 50%;
       list-style-type: none;
-      border: black solid 2px;
+      ul {
+        li {
+          list-style-type: none;
+        }
+      }
     }
   }
 `;
