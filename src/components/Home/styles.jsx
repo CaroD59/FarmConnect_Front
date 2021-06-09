@@ -3,8 +3,6 @@ import styled from 'styled-components';
 const StyledHome = styled.section`
   height: 800px;
   width: 100%;
-  border: 1px solid black;
-
   .profil {
     width: 98%;
     height: 350px;

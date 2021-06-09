@@ -8,7 +8,7 @@ const StyledHeader = styled.div`
     margin: auto;
     width: 100%;
     height: 65px;
-    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 4px rgba(218, 218, 218, 0.25);
     ul {
       display: flex;
       justify-content: flex-end;
@@ -20,13 +20,18 @@ const StyledHeader = styled.div`
         text-align: center;
         padding: 5px;
         margin-right: 15px;
-        font-family: 'roboto', sans-serif;
-        font-size: 12px;
         width: 90px;
         height: 25px;
         border-bottom: transparent solid 2px;
+        a {
+          font-family: 'roboto', sans-serif;
+          text-decoration: none;
+          font-size: 14px;
+          color: rgba(70, 70, 70, 1);
+        }
         :hover {
           border-bottom: rgba(34, 53, 148, 1) solid 2px;
+          transition: 0.3s;
         }
       }
     }
