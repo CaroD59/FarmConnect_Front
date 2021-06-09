@@ -38,13 +38,13 @@ function Header() {
         <div className="Pages">
           <ul>
             <li className="Home">
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/home">Home</NavLink>
             </li>
             <li className="MyApps">
               <NavLink to="/my-apps">Mes Services</NavLink>
             </li>
             <li className="Marketplace">
-              <NavLink to="/marketplace">Marketplace</NavLink>
+              <NavLink to="/market-place">Marketplace</NavLink>
             </li>
             <li className="Contact">
               <NavLink to="/contact">Contact</NavLink>

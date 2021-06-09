@@ -1,8 +1,11 @@
 import StyledHome from './styles';
+import Header from '../Header/index';
+import Footer from '../Footer/index';
 
 function Home() {
   return (
     <StyledHome>
+      <Header />
       <div className="profil">
         <h1> Bonjour Utilisateur </h1>
         <div className="infos">
@@ -80,6 +83,7 @@ function Home() {
           p
         </div>
       </div>
+      <Footer />
     </StyledHome>
   );
 }
