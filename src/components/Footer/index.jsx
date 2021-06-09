@@ -2,7 +2,7 @@ function Footer() {
   return (
     <>
       <div className="Header">
-        <div className="legal_information">
+        <div className="footer_informations">
           <ul>
             <li>Politique de Confidientalité</li>
             <li>Mentions Légales</li>
