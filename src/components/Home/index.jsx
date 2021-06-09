@@ -8,26 +8,26 @@ function Home() {
         <div className="infos">
           <div className="containers">
             <h3>Mes coordonnées</h3>
-            <ul className="coordonnées">
-              <li className="coordonnées">
+            <ul className="contact">
+              <li className="contact">
                 <img
-                  className="coordonnées"
+                  className="contact"
                   src="http://simpleicon.com/wp-content/uploads/pencil.png"
                   alt="pen"
                 />
                 06 89 67 45 67
               </li>
-              <li className="coordonnées">
+              <li className="contact">
                 <img
-                  className="coordonnées"
+                  className="contact"
                   src="http://simpleicon.com/wp-content/uploads/pencil.png"
                   alt="pen"
                 />
                 contact@champagne-toto.fr
               </li>
-              <li className="coordonnées">
+              <li className="contact">
                 <img
-                  className="coordonnées"
+                  className="contact"
                   src="http://simpleicon.com/wp-content/uploads/pencil.png"
                   alt="pen"
                 />
