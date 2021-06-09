@@ -8,6 +8,7 @@ export default function LoginForm({ Loggedin, error }) {
     e.preventDefault();
     Loggedin(details);
   };
+
   return (
     <LogForm>
       <img src="./Images/FC.png" alt="" className="FarmConnectLogo" />
