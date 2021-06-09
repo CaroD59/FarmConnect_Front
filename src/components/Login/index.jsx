@@ -1,35 +1,65 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import LoginForm from './LoginForm';
-import { Background } from './styles';
+import { LogForm } from './styles';
 
-export default function Login() {
-  const adminUsers = { email: 'dorchies.c@gmail.com', password: 'lol123' };
+export default function LoginForm() {
+  const adminUser = { email: 'dorchies.c@gmail.com', password: 'lol123' };
   const history = useHistory();
-  const [user, setUser] = useState({ email: '' });
   const [error, setError] = useState('');
-
-  const Loggedin = (details) => {
+  const [details, setDetails] = useState({ email: '', password: '' });
+  const submitHandler = (e) => {
+    e.preventDefault();
     if (
-      details.email === adminUsers.email &&
-      details.password === adminUsers.password
+      details.email === adminUser.email &&
+      details.password === adminUser.password
     ) {
-      setUser({
-        email: details.email,
-      });
+      history.push('/home');
     } else {
       setError('Details do not match ....');
     }
   };
   return (
-    <div>
-      {user.email !== '' ? (
-        history.push('/home')
-      ) : (
-        <Background>
-          <LoginForm Loggedin={Loggedin} error={error} />{' '}
-        </Background>
-      )}
-    </div>
+    <LogForm>
+      <img src="./Images/FC.png" alt="" className="FarmConnectLogo" />
+      <form onSubmit={submitHandler}>
+        <div className="pLogin">
+          <p>Connectez-vous pour accéder</p>
+          <p>...</p>
+        </div>
+        <div className="form-inner">
+          {error !== '' ? <div className="error">{error}</div> : ''}
+          <div className="form-group">
+            <input
+              type="text"
+              name="E-mail"
+              id="E-mail"
+              placeholder="E-mail"
+              onChange={(e) =>
+                setDetails({ ...details, email: e.target.value })
+              }
+              value={details.email}
+              className="LogInput"
+            />
+          </div>
+          <div className="form-group">
+            <input
+              type="password"
+              password="Password"
+              id="Password"
+              placeholder="Mot de passe"
+              onChange={(e) =>
+                setDetails({ ...details, password: e.target.value })
+              }
+              value={details.password}
+              className="LogInput"
+            />
+          </div>
+          <div className="divLog">
+            <p className="pForgottenPassword">Mot de passe oublié ?</p>
+            <input type="submit" value="Continuer" className="buttonLogin" />
+          </div>
+        </div>
+      </form>
+    </LogForm>
   );
 }

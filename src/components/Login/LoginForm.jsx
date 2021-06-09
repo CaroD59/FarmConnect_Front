@@ -1,14 +1,23 @@
-import PropTypes from 'prop-types';
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { LogForm } from './styles';
 
-export default function LoginForm({ Loggedin, error }) {
+export default function LoginForm() {
+  const adminUser = { email: 'dorchies.c@gmail.com', password: 'lol123' };
+  const history = useHistory();
+  const [error, setError] = useState('');
   const [details, setDetails] = useState({ email: '', password: '' });
   const submitHandler = (e) => {
     e.preventDefault();
-    Loggedin(details);
+    if (
+      details.email === adminUser.email &&
+      details.password === adminUser.password
+    ) {
+      history.push('/home');
+    } else {
+      setError('Details do not match ....');
+    }
   };
-
   return (
     <LogForm>
       <img src="./Images/FC.png" alt="" className="FarmConnectLogo" />
@@ -54,8 +63,3 @@ export default function LoginForm({ Loggedin, error }) {
     </LogForm>
   );
 }
-
-LoginForm.propTypes = {
-  Loggedin: PropTypes.string.isRequired,
-  error: PropTypes.string.isRequired,
-};
