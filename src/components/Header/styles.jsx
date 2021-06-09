@@ -4,11 +4,12 @@ const StyledHeader = styled.div`
   .NavBar {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
     width: 100%;
     height: 65px;
-    box-shadow: 0px 4px 4px rgba(218, 218, 218, 0.25);
+    border-bottom: rgb(247, 143, 33, 0.75) 1px solid;
+    box-shadow: 0px 10px 10px rgba(218, 218, 218, 0.25);
     ul {
       display: flex;
       justify-content: flex-end;

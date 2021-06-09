@@ -2,32 +2,36 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.div`
   .Footer {
+    width: 100vw;
+    height: 200px;
     display: flex;
-    border: black solid 2px;
+    border-top: rgba(220, 220, 220, 1) 1px solid;
+    background-color: rgba(218, 218, 218, 0.25);
     .Footer_informations {
-      border: green solid 2px;
-      width: 50%;
+      margin: auto;
       list-style-type: none;
+      font-family: 'roboto', sans-serif;
+      color: rgba(70, 70, 70, 1);
+      font-size: 14px;
       .LegalMentions {
         padding: 0;
-        border: red solid 2px;
         display: flex;
-        justify-content: center;
+        align-items: left;
         flex-direction: column;
+        height: auto;
         li {
           list-style-type: none;
-          border: blue solid 2px;
+          padding: 5px;
         }
       }
       .Informations {
         padding: 0;
-        border: red solid 2px;
         display: flex;
-        justify-content: center;
+        align-items: left;
         flex-direction: column;
         li {
           list-style-type: none;
-          border: blue solid 2px;
+          padding: 5px;
         }
       }
     }
