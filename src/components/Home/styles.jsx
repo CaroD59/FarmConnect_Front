@@ -91,7 +91,6 @@ const StyledHome = styled.section`
   }
     }
   }
-
 `;
 
 export default StyledHome;
