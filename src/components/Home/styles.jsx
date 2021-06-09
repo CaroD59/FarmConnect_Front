@@ -29,6 +29,20 @@ const StyledHome = styled.section`
       justify-content: space-around;
       align-items: center;
       .containers {
+        border: 2px solid #dbd8d8;
+        box-shadow: 1px 1px #dbd8d8;
+        width: 400px;
+        text-align: center;
+        height: 250px;
+        margin-right: 35px;
+        border-radius: 4%;
+        h3 {
+          font-family: Verdana;
+          font-weight: normal;
+          font-size: 20px;
+          text-align: left;
+          padding: 10px;
+        }
         ul {
           height: 150px;
           display: flex;
@@ -41,47 +55,15 @@ const StyledHome = styled.section`
             text-align: start;
             display: flex;
             align-items: center;
+            p {
+              font-weight: bold;
+            }
             img {
               margin-right: 20px;
               padding-left: 10px;
               width: 30px;
               height: 30px;
             }
-          }
-        }
-
-
-    div.containers {
-      border: 2px solid #dbd8d8;
-      box-shadow: 1px 1px #dbd8d8;
-      width: 400px;
-      text-align: center;
-      height: 250px;
-      margin-right: 35px;
-      border-radius: 4%;
-      h3 {
-        font-family: Verdana;
-        font-weight: normal;
-        font-size: 20px;
-        text-align: left;
-        padding: 10px;
-      }
-
-      ul.content {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-        li {
-          list-style: none;
-          font-family: Arial, Helvetica, sans-serif;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          border: 1px solid red;
-          width: 290px;
-          height: 30px;
-          p {
-            font-weight: bold;
           }
         }
       }
