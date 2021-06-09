@@ -14,7 +14,6 @@ const StyledHome = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
     h1 {
       width: 98%;
       font-family: Verdana;
@@ -23,37 +22,34 @@ const StyledHome = styled.section`
       color: #7171ec;
       margin-left: 20px;
     }
-
-  .infos {
-    width: 95%;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    ul.contact {
-      height: 150px;
+    .infos {
+      width: 95%;
+      height: 300px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-left: 0;
-     
-
-      li.contact {
-        list-style: none;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: start;
-        display: flex;
-        align-items: center;
-
-        img {
-          margin-right: 20px;
-          padding-left: 10px;
-          width: 30px;
-          height: 30px;
+      justify-content: space-around;
+      align-items: center;
+      .containers {
+        ul {
+          height: 150px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 0;
+          li {
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            img {
+              margin-right: 20px;
+              padding-left: 10px;
+              width: 30px;
+              height: 30px;
+            }
+          }
         }
-      }
-    }
+
 
     div.containers {
       border: 2px solid #dbd8d8;
@@ -72,23 +68,23 @@ const StyledHome = styled.section`
       }
 
       ul.content {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    li {
-      list-style: none;
-      font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      border: 1px solid red;
-      width: 290px;
-      height: 30px;
-      p {
-        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        li {
+          list-style: none;
+          font-family: Arial, Helvetica, sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border: 1px solid red;
+          width: 290px;
+          height: 30px;
+          p {
+            font-weight: bold;
+          }
+        }
       }
-    }
-  }
     }
   }
 `;
