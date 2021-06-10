@@ -83,7 +83,7 @@ const LogForm = styled.div`
 `;
 
 const Background = styled.div`
-  background-image: url(./Images/welcomefont.png);
+  background-image: url(./img/welcomefont.png);
   background-size: cover;
   height: 100vh;
 `;
