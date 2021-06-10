@@ -20,7 +20,7 @@ export default function LoginForm() {
   };
   return (
     <LogForm>
-      <img src="./Images/FC.png" alt="" className="FarmConnectLogo" />
+      <img src="./img/FC.png" alt="" className="FarmConnectLogo" />
       <form onSubmit={submitHandler}>
         <div className="pLogin">
           <p>Connectez-vous pour accéder</p>
