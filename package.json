@@ -20,7 +20,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx --fix src/",
-    "dev": "nodemon server.js",
     "prettify": "prettier --write src/"
   },
   "eslintConfig": {
