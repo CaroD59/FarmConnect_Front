@@ -1,5 +1,11 @@
+import MarketPlaceCatalog from '../MarketPlaceCatalog/index';
+
 function MarketPlace() {
-  return <h1> Welcome to the MarketPlace </h1>;
+  return (
+    <>
+      <MarketPlaceCatalog />
+    </>
+  );
 }
 
 export default MarketPlace;
