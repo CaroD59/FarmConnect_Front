@@ -32,8 +32,6 @@ const StyledHeader = styled.div`
         }
         :hover {
           border-bottom: rgba(34, 53, 148, 1) solid 2px;
-          transition: transform 250ms;
-          transition-timing-function: linear;
         }
       }
     }
