@@ -1,10 +1,10 @@
-import StyledMarketplace from './styles';
+import MarketPlaceCatalog from '../MarketPlaceCatalog/index';
 
 function MarketPlace() {
   return (
-    <StyledMarketplace>
-      <h1> Welcome to the MarketPlace </h1>
-    </StyledMarketplace>
+    <>
+      <MarketPlaceCatalog />
+    </>
   );
 }
 
