@@ -3,8 +3,6 @@ import styled from 'styled-components';
 const StyledHome = styled.section`
   height: 800px;
   width: 100%;
-  border: 1px solid black;
-
   .profil {
     width: 98%;
     height: 350px;
@@ -19,7 +17,7 @@ const StyledHome = styled.section`
       font-family: Verdana;
       font-weight: lighter;
       font-size: 35px;
-      color: #7171ec;
+      color: rgba(34, 53, 148, 1);
       margin-left: 20px;
     }
     .infos {
