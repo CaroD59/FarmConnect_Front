@@ -20,7 +20,7 @@ function Header() {
               <NavLink to="/my-apps">Mes Services</NavLink>
             </li>
             <li className="Marketplace">
-              <NavLink to="/marketplace">Marketplace</NavLink>
+              <NavLink to="/market-place">Marketplace</NavLink>
             </li>
             <li className="Contact">
               <NavLink to="/contact">Contact</NavLink>
