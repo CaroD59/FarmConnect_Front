@@ -7,6 +7,10 @@ export default function LoginForm() {
   const history = useHistory();
   const [error, setError] = useState('');
   const [details, setDetails] = useState({ email: '', password: '' });
+  const signInHandler = (e) => {
+    e.preventDefault();
+    history.push('/registration');
+  };
   const submitHandler = (e) => {
     e.preventDefault();
     if (
@@ -15,7 +19,7 @@ export default function LoginForm() {
     ) {
       history.push('/home');
     } else {
-      setError('Details do not match ....');
+      setError('Details do not match ....');
     }
   };
   return (
@@ -46,7 +50,7 @@ export default function LoginForm() {
               type="password"
               password="Password"
               id="Password"
-              placeholder="Mot de passe"
+              placeholder="Mot de passe"
               onChange={(e) =>
                 setDetails({ ...details, password: e.target.value })
               }
@@ -54,9 +58,16 @@ export default function LoginForm() {
               className="LogInput"
             />
           </div>
-          <div className="divLog">
-            <p className="pForgottenPassword">Mot de passe oublié ?</p>
-            <input type="submit" value="Continuer" className="buttonLogin" />
+          <div className="BlocLoginSignIn">
+            <div>
+              <p className="pForgottenPassword">Mot de passe oublié ?</p>
+              <button type="button" className="pSignIn" onClick={signInHandler}>
+                S&apos;inscrire
+              </button>
+            </div>
+            <div>
+              <input type="submit" value="Continuer" className="buttonLogin" />
+            </div>
           </div>
         </div>
       </form>
