@@ -1,67 +1,100 @@
 import styled from 'styled-components';
 
 const StyledHome = styled.section`
-  height: 800px;
-  width: 100%;
-  .profil {
-    width: 98%;
-    height: 350px;
-    margin-left: 10px;
-    margin-top: 20px;
+  .home {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    h1 {
-      width: 98%;
-      font-family: Verdana;
-      font-weight: lighter;
-      font-size: 35px;
-      color: rgba(34, 53, 148, 1);
-      margin-left: 20px;
+    justify-content: space-between;
+    font-family: 'roboto', sans-serif;
+    background-color: rgba(218, 218, 218, 0.25);
+    .profil {
+      width: 60%;
+    }
+    .parcelle {
+      width: 60%;
+      height: 500px;
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 80px;
+      .parcelleMap {
+        width: 80%;
+        margin: 30px;
+        border-radius: 8px;
+        background-color: #ffff;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+      }
+    }
+      .infos-parcelle {
+        width: 20%;
+        margin: 30px;
+        border-radius: 8px;
+        background-color: #ffff;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+        h3 {
+          font-size: 20px;
+          padding: 15px;
+          ul {
+            li {
+            }
+          }
+        }
+    }
+    .helloUser {
+      color: rgba(70, 70, 70, 1);
+      text-align: center;
+      font-size: 15px;
+      margin: 30px;
+      padding: 10px;
+    }
+    .welcomeProfil {
+      color: rgba(70, 70, 70, 1);
+      text-align: center;
+      font-size: 40px;
+      margin: 30px;
+      padding: 10px;
     }
     .infos {
-      width: 95%;
       height: 300px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       .containers {
-        border: 2px solid #dbd8d8;
-        box-shadow: 1px 1px #dbd8d8;
-        width: 400px;
-        text-align: center;
-        height: 250px;
-        margin-right: 35px;
-        border-radius: 4%;
-        h3 {
-          font-family: Verdana;
-          font-weight: normal;
+        margin: 30px;
+        width: 500px;
+        height: 300px;
+        border-radius: 8px;
+        background-color: #ffff;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+        .cardName {
           font-size: 20px;
-          text-align: left;
-          padding: 10px;
+          padding: 15px;
+          margin: 0;
+          font-weight: normal;
         }
-        ul {
-          height: 150px;
+        .card {
+          height: 200px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          padding-left: 0;
+          padding: 10px;
+          margin: 0;
           li {
             list-style: none;
-            font-family: Arial, Helvetica, sans-serif;
             text-align: start;
             display: flex;
             align-items: center;
             p {
-              font-weight: bold;
+              margin: 0;
             }
-            img {
-              margin-right: 20px;
-              padding-left: 10px;
-              width: 30px;
-              height: 30px;
-            }
+          }
           }
         }
       }

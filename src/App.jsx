@@ -7,6 +7,7 @@ import Home from './components/Home/index';
 import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
+import './reset.css';
 
 function App() {
   return (
