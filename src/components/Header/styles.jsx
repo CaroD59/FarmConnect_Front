@@ -32,6 +32,7 @@ const StyledHeader = styled.div`
         }
         :hover {
           border-bottom: rgba(34, 53, 148, 1) solid 2px;
+          transition: 0.3s;
         }
       }
     }
