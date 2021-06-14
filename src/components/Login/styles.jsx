@@ -42,10 +42,21 @@ const LogForm = styled.div`
     color: #223594;
     font-family: 'roboto', sans-serif;
     font-weight: bold;
+    text-align: right;
     font-size: 0.6em;
   }
 
-  .divLog {
+  .pSignIn {
+    cursor: pointer;
+    border: none;
+    color: #223594;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    font-size: 0.6em;
+  }
+
+  .BlocLoginSignIn {
     text-align: right;
   }
 
@@ -72,6 +83,7 @@ const LogForm = styled.div`
     height: 45px;
     opacity: 0.5;
   }
+
   .LogInput:focus,
   .LogInput:hover {
     outline: none;

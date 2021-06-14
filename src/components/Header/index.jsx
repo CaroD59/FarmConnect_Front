@@ -38,7 +38,7 @@ function Header() {
         <div className="Pages">
           <ul>
             <li className="Home">
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/home">Home</NavLink>
             </li>
             <li className="MyApps">
               <NavLink to="/my-apps">Mes Services</NavLink>
