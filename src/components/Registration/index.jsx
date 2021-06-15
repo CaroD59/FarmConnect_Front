@@ -16,12 +16,7 @@ function Registration() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
-    axios.post('http://localhost:5050/users', users).then(({ data }) => {
-      setUsers(data);
-    });
-
-    console.log('toto');
+    axios.post('http://localhost:5050/users', users);
   };
   return (
     <RegistrationForm>
