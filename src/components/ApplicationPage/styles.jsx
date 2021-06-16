@@ -7,7 +7,6 @@ const StyledApplicationPage = styled.div`
     height: 350px;
     display: flex;
     justify-content: center;
-    border: black solid 2px;
     .logo {
       position: absolute;
       top: 0;
@@ -24,7 +23,6 @@ const StyledApplicationPage = styled.div`
     height: 500px;
     color: #223594;
     font-family: 'roboto', sans-serif;
-    border: yellowgreen solid 2px;
     .name {
       margin-top: 20px;
       margin-left: 160px;
