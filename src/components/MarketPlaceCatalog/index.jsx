@@ -9,7 +9,7 @@ export default function GeneralCatalogue() {
   const history = useHistory();
   const appHandler = (e) => {
     e.preventDefault();
-    history.push(`/app/${id}`);
+    history.push(`/apps/${id}`);
   };
   useEffect(() => {
     axios.get('http://localhost:5050/apps').then(({ data }) => {
