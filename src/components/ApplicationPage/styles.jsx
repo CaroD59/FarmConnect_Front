@@ -12,11 +12,11 @@ const StyledApplicationPage = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      width: 100px;
+      width: 200px;
       height: 100px;
     }
     .banner {
-      max-width: 100%;
+      width: 100%;
     }
   }
   .nameDesc {
