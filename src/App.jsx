@@ -7,6 +7,7 @@ import Home from './components/Home/index';
 import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
+import ApplicationPage from './components/ApplicationPage';
 import './reset.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/myapps" component={MyApps} />
         <Route path="/marketplace" component={MarketPlace} />
         <Route path="/contact" component={Contact} />
+        <Route path="/app/:id" component={ApplicationPage} />
       </Switch>
       <Footer />
     </div>
