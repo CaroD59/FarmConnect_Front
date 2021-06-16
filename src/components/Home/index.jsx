@@ -126,19 +126,23 @@ function Home() {
             <h3> Parcelle </h3>
             <ul>
               <li>
-                Qté <em> 12 </em>
+                <h4>Qté :</h4> <em> 12 </em>
               </li>
               <li>
-                Are <em> 100 ha </em>
+                <h4>Are :</h4> <em> 100 ha </em>
               </li>
               <li>
-                Periode <em> Ebourgeonnade </em>
+                <h4>Periode :</h4> <em> Ebourgeonnade </em>
               </li>
             </ul>
           </div>
           <div className="parcelleMap">
             <p>Ici arrivera la carte de la parcelle de l&apos;exploitant.</p>
           </div>
+        </div>
+        <div className="button">
+          <button type="button"> Contact </button>
+          <button type="button"> Market Place gt </button>
         </div>
       </div>
     </StyledHome>

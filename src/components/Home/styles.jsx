@@ -58,8 +58,7 @@ const StyledHome = styled.section`
               align-items: center;
             }
             .pic:hover{
-              width: 73px;
-              height: 73px;
+              border: 2px solid #f78f21;
               transition: 100ms;
             }
           }
@@ -99,6 +98,7 @@ const StyledHome = styled.section`
     display: flex;
     justify-content: space-around;
     margin: 70px;
+    margin-bottom: 10px;
 
     .infos-parcelle {
       width: 250px;
@@ -106,8 +106,9 @@ const StyledHome = styled.section`
       border-radius: 8px;
       background-color: #ffff;
       box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+      font-size: 70%;
       h3 {
-        font-size: 28px;
+        font-size: 20px;
         padding: 15px;
         margin-top: 20px;
       }
@@ -119,8 +120,13 @@ const StyledHome = styled.section`
         justify-content: space-around;
         li {
           padding-left: 10px;
-          em {
+          display: flex;
+          h4 {
+            width: 80px;
             font-weight: bold;
+          }
+          em {
+            font-weight: normal;
           }
         }
       }
@@ -135,7 +141,7 @@ const StyledHome = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 100%;  
       }
     }
   }
@@ -152,6 +158,21 @@ const StyledHome = styled.section`
     font-size: 40px;
     margin: 30px;
     padding: 10px;
+  }
+  .button {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button {
+      font-family: 'roboto', sans-serif;
+      background-color: #f78f21;
+      border: 0;
+      border-radius: 3px;
+      width: 90px;
+      height: 30px;
+    }
   }
 `;
 
