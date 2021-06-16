@@ -20,9 +20,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
         <Route path="/myapps" component={MyApps} />
-        <Route path="/marketplace" component={MarketPlace} />
+        <Route path="/apps" component={MarketPlace} />
         <Route path="/contact" component={Contact} />
-        <Route path="/app/:id" component={ApplicationPage} />
+        <Route path="/apps/:id" component={ApplicationPage} />
       </Switch>
       <Footer />
     </div>
