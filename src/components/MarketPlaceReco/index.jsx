@@ -1,9 +1,16 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useHistory, useParams } from 'react-router-dom';
 import StyledMarketPlaceReco from './styles';
 
 function MarketPlaceReco() {
   const [appli, setAppli] = useState([]);
+  const id = useParams();
+  const history = useHistory();
+  const appHandler = (e) => {
+    e.preventDefault();
+    history.push(`/app/${id}`);
+  };
 
   useEffect(() => {
     axios.get('http://localhost:5050/apps').then(({ data }) => {
@@ -12,7 +19,7 @@ function MarketPlaceReco() {
   }, []);
 
   return (
-    <div>
+    <div onClick={appHandler} onKeyDown={appHandler} aria-hidden="true">
       <StyledMarketPlaceReco>
         <h1 className="titre">Recommandations</h1>
         <div className="AppGallery">
