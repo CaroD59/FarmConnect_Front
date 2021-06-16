@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const RegistrationForm = styled.div`
-  border-radius: 30px;
-`;
+const RegistrationForm = styled.div``;
 
 export default RegistrationForm;
