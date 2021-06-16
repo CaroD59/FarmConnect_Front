@@ -9,53 +9,81 @@ function Home() {
         <div className="profil">
           <div className="infos">
             <div className="containers">
-              <h3 className="cardName">Mes coordonnées</h3>
+              <div className="title">
+                <h3 className="cardName">Mes coordonnées</h3>
+                <img
+                  className="editor"
+                  src="http://www.rhodo.ch/storage/app/media/inscription_picto.png"
+                  alt="editor"
+                />
+              </div>
               <ul className="card">
                 <li>
-                  Nom : <p> Claude </p>
+                  <h4>Nom :</h4> <p> Claude </p>
                 </li>
                 <li>
-                  Prénom : <p> Jean </p>
+                  <h4>Prenom :</h4> <p> Jean </p>
                 </li>
                 <li>
-                  Téléphone : <p> 06 89 67 45 67 </p>
+                  <h4>Telephone :</h4> <p> 06 89 67 45 67 </p>
                 </li>
                 <li>
-                  Mail : <p> contact@champagne-toto.fr </p>
+                  <h4>Mail :</h4>
+                  <p> contact@champagne-toto.fr </p>
                 </li>
                 <li>
-                  Adresse : <p> 212 rue du bourg </p>
+                  <h4>Adresse :</h4> <p> 212 rue du bourg </p>
                 </li>
                 <li>
-                  Code Postal : <p> 57890 </p>
+                  <h4>Code Postal :</h4>
+                  <p> 57890 </p>
                 </li>
                 <li>
-                  Ville : <p> Roubaix </p>
+                  <h4>Ville :</h4> <p> Roubaix </p>
                 </li>
               </ul>
             </div>
             <div className="containers">
-              <h3 className="cardName">Mon exploitation</h3>
+              <div className="title">
+                <h3 className="cardName">Mon exploitation</h3>
+                <img
+                  className="editor"
+                  src="http://www.rhodo.ch/storage/app/media/inscription_picto.png"
+                  alt="editor"
+                />
+              </div>
               <ul className="card">
                 <li>
-                  Forme juridique <p> Loredum lupson </p>
+                  <h4>Forme juridique :</h4>
+                  <p>Lorem Ipsum is simply dummy text</p>
                 </li>
                 <li>
-                  Numero sirene <p> Loredum lupson</p>
+                  <h4>Forme juridique :</h4>
+                  <p>Lorem Ipsum is simply dummy text</p>
                 </li>
                 <li>
-                  Numero Siret <p> Loredum lupson </p>
+                  <h4>Forme juridique :</h4>
+                  <p>Lorem Ipsum is simply dummy text</p>
                 </li>
                 <li>
-                  Numero TVA <p> Loredum lupson </p>
+                  <h4>Forme juridique :</h4>
+                  <p>Lorem Ipsum is simply dummy text</p>
                 </li>
                 <li>
-                  Numero RCS <p> Loredum lupson </p>
+                  <h4>Forme juridique :</h4>
+                  <p>Lorem Ipsum is simply dummy text</p>
                 </li>
               </ul>
             </div>
             <div className="containers">
-              <h3 className="cardName">Mes activités </h3>
+              <div className="title">
+                <h3 className="cardName">Mes activités</h3>
+                <img
+                  className="editor"
+                  src="http://www.rhodo.ch/storage/app/media/inscription_picto.png"
+                  alt="editor"
+                />
+              </div>
               <div className="picto">
                 <div className="pic">
                   <img

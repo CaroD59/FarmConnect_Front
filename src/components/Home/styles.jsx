@@ -25,11 +25,28 @@ const StyledHome = styled.section`
           border-radius: 8px;
           background-color: #ffff;
           box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+          .title {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 15px;
+            align-items: center;
+            .editor {
+              width: 20px;
+              height: 20px;
+            }
+            .editor:hover {
+              width: 22px;
+              height: 22px;
+              transition: 100ms;
+            }
+          }
           .picto {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            padding-top: 8vh;
+            padding-top: 20px;
+
+            height: 200px;
             .pic {
               margin: 5px;
               width: 70px;
@@ -39,6 +56,11 @@ const StyledHome = styled.section`
               display: flex;
               justify-content: center;
               align-items: center;
+            }
+            .pic:hover{
+              width: 73px;
+              height: 73px;
+              transition: 100ms;
             }
           }
 
@@ -52,18 +74,18 @@ const StyledHome = styled.section`
             height: 200px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            padding: 10px;
-            margin: 0;
-            li {
-              list-style: none;
-              text-align: start;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              p {
-                margin: 0;
-                font-weight: bold;
+            justify-content: space-around;
+            padding-top: 20px;
+              li {
+                list-style: none;
+                display: flex;
+                font-size: 70%;
+                h4 {
+                  width: 100px;
+                  padding-left: 10px;
+                  font-weight: bold;
+                }
+                
               }
             }
           }
@@ -72,7 +94,7 @@ const StyledHome = styled.section`
     }
   }
   .parcelle {
-    width: 91%;
+    width: 88%;
     height: 400px;
     display: flex;
     justify-content: space-around;
@@ -104,7 +126,7 @@ const StyledHome = styled.section`
       }
     }
     .parcelleMap {
-      width: 800px;
+      width: 850px;
       margin: 30px;
       border-radius: 8px;
       background-color: #ffff;
