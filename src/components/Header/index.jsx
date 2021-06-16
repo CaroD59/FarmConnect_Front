@@ -17,10 +17,10 @@ function Header() {
               <NavLink to="/home">Home</NavLink>
             </li>
             <li className="MyApps">
-              <NavLink to="/my-apps">Mes Services</NavLink>
+              <NavLink to="/myapps">Mes Services</NavLink>
             </li>
             <li className="Marketplace">
-              <NavLink to="/market-place">Marketplace</NavLink>
+              <NavLink to="/marketplace">Marketplace</NavLink>
             </li>
             <li className="Contact">
               <NavLink to="/contact">Contact</NavLink>
