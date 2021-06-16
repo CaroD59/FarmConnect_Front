@@ -19,7 +19,7 @@ export default function GeneralCatalogue() {
   return (
     <div onClick={appHandler} onKeyDown={appHandler} aria-hidden="true">
       <StyledMarketPlaceCatalog>
-        <h1 className="titre">Recommandations</h1>
+        <h1 className="titre">Catalogue</h1>
         <div className="AppGallery">
           {generalCatalogue.map((catalogue) => {
             return (
