@@ -36,9 +36,9 @@ function Registration() {
           </div>
           <div className="form-group">
             <input
-              type="text"
-              name="Password"
-              id="Password"
+              type="password"
+              name="password"
+              id="password"
               placeholder="Mot de passe"
               onChange={(e) => setUsers({ ...users, password: e.target.value })}
               value={users.password}
