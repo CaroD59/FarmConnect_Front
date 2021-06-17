@@ -36,7 +36,7 @@ function Registration() {
           </div>
           <div className="form-group">
             <input
-              type="password"
+              type="text"
               name="Password"
               id="Password"
               placeholder="Mot de passe"
