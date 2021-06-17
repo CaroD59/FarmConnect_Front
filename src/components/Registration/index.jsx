@@ -20,7 +20,7 @@ function Registration() {
   };
   return (
     <RegistrationForm>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className="form">
         <p>Formulaire d&apos;inscription</p>
         <div className="form-inner">
           <div className="form-group">
@@ -37,8 +37,8 @@ function Registration() {
           <div className="form-group">
             <input
               type="password"
-              name="password"
-              id="password"
+              name="Password"
+              id="Password"
               placeholder="Mot de passe"
               onChange={(e) => setUsers({ ...users, password: e.target.value })}
               value={users.password}
