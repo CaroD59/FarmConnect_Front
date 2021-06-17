@@ -10,7 +10,8 @@ const StyledMarketPlaceCatalog = styled.div`
 
   .AppGallery {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .card {
@@ -25,6 +26,7 @@ const StyledMarketPlaceCatalog = styled.div`
 
     :hover {
       transform: scale(1.02);
+      cursor: pointer;
       box-shadow: 10px 11px 20px -16px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: 10px 11px 20px -16px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 11px 20px -16px rgba(0, 0, 0, 0.75);

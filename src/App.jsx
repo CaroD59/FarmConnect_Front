@@ -7,6 +7,7 @@ import Home from './components/Home/index';
 import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
+import ApplicationPage from './components/ApplicationPage';
 import './reset.css';
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
         <Route path="/registration" component={Registration} />
         <Route exact path="/" component={Home} />
         <Route path="/home" component={Home} />
-        <Route path="/my-apps" component={MyApps} />
-        <Route path="/marketplace" component={MarketPlace} />
+        <Route path="/myapps" component={MyApps} />
+        <Route exact path="/apps" component={MarketPlace} />
         <Route path="/contact" component={Contact} />
+        <Route path="/apps/:id" component={ApplicationPage} />
       </Switch>
       <Footer />
     </div>
