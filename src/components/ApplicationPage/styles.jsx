@@ -7,7 +7,7 @@ const StyledApplicationPage = styled.div`
     height: 350px;
     display: flex;
     justify-content: center;
-    .logo {
+    .logoApp {
       position: absolute;
       top: 0;
       left: 0;
@@ -31,6 +31,7 @@ const StyledApplicationPage = styled.div`
     .description {
       margin-top: 20px;
       margin-left: 300px;
+      margin-right: 300px;
     }
   }
 `;
