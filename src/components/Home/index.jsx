@@ -140,10 +140,6 @@ function Home() {
             <p>Ici arrivera la carte de la parcelle de l&apos;exploitant.</p>
           </div>
         </div>
-        <div className="button">
-          <button type="button"> Contact </button>
-          <button type="button"> Market Place gt </button>
-        </div>
       </div>
     </StyledHome>
   );
