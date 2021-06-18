@@ -6,14 +6,18 @@ const StyledMarketPlaceReco = styled.div`
     font-family: 'roboto', sans-serif;
     font-size: 44px;
     font-weight: 300;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   .AppGallery {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
   }
 
   .card {
+    margin: 0;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -22,6 +26,10 @@ const StyledMarketPlaceReco = styled.div`
     border: solid 1px #c2bcb2;
     width: 390px;
     height: 180px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 
     :hover {
       transform: scale(1.02);

@@ -27,7 +27,7 @@ function MarketPlaceReco() {
             return (
               <div className="card" key={app.id}>
                 <div className="image">
-                  <img src={app.logo} alt="banner" className="imageSize" />
+                  <img src={app.banner} alt="banner" className="imageSize" />
                 </div>
                 <div className="infos">
                   <div className="societe">

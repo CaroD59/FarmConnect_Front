@@ -15,6 +15,7 @@ const StyledMarketPlaceCatalog = styled.div`
     flex-direction: row;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin-bottom: 50px;
   }
 
   .card {

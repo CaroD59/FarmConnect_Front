@@ -32,7 +32,7 @@ export default function GeneralCatalogue() {
               >
                 <div className="image">
                   <img
-                    src={catalogue.logo}
+                    src={catalogue.banner}
                     alt="banner"
                     className="imageSize"
                   />
