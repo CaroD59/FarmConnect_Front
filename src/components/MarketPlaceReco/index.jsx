@@ -9,7 +9,7 @@ function MarketPlaceReco() {
   const history = useHistory();
   const appHandler = (e) => {
     e.preventDefault();
-    history.push(`/app/${id}`);
+    history.push(`/apps/${id}`);
   };
 
   useEffect(() => {
@@ -19,22 +19,29 @@ function MarketPlaceReco() {
   }, []);
 
   return (
-    <div onClick={appHandler} onKeyDown={appHandler} aria-hidden="true">
+    <div
+      onClick={appHandler}
+      onKeyDown={appHandler}
+      aria-hidden="true"
+      key={appli.id}
+    >
       <StyledMarketPlaceReco>
         <h1 className="titre">Recommandations</h1>
         <div className="AppGallery">
           {appli.slice(0, 3).map((app) => {
             return (
-              <div className="card">
-                <div className="image">
-                  <img src={app.banner} alt="banner" className="imageSize" />
-                </div>
-                <div className="infos">
-                  <div className="societe">
-                    <p className="name">{app.name}</p>
-                    <p className="activite">{app.provider_app}</p>
+              <div className="AppGallery">
+                <div className="card">
+                  <div className="image">
+                    <img src={app.banner} alt="banner" className="imageSize" />
                   </div>
-                  <div className="button">Infos</div>
+                  <div className="infos">
+                    <div className="societe">
+                      <p className="name">{app.name}</p>
+                      <p className="activite">{app.provider_app}</p>
+                    </div>
+                    <div className="button">Infos</div>
+                  </div>
                 </div>
               </div>
             );
