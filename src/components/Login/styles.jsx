@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const LogForm = styled.div`
   .loginPage {
     background-image: url(./img/welcomefont.png);
+    background-size: cover;
     width: 100vw;
     height: 700px;
     .form {
