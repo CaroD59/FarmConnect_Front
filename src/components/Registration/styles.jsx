@@ -1,15 +1,24 @@
 import styled from 'styled-components';
 
-const RegistrationForm = styled.div`
-  border-radius: 30px;
-  width: 500px;
-  height: 350px;
-  display: block;
-  margin: auto;
-  margin-bottom: 400px;
-  position: relative;
-  top: 50px;
-  background-color: white;
+const LogForm = styled.div`
+  .loginPage {
+    background-image: url(./img/welcomefont.png);
+    width: 100vw;
+    height: 700px;
+    .registration {
+      background-color: #fff;
+      margin: 0;
+      border-radius: 20px;
+      width: 450px;
+      height: 550px;
+      display: block;
+      margin: auto;
+      position: relative;
+      top: 50px;
+      background-color: white;
+      margin-bottom: 150px;
+    }
+  }
 
   .FarmConnectLogo {
     width: 300px;
@@ -29,7 +38,7 @@ const RegistrationForm = styled.div`
     height: 45px;
   }
 
-  .pLogin {
+  .form {
     margin-top: 20px;
     color: #223594;
     font-family: 'roboto', sans-serif;
@@ -39,7 +48,7 @@ const RegistrationForm = styled.div`
   }
 
   .pForgottenPassword {
-    margin-top: 70px;
+    margin-top: 50px;
     color: #223594;
     font-family: 'roboto', sans-serif;
     font-weight: bold;
@@ -95,4 +104,4 @@ const RegistrationForm = styled.div`
   }
 `;
 
-export default RegistrationForm;
+export default LogForm;

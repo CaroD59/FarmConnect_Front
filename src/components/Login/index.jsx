@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { LogForm } from './styles';
+import LogForm from './styles';
 
 export default function LoginForm() {
   const adminUser = { email: 'dorchies.c@gmail.com', password: 'lol123' };
@@ -24,53 +24,64 @@ export default function LoginForm() {
   };
   return (
     <LogForm>
-      <img src="./img/FC.png" alt="" className="FarmConnectLogo" />
-      <form onSubmit={submitHandler}>
-        <div className="pLogin">
-          <p>Connectez-vous pour accéder</p>
-          <p>...</p>
-        </div>
-        <div className="form-inner">
-          {error !== '' ? <div className="error">{error}</div> : ''}
-          <div className="form-group">
-            <input
-              type="text"
-              name="E-mail"
-              id="E-mail"
-              placeholder="E-mail"
-              onChange={(e) =>
-                setDetails({ ...details, email: e.target.value })
-              }
-              value={details.email}
-              className="LogInput"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="password"
-              password="Password"
-              id="Password"
-              placeholder="Mot de passe"
-              onChange={(e) =>
-                setDetails({ ...details, password: e.target.value })
-              }
-              value={details.password}
-              className="LogInput"
-            />
-          </div>
-          <div className="BlocLoginSignIn">
-            <div>
-              <p className="pForgottenPassword">Mot de passe oublié ?</p>
-              <button type="button" className="pSignIn" onClick={signInHandler}>
-                S&apos;inscrire
-              </button>
+      <div className="loginPage">
+        <div className="form">
+          <img src="./img/FC.png" alt="" className="FarmConnectLogo" />
+          <form onSubmit={submitHandler}>
+            <div className="pLogin">
+              <p>Connectez-vous pour accéder</p>
             </div>
-            <div>
-              <input type="submit" value="Continuer" className="buttonLogin" />
+            <div className="form-inner">
+              {error !== '' ? <div className="error">{error}</div> : ''}
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="E-mail"
+                  id="E-mail"
+                  placeholder="E-mail"
+                  onChange={(e) =>
+                    setDetails({ ...details, email: e.target.value })
+                  }
+                  value={details.email}
+                  className="LogInput"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="password"
+                  password="Password"
+                  id="Password"
+                  placeholder="Mot de passe"
+                  onChange={(e) =>
+                    setDetails({ ...details, password: e.target.value })
+                  }
+                  value={details.password}
+                  className="LogInput"
+                />
+              </div>
+              <div className="BlocLoginSignIn">
+                <div>
+                  <p className="pForgottenPassword">Mot de passe oublié ?</p>
+                  <button
+                    type="button"
+                    className="pSignIn"
+                    onClick={signInHandler}
+                  >
+                    S&apos;inscrire
+                  </button>
+                </div>
+                <div>
+                  <input
+                    type="submit"
+                    value="Se Connecter"
+                    className="buttonLogin"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-      </form>
+      </div>
     </LogForm>
   );
 }

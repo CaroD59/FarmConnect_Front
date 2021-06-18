@@ -20,60 +20,75 @@ function Registration() {
   };
   return (
     <RegistrationForm>
-      <form onSubmit={submitHandler} className="form">
-        <p>Formulaire d&apos;inscription</p>
-        <div className="form-inner">
-          <div className="form-group">
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              onChange={(e) => setUsers({ ...users, email: e.target.value })}
-              value={users.email}
-              className="LogInput"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="password"
-              name="Password"
-              id="Password"
-              placeholder="Mot de passe"
-              onChange={(e) => setUsers({ ...users, password: e.target.value })}
-              value={users.password}
-              className="LogInput"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              name="firstname"
-              id="firstname"
-              placeholder="Prénom"
-              onChange={(e) =>
-                setUsers({ ...users, firstname: e.target.value })
-              }
-              value={users.firstname}
-              className="LogInput"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              name="lastname"
-              id="lastname"
-              placeholder="Nom"
-              onChange={(e) => setUsers({ ...users, lastname: e.target.value })}
-              value={users.lastname}
-              className="LogInput"
-            />
-          </div>
-          <div>
-            <input type="submit" value="Continuer" className="buttonLogin" />
-          </div>
+      <div className="loginPage">
+        <div className="registration">
+          <img src="./img/FC.png" alt="" className="FarmConnectLogo" />
+          <form onSubmit={submitHandler} className="form">
+            <p>Formulaire d&apos;inscription</p>
+            <div className="form-inner">
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                  onChange={(e) =>
+                    setUsers({ ...users, email: e.target.value })
+                  }
+                  value={users.email}
+                  className="LogInput"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="password"
+                  name="Password"
+                  id="Password"
+                  placeholder="Mot de passe"
+                  onChange={(e) =>
+                    setUsers({ ...users, password: e.target.value })
+                  }
+                  value={users.password}
+                  className="LogInput"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="Prénom"
+                  onChange={(e) =>
+                    setUsers({ ...users, firstname: e.target.value })
+                  }
+                  value={users.firstname}
+                  className="LogInput"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Nom"
+                  onChange={(e) =>
+                    setUsers({ ...users, lastname: e.target.value })
+                  }
+                  value={users.lastname}
+                  className="LogInput"
+                />
+              </div>
+              <div>
+                <input
+                  type="submit"
+                  value="S'inscrire"
+                  className="buttonLogin"
+                />
+              </div>
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
     </RegistrationForm>
   );
 }
