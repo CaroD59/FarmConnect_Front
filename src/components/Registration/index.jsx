@@ -16,7 +16,7 @@ function Registration() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5050/users', users);
+    axios.post(`${process.env.REACT_APP_API_URL}/auth/signup`, users);
   };
   return (
     <RegistrationForm>
