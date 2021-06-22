@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useHistory, useParams } from 'react-router-dom';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import StyledMarketPlaceReco from './styles';
 
 function MarketPlaceReco() {
@@ -27,8 +29,55 @@ function MarketPlaceReco() {
     >
       <StyledMarketPlaceReco>
         <h1 className="titre">Recommandations</h1>
-        <div className="AppGallery">
-          {appli.slice(0, 3).map((app) => {
+        <Carousel
+          additionalTransfrom={0}
+          arrows
+          autoPlay
+          autoPlaySpeed={3000}
+          centerMode={false}
+          className="Carousel"
+          containerClass="container"
+          dotListClass=""
+          draggable
+          focusOnSelect={false}
+          infinite
+          itemClass=""
+          keyBoardControl
+          minimumTouchDrag={80}
+          renderButtonGroupOutside={false}
+          renderDotsOutside={false}
+          responsive={{
+            desktop: {
+              breakpoint: {
+                max: 3000,
+                min: 1024,
+              },
+              items: 4,
+              partialVisibilityGutter: 40,
+            },
+            mobile: {
+              breakpoint: {
+                max: 464,
+                min: 0,
+              },
+              items: 1,
+              partialVisibilityGutter: 30,
+            },
+            tablet: {
+              breakpoint: {
+                max: 1024,
+                min: 464,
+              },
+              items: 2,
+              partialVisibilityGutter: 30,
+            },
+          }}
+          showDots
+          sliderClass=""
+          slidesToSlide={3}
+          swipeable
+        >
+          {appli.map((app) => {
             return (
               <div className="AppGallery">
                 <div className="card">
@@ -46,7 +95,7 @@ function MarketPlaceReco() {
               </div>
             );
           })}
-        </div>
+        </Carousel>
       </StyledMarketPlaceReco>
     </div>
   );
