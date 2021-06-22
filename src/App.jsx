@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header/index';
 import Footer from './components/Footer/index';
@@ -8,6 +9,8 @@ import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
 import './reset.css';
+
+dotenv.config();
 
 function App() {
   return (

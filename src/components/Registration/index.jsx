@@ -16,7 +16,7 @@ function Registration() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:5050/auth/signup', users);
+    axios.post(`${process.env.REACT_APP_API_URL}/auth/signup`, users);
   };
   return (
     <RegistrationForm>
@@ -36,7 +36,7 @@ function Registration() {
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="password"
               name="Password"
               id="Password"
               placeholder="Mot de passe"
