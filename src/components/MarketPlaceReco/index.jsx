@@ -21,12 +21,7 @@ function MarketPlaceReco() {
   }, []);
 
   return (
-    <div
-      onClick={appHandler}
-      onKeyDown={appHandler}
-      aria-hidden="true"
-      key={appli.id}
-    >
+    <div onClick={appHandler} onKeyDown={appHandler} aria-hidden="true">
       <StyledMarketPlaceReco>
         <h1 className="titre">Recommandations</h1>
         <Carousel
@@ -79,7 +74,7 @@ function MarketPlaceReco() {
         >
           {appli.map((app) => {
             return (
-              <div className="AppGallery">
+              <div className="AppGallery" key={app.id}>
                 <div className="card">
                   <div className="image">
                     <img src={app.banner} alt="banner" className="imageSize" />
