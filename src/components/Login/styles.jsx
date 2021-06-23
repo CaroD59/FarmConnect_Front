@@ -1,22 +1,31 @@
 import styled from 'styled-components';
 
 const LogForm = styled.div`
-  border-radius: 30px;
-  width: 500px;
-  height: 600px;
-  display: block;
-  margin: auto;
-  position: relative;
-  top: 50px;
-  background-color: white;
-
+  .loginPage {
+    background-image: url(./img/welcomefont.png);
+    background-size: cover;
+    width: 100vw;
+    height: 700px;
+    .form {
+      background-color: #fff;
+      margin: 0;
+      border-radius: 20px;
+      width: 450px;
+      height: 550px;
+      display: block;
+      margin: auto;
+      position: relative;
+      top: 50px;
+      background-color: white;
+      margin-bottom: 150px;
+    }
+  }
   .FarmConnectLogo {
     width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-
   .buttonLogin {
     margin-top: 10px;
     background-color: #f78f21;
@@ -27,7 +36,6 @@ const LogForm = styled.div`
     width: 350px;
     height: 45px;
   }
-
   .pLogin {
     margin-top: 20px;
     color: #223594;
@@ -36,16 +44,14 @@ const LogForm = styled.div`
     line-height: 0%;
     text-align: center;
   }
-
   .pForgottenPassword {
-    margin-top: 70px;
+    margin-top: 50px;
     color: #223594;
     font-family: 'roboto', sans-serif;
     font-weight: bold;
     text-align: right;
     font-size: 0.6em;
   }
-
   .pSignIn {
     cursor: pointer;
     border: none;
@@ -55,16 +61,13 @@ const LogForm = styled.div`
     text-align: right;
     font-size: 0.6em;
   }
-
   .BlocLoginSignIn {
     text-align: right;
   }
-
   .buttonLogin:hover,
   .buttonLogin:focus {
     cursor: pointer;
   }
-
   .form-inner {
     margin-top: 50px;
     display: flex;
@@ -72,7 +75,6 @@ const LogForm = styled.div`
     justify-content: center;
     align-items: center;
   }
-
   .LogInput {
     border: none;
     background-color: #ebecf0;
@@ -83,21 +85,13 @@ const LogForm = styled.div`
     height: 45px;
     opacity: 0.5;
   }
-
   .LogInput:focus,
   .LogInput:hover {
     outline: none;
   }
-
   ::placeholder {
     opacity: 1;
   }
 `;
 
-const Background = styled.div`
-  background-image: url(./img/welcomefont.png);
-  background-size: cover;
-  height: 100vh;
-`;
-
-export { LogForm, Background };
+export default LogForm;
