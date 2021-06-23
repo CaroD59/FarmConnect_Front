@@ -5,6 +5,7 @@ import Footer from './components/Footer/index';
 import Login from './components/Login/index';
 import Registration from './components/Registration/index';
 import Home from './components/Home/index';
+import Cockpit from './components/Cockpit/index';
 import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
@@ -20,7 +21,7 @@ function App() {
       <Switch>
         <Route path="/login" component={Login} />
         <Route path="/registration" component={Registration} />
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Cockpit} />
         <Route path="/home" component={Home} />
         <Route path="/myapps" component={MyApps} />
         <Route exact path="/apps" component={MarketPlace} />

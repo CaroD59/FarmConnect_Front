@@ -5,9 +5,9 @@ import StyledHeader from './styles';
 function Header() {
   return (
     <StyledHeader>
-      <nav className="NavBar">
-        <div className="LogoContainer">
-          <a href="http://localhost:3000/home">
+      <ndiv className="NavBar">
+        <div className="logoContainer">
+          <a href="/home">
             <img src="img/header-logo.jpg" alt="logo" />
           </a>
         </div>
@@ -27,7 +27,12 @@ function Header() {
             </li>
           </ul>
         </div>
-      </nav>
+        <div className="logoProfile">
+          <a href="/">
+            <img src="img/Vector.png" alt="logoProfile" />
+          </a>
+        </div>
+      </ndiv>
     </StyledHeader>
   );
 }

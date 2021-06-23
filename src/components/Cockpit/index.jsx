@@ -3,7 +3,9 @@ import StyledCockpit from './styles';
 function Cockpit() {
   return (
     <StyledCockpit>
-      <h1> Cockpit Section </h1>
+      <div className="cockpit">
+        <h1> Cockpit Section </h1>
+      </div>
     </StyledCockpit>
   );
 }

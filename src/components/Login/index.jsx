@@ -17,7 +17,7 @@ export default function LoginForm() {
       details.email === adminUser.email &&
       details.password === adminUser.password
     ) {
-      history.push('/home');
+      history.push('/');
     } else {
       setError('Details do not match ....');
     }
