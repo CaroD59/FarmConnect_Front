@@ -11,8 +11,6 @@ const StyledHeader = styled.div`
     box-shadow: 0px 10px 10px rgba(218, 218, 218, 0.25);
     .logoContainer {
       a {
-        display: flex;
-        justify-content: space-between;
       }
     }
     .container {

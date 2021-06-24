@@ -6,7 +6,7 @@ function Footer() {
       <div className="Footer">
         <div className="Footer_informations">
           <ul className="LegalMentions">
-            <li>Politique de Confidientalité</li>
+            <li>Politique de Confidentialité</li>
             <li>Mentions Légales</li>
             <li>CGU</li>
           </ul>

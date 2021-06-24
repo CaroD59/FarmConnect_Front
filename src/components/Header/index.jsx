@@ -7,15 +7,15 @@ function Header() {
     <StyledHeader>
       <div className="NavBar">
         <div className="logoContainer">
-          <a href="/home">
+          <a href="/">
             <img src="img/header-logo.jpg" alt="logo" />
           </a>
         </div>
         <div className="container">
           <div className="Pages">
             <ul>
-              <li className="Home">
-                <NavLink to="/home">Home</NavLink>
+              <li className="Cockpit">
+                <NavLink to="/">Cockpit</NavLink>
               </li>
               <li className="MyApps">
                 <NavLink to="/myapps">Mes Services</NavLink>
@@ -29,7 +29,7 @@ function Header() {
             </ul>
           </div>
           <div className="logoProfile">
-            <a href="/">
+            <a href="/myprofile">
               <img src="img/Vector.png" alt="logoProfile" />
             </a>
           </div>

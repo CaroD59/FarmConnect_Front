@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledHome = styled.section`
+const StyledMyProfile = styled.section`
   .home {
     width: 100vw;
     display: flex;
@@ -176,4 +176,4 @@ const StyledHome = styled.section`
   }
 `;
 
-export default StyledHome;
+export default StyledMyProfile;
