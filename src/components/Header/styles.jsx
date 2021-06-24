@@ -24,6 +24,8 @@ const StyledHeader = styled.div`
       }
     }
     .Pages {
+      display: flex;
+      align-items: center;
       ul {
         display: flex;
         padding: 0;
@@ -31,18 +33,18 @@ const StyledHeader = styled.div`
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-right: 50px;
-          width: 90px;
+          width: 100px;
           height: 25px;
-          border-bottom: transparent solid 2px;
           a {
             font-family: 'roboto', sans-serif;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
             color: rgba(70, 70, 70, 1);
+            border-bottom: transparent solid 2px;
             :hover {
+              padding: 10px;
               border-bottom: rgba(34, 53, 148, 1) solid 2px;
-              transition: 0.3s;
+              transition: 0.2s;
             }
           }
         }
