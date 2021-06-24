@@ -15,6 +15,9 @@ const StyledHeader = styled.div`
         justify-content: space-between;
       }
     }
+    .container {
+      display: flex;
+    }
     .logoProfile {
       a {
         display: flex;
