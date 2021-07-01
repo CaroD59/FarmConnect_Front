@@ -8,7 +8,7 @@ function Header() {
       <nav className="NavBar">
         <div className="LogoContainer">
           <a href="http://localhost:3000/home">
-            <img src="img/header-logo.jpg" alt="logo" />
+            <img src="/img/header-logo.jpg" alt="logo" />
           </a>
         </div>
         <div className="Pages">
