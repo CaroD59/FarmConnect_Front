@@ -39,7 +39,7 @@ const StyledHeader = styled.div`
           a {
             font-family: 'roboto', sans-serif;
             text-decoration: none;
-            font-size: 13px;
+            font-size: 14px;
             color: rgba(70, 70, 70, 1);
             border-bottom: transparent solid 2px;
             :hover {
