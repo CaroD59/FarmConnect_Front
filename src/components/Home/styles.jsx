@@ -22,7 +22,7 @@ const StyledHome = styled.section`
           margin: 20px;
           width: 330px;
           height: 280px;
-          border-radius: 8px;
+         
           background-color: #ffff;
           box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
           .title {
