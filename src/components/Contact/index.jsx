@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import dotenv from 'dotenv';
 import StyledContact from './styles';
@@ -6,7 +6,6 @@ import StyledContact from './styles';
 dotenv.config();
 
 export default function ContactForm() {
-  const [translations, setTranslations] = useState({});
   const [isSent, setIsSent] = useState(false);
   const [details, setDetails] = useState({
     firstName: '',
@@ -17,12 +16,6 @@ export default function ContactForm() {
   });
   const [selected, setSelected] = useState(false);
 
-  useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/texts`).then(({ data }) => {
-      setTranslations(data);
-    });
-  }, []);
-
   const handleChange = (evt) => {
     const newDetails = { ...details };
     newDetails[evt.target.name] = evt.target.value;
@@ -31,7 +24,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.REACT_APP_API_URL}`, details).then(
+    axios.post(`${process.env.REACT_APP_API_URL}/contact`, details).then(
       (response) => {
         console.log(response);
         setIsSent(true);
@@ -44,11 +37,6 @@ export default function ContactForm() {
 
   return (
     <StyledContact id="Contact">
-      <h1>{translations.fifth_section || null}</h1>
-      <div className="accroche">
-        <p>{translations.contact_catchPhrase}</p>
-      </div>
-
       {isSent ? (
         <div className="button">
           <button type="button" className="inactive">
@@ -62,7 +50,6 @@ export default function ContactForm() {
           </div>
           <div className="form-inner">
             <div className="form-groupe">
-              <p>{translations.first_input || null}</p>
               <input
                 type="text"
                 id="firstname"
@@ -71,11 +58,8 @@ export default function ContactForm() {
                 value={details.firstName}
                 onChange={handleChange}
                 className="ContactInput"
-                required={
-                  translations?.requirable_first_input === 'obligatoire'
-                }
+                required
               />
-              <p>{translations.second_input || null}</p>
               <div className="form-groupe">
                 <input
                   type="text"
@@ -85,12 +69,9 @@ export default function ContactForm() {
                   value={details.lastName}
                   onChange={handleChange}
                   className="ContactInput"
-                  required={
-                    translations?.requirable_second_input === 'obligatoire'
-                  }
+                  required
                 />
               </div>
-              <p>{translations.fourth_input || null}</p>
               <div className="form-groupe">
                 <input
                   type="text"
@@ -100,14 +81,11 @@ export default function ContactForm() {
                   value={details.phoneNumber}
                   onChange={handleChange}
                   className="ContactInput"
-                  required={
-                    translations?.requirable_fourth_input === 'obligatoire'
-                  }
+                  required
                 />
               </div>
             </div>
             <div className="secondBloc">
-              <p>{translations.fifth_input || null}</p>
               <div className="form-groupe">
                 <input
                   type="text"
@@ -117,12 +95,9 @@ export default function ContactForm() {
                   value={details.email}
                   onChange={handleChange}
                   className="ContactInput"
-                  required={
-                    translations?.requirable_fifth_input === 'obligatoire'
-                  }
+                  required
                 />
               </div>
-              <p>{translations.sixth_input || null}</p>
               <div className="form-groupe">
                 <textarea
                   type="text"
@@ -132,9 +107,7 @@ export default function ContactForm() {
                   value={details.message}
                   onChange={handleChange}
                   className="ContactInput"
-                  required={
-                    translations?.requirable_sixth_input === 'obligatoire'
-                  }
+                  required
                 />
               </div>
             </div>
