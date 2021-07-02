@@ -13,11 +13,7 @@ const StyledMarketPlaceReco = styled.div`
   .AppGallery {
     display: flex;
     justify-content: space-around;
-<<<<<<< HEAD
-    padding-bottom: 30px;
-=======
     margin-bottom: 50px;
->>>>>>> demo
   }
 
   .card {
@@ -28,17 +24,12 @@ const StyledMarketPlaceReco = styled.div`
     justify-content: space-around;
     border-radius: 8px;
     border: solid 1px #c2bcb2;
-<<<<<<< HEAD
-    width: 330px;
-    height: 150px;
-=======
     width: 390px;
     height: 180px;
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
->>>>>>> demo
 
     :hover {
       transform: scale(1.02);
