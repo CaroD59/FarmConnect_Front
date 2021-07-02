@@ -1,17 +1,6 @@
 import styled from 'styled-components';
 
 const LogForm = styled.div`
-<<<<<<< HEAD
-  border-radius: 30px;
-  width: 500px;
-  height: 600px;
-  display: block;
-  margin: auto;
-  position: relative;
-  top: 50px;
-  background-color: white;
-  margin-bottom: 150px;
-=======
   .loginPage {
     background-image: url(./img/welcomefont.png);
     background-size: cover;
@@ -31,7 +20,6 @@ const LogForm = styled.div`
       margin-bottom: 150px;
     }
   }
->>>>>>> demo
 
   .FarmConnectLogo {
     width: 300px;
