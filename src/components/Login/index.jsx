@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { LogForm } from './styles';
 
 export default function LoginForm() {
-  const adminUser = { email: 'dorchies.c@gmail.com', password: 'lol123' };
   const history = useHistory();
-  const [error, setError] = useState('');
   const [details, setDetails] = useState({ email: '', password: '' });
+  const [error, setError] = useState('');
   const signInHandler = (e) => {
     e.preventDefault();
     history.push('/registration');
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    if (
-      details.email === adminUser.email &&
-      details.password === adminUser.password
-    ) {
-      history.push('/');
-    } else {
-      setError('Details do not match ....');
-    }
+    axios
+      .post(`${process.env.REACT_APP_API_URL}/auth/login`, details)
+      .then(({ data }) => {
+        history.push(`/home/${data.id}`);
+      })
+      .catch(() => {
+        setError('Details do not match ....');
+      });
   };
   return (
     <LogForm>
