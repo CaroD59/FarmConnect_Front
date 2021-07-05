@@ -7,7 +7,7 @@ function Header() {
     <StyledHeader>
       <nav className="NavBar">
         <div className="LogoContainer">
-          <a href="/home">
+          <a href="/">
             <img src="/img/header-logo.jpg" alt="logo" />
           </a>
         </div>
