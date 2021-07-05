@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledHome = styled.section`
+const StyledMyProfile = styled.section`
   .home {
     display: flex;
     flex-direction: column;
@@ -162,4 +162,4 @@ const StyledHome = styled.section`
   }
 `;
 
-export default StyledHome;
+export default StyledMyProfile;
