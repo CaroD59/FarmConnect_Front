@@ -5,10 +5,10 @@ import StyledHeader from './styles';
 function Header() {
   return (
     <StyledHeader>
-      <div className="NavBar">
-        <div className="logoContainer">
+      <nav className="NavBar">
+        <div className="LogoContainer">
           <a href="/">
-            <img src="img/header-logo.jpg" alt="logo" />
+            <img src="/img/header-logo.jpg" alt="logo" />
           </a>
         </div>
         <div className="container">
@@ -34,7 +34,7 @@ function Header() {
             </a>
           </div>
         </div>
-      </div>
+      </nav>
     </StyledHeader>
   );
 }

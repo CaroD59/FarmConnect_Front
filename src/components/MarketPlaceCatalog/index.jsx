@@ -17,16 +17,22 @@ export default function GeneralCatalogue() {
     });
   }, []);
   return (
-    <div onClick={appHandler} onKeyDown={appHandler} aria-hidden="true">
+    <div>
       <StyledMarketPlaceCatalog>
         <h1 className="titre">Catalogue</h1>
         <div className="AppGallery">
           {generalCatalogue.map((catalogue) => {
             return (
-              <div className="card">
+              <div
+                className="card"
+                onClick={appHandler}
+                onKeyDown={appHandler}
+                aria-hidden="true"
+                key={catalogue.id}
+              >
                 <div className="image">
                   <img
-                    src={catalogue.logo}
+                    src={catalogue.banner}
                     alt="banner"
                     className="imageSize"
                   />
