@@ -7,9 +7,11 @@ function ApplicationPage() {
   const [application, setApplication] = useState(null);
   const { id } = useParams();
   useEffect(() => {
-    axios.get(`http://localhost:5050/apps/${id}`).then(({ data }) => {
-      setApplication(data);
-    });
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/apps/${id}`)
+      .then(({ data }) => {
+        setApplication(data);
+      });
   }, []);
   return (
     <StyledApplicationPage>
