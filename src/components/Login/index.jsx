@@ -51,7 +51,7 @@ export default function LoginForm() {
                   type="password"
                   password="Password"
                   id="Password"
-                  placeholder="Mot de passe"
+                  placeholder="Mot de passe"
                   onChange={(e) =>
                     setDetails({ ...details, password: e.target.value })
                   }

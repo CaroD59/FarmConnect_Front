@@ -1,8 +1,8 @@
-import StyledHome from './styles';
+import StyledMyProfile from './styles';
 
-function Home() {
+function MyProfile() {
   return (
-    <StyledHome>
+    <StyledMyProfile>
       <div className="home">
         <h1 className="helloUser"> Bonjour Jean Claude ! </h1>
         <h2 className="welcomeProfil">Bienvenue sur votre profil.</h2>
@@ -141,8 +141,8 @@ function Home() {
           </div>
         </div>
       </div>
-    </StyledHome>
+    </StyledMyProfile>
   );
 }
 
-export default Home;
+export default MyProfile;

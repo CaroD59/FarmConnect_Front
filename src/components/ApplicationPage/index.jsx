@@ -16,7 +16,7 @@ function ApplicationPage() {
       {application && (
         <>
           <div className="logoBanner">
-            <img src={application.logo} alt="" className="logo" />
+            <img src={application.logo} alt="" className="logoApp" />
             <img src={application.banner} alt="" className="banner" />
           </div>
           <div className="nameDesc">
