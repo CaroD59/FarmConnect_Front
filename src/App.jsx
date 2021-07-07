@@ -21,7 +21,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/registration" component={Registration} />
         <Route exact path="/" component={Home} />
-        <Route path="/home" component={Home} />
+        <Route path="/home/:id" component={Home} />
         <Route path="/myapps" component={MyApps} />
         <Route exact path="/apps" component={MarketPlace} />
         <Route path="/contact" component={Contact} />
