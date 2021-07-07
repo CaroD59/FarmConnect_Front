@@ -21,7 +21,7 @@ function Registration() {
   return (
     <RegistrationForm>
       <form onSubmit={submitHandler}>
-        <p>Formulaire d&apos;inscription</p>
+        <p className="title">Formulaire d&apos;inscription</p>
         <div className="form-inner">
           <div className="form-group">
             <input
