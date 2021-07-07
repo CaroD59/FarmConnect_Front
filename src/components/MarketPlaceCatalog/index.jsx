@@ -10,7 +10,7 @@ export default function GeneralCatalogue() {
     history.push(`/apps/${id}`);
   };
   useEffect(() => {
-    axios.get('http://localhost:5050/apps').then(({ data }) => {
+    axios.get(`${process.env.REACT_APP_API_URL}/apps`).then(({ data }) => {
       setGeneralCatalogue(data);
     });
   }, []);
