@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
-const StyledHome = styled.section`
+const StyledMyProfile = styled.section`
   .home {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +10,8 @@ const StyledHome = styled.section`
     background-color: rgba(218, 218, 218, 0.25);
     .profil {
       display: flex;
-      width: 100%;
+      width: 1000px;
+      height: 350px;
       .infos {
         height: 300px;
         display: flex;
@@ -20,8 +20,8 @@ const StyledHome = styled.section`
         .containers {
           padding: 5px;
           margin: 20px;
-          width: 25vw;
-          height: 300px;
+          width: 330px;
+          height: 280px;
           border-radius: 8px;
           background-color: #ffff;
           box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
@@ -43,9 +43,8 @@ const StyledHome = styled.section`
           .picto {
             display: flex;
             justify-content: space-around;
-            align-items: center;
-            padding-top: 20px;
-
+            align-items: flex-start;
+            padding-top: 55px;
             height: 200px;
             .pic {
               margin: 5px;
@@ -56,13 +55,13 @@ const StyledHome = styled.section`
               display: flex;
               justify-content: center;
               align-items: center;
+              border: 2px solid rgba(0, 0, 0, 0.1);
             }
             .pic:hover{
               border: 2px solid #f78f21;
               transition: 100ms;
             }
           }
-
           .cardName {
             font-size: 20px;
             padding: 15px;
@@ -93,24 +92,24 @@ const StyledHome = styled.section`
     }
   }
   .parcelle {
-    width: 88%;
-    height: 400px;
+    width: 1000px;
+    height: 380px;
     display: flex;
-    justify-content: space-around;
-    margin: 70px;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 10px;
-
     .infos-parcelle {
-      width: 250px;
-      margin: 30px;
+      width: 200px;
       border-radius: 8px;
       background-color: #ffff;
       box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
       font-size: 70%;
+      height: 280px;
+      margin-left: 20px;
       h3 {
         font-size: 20px;
-        padding: 15px;
         margin-top: 20px;
+        padding-left: 20px;
       }
       ul {
         margin-top: 40px;
@@ -132,11 +131,12 @@ const StyledHome = styled.section`
       }
     }
     .parcelleMap {
-      width: 850px;
-      margin: 30px;
+      width: 700px;
       border-radius: 8px;
       background-color: #ffff;
       box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+      height: 280px;
+      margin-right: 20px;
       p {
         display: flex;
         justify-content: center;
@@ -159,21 +159,6 @@ const StyledHome = styled.section`
     margin: 30px;
     padding: 10px;
   }
-  .button {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    button {
-      font-family: 'roboto', sans-serif;
-      background-color: #f78f21;
-      border: 0;
-      border-radius: 3px;
-      width: 90px;
-      height: 30px;
-    }
-  }
 `;
 
-export default StyledHome;
+export default StyledMyProfile;
