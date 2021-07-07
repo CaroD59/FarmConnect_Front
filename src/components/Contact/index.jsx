@@ -14,7 +14,6 @@ export default function ContactForm() {
     email: '',
     message: '',
   });
-  const [selected, setSelected] = useState(false);
 
   const handleChange = (evt) => {
     const newDetails = { ...details };
@@ -109,16 +108,14 @@ export default function ContactForm() {
                   </div>
                 </div>
                 <div className="RGPD">
-                  <input
-                    type="checkbox"
-                    onChange={(e) => setSelected(e.target.checked)}
-                    required
-                  />
-                  <span>
-                    {selected
-                      ? "J'accepte de partager mes informations à FarmConnect"
-                      : 'Veuillez valider vos données RGPD'}
-                  </span>
+                  <div>
+                    <input type="checkbox" required />
+                  </div>
+                  <div className="FarmConnectInfos">
+                    <p>
+                      J&apos;accepte de partager mes informations à FarmConnect
+                    </p>
+                  </div>
                 </div>
                 <div className="Button">
                   <button

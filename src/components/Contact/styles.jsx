@@ -74,6 +74,16 @@ const StyledContact = styled.div`
             opacity: 1;
           }
         }
+        .RGPD {
+          padding-top: 10px;
+          display: flex;
+          align-items: center;
+          .FarmConnectInfos {
+            color: #223594;
+            font-family: 'roboto', sans-serif;
+            font-size: 12px;
+          }
+        }
         .Button {
           button {
             margin-top: 10px;
