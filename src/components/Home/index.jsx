@@ -9,10 +9,12 @@ function Home() {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:5050/users/${id}`).then(({ data }) => {
-      console.log(data[0]);
-      setInfos(data[0]);
-    });
+    axios
+      .get(`${process.env.REACT_APP_API_URL}users/${id}`)
+      .then(({ data }) => {
+        console.log(data[0]);
+        setInfos(data[0]);
+      });
   }, []);
   return (
     <StyledHome>
