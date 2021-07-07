@@ -24,15 +24,9 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.REACT_APP_API_URL}/contact`, details).then(
-      (response) => {
-        console.log(response);
-        setIsSent(true);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    axios.post(`${process.env.REACT_APP_API_URL}/contact`, details).then(() => {
+      setIsSent(true);
+    });
   };
 
   return (
@@ -121,7 +115,7 @@ export default function ContactForm() {
             <span>
               {selected
                 ? "J'accepte de partager mes informations à FarmConnect"
-                : 'Veuillez valider vos données RGBD'}
+                : 'Veuillez valider vos données RGPD'}
             </span>
           </div>
           <div className="Button">

@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
 const LogForm = styled.div`
+  .title {
+    margin-top: 20px;
+    color: #223594;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    line-height: 0%;
+    text-align: center;
+  }
   .loginPage {
     background-image: url(./img/welcomefont.png);
     background-size: cover;
