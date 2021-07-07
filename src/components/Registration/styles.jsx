@@ -5,7 +5,7 @@ const LogForm = styled.div`
     background-image: url(./img/welcomefont.png);
     background-size: cover;
     width: 100vw;
-    height: 700px;
+    height: 780px;
     .form {
       background-color: #fff;
       margin: 0;
