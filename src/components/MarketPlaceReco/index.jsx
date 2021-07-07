@@ -1,16 +1,14 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import StyledMarketPlaceReco from './styles';
 
 function MarketPlaceReco() {
   const [appli, setAppli] = useState([]);
-  const id = useParams();
   const history = useHistory();
-  const appHandler = (e) => {
-    e.preventDefault();
+  const appHandler = (id) => {
     history.push(`/apps/${id}`);
   };
 
@@ -21,7 +19,7 @@ function MarketPlaceReco() {
   }, []);
 
   return (
-    <div onClick={appHandler} onKeyDown={appHandler} aria-hidden="true">
+    <div>
       <StyledMarketPlaceReco>
         <h1 className="titre">Recommandations</h1>
         <Carousel
@@ -75,7 +73,14 @@ function MarketPlaceReco() {
           {appli.map((app) => {
             return (
               <div className="AppGallery" key={app.id}>
-                <div className="card">
+                <div
+                  className="card"
+                  onClick={() => {
+                    appHandler(app.id);
+                  }}
+                  onKeyDown={appHandler}
+                  aria-hidden="true"
+                >
                   <div className="image">
                     <img src={app.banner} alt="banner" className="imageSize" />
                   </div>
