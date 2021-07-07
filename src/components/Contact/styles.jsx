@@ -11,7 +11,7 @@ const StyledContact = styled.div`
       margin: 0;
       border-radius: 20px;
       width: 450px;
-      height: 630px;
+      height: 690px;
       display: block;
       margin: auto;
       position: relative;
@@ -50,9 +50,23 @@ const StyledContact = styled.div`
             height: 45px;
             opacity: 0.5;
           }
+          .ContactMessage {
+            border: none;
+            background-color: #ebecf0;
+            font-family: 'roboto', sans-serif;
+            letter-spacing: -0.2px;
+            font-size: 15px;
+            width: 350px;
+            height: 100px;
+            opacity: 0.5;
+          }
 
           .ContactInput:focus,
           .ContactInput:hover {
+            outline: none;
+          }
+          .ContactMessage:focus,
+          .ContactMessage:hover {
             outline: none;
           }
 

@@ -24,6 +24,9 @@ const StyledFooter = styled.div`
           list-style-type: none;
           padding: 3px;
           font-style: italic;
+          a {
+            text-decoration: none;
+          }
         }
       }
       .Informations {
@@ -35,6 +38,10 @@ const StyledFooter = styled.div`
           list-style-type: none;
           padding: 3px;
           font-style: italic;
+          a {
+            text-decoration: none;
+            color: rgba(70, 70, 70, 1);
+          }
         }
       }
     }

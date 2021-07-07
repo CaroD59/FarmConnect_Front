@@ -103,7 +103,7 @@ export default function ContactForm() {
                       name="message"
                       value={details.message}
                       onChange={handleChange}
-                      className="ContactInput"
+                      className="ContactMessage"
                       required
                     />
                   </div>
