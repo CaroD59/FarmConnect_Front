@@ -50,7 +50,7 @@ export default function ContactForm() {
                   <input
                     type="text"
                     id="firstname"
-                    placeholder="Your fistname"
+                    placeholder="Prénom"
                     name="firstName"
                     value={details.firstName}
                     onChange={handleChange}
@@ -61,7 +61,7 @@ export default function ContactForm() {
                     <input
                       type="text"
                       id="lastname"
-                      placeholder="Your lastname"
+                      placeholder="Nom"
                       name="lastName"
                       value={details.lastName}
                       onChange={handleChange}
@@ -73,7 +73,7 @@ export default function ContactForm() {
                     <input
                       type="text"
                       id="phoneNumber"
-                      placeholder="Your phone number"
+                      placeholder="Numéro de téléphone"
                       name="phoneNumber"
                       value={details.phoneNumber}
                       onChange={handleChange}
@@ -87,7 +87,7 @@ export default function ContactForm() {
                     <input
                       type="text"
                       id="email"
-                      placeholder="Your email"
+                      placeholder="E-mail"
                       name="email"
                       value={details.email}
                       onChange={handleChange}
@@ -99,7 +99,7 @@ export default function ContactForm() {
                     <textarea
                       type="text"
                       id="message"
-                      placeholder="Write your message here"
+                      placeholder="Ecrivez votre message ici"
                       name="message"
                       value={details.message}
                       onChange={handleChange}
