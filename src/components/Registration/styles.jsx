@@ -40,22 +40,6 @@ const LogForm = styled.div`
         justify-content: center;
         align-items: center;
 
-        .buttonRegistration {
-          margin-top: 10px;
-          background-color: #f78f21;
-          border: none;
-          border-radius: 5px;
-          color: white;
-          font-weight: bold;
-          width: 350px;
-          height: 45px;
-        }
-
-        .buttonRegistration:hover,
-        .buttonRegistration:focus {
-          cursor: pointer;
-        }
-
         .RegistrationInput {
           border: none;
           background-color: #ebecf0;
@@ -74,6 +58,22 @@ const LogForm = styled.div`
 
         ::placeholder {
           opacity: 1;
+        }
+
+        .buttonRegistration {
+          margin-top: 10px;
+          background-color: #f78f21;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          font-weight: bold;
+          width: 350px;
+          height: 45px;
+        }
+
+        .buttonRegistration:hover,
+        .buttonRegistration:focus {
+          cursor: pointer;
         }
       }
     }
