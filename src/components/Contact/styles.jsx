@@ -39,25 +39,26 @@ const StyledContact = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .form-groupe {
+          .ContactInput {
+            border: none;
+            background-color: #ebecf0;
+            font-family: 'roboto', sans-serif;
+            letter-spacing: -0.2px;
+            font-size: 15px;
+            width: 350px;
+            height: 45px;
+            opacity: 0.5;
+          }
 
-        .ContactInput {
-          border: none;
-          background-color: #ebecf0;
-          font-family: 'roboto', sans-serif;
-          letter-spacing: -0.2px;
-          font-size: 15px;
-          width: 350px;
-          height: 45px;
-          opacity: 0.5;
-        }
+          .ContactInput:focus,
+          .ContactInput:hover {
+            outline: none;
+          }
 
-        .ContactInput:focus,
-        .ContactInput:hover {
-          outline: none;
-        }
-
-        ::placeholder {
-          opacity: 1;
+          ::placeholder {
+            opacity: 1;
+          }
         }
         .Button {
           button {

@@ -81,8 +81,6 @@ export default function ContactForm() {
                       required
                     />
                   </div>
-                </div>
-                <div className="secondBloc">
                   <div className="form-groupe">
                     <input
                       type="text"
@@ -95,11 +93,13 @@ export default function ContactForm() {
                       required
                     />
                   </div>
+                </div>
+                <div className="secondBloc">
                   <div className="form-groupe">
                     <textarea
                       type="text"
                       id="message"
-                      placeholder="Ecrivez votre message ici"
+                      placeholder="Ecrivez votre message"
                       name="message"
                       value={details.message}
                       onChange={handleChange}

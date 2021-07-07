@@ -33,7 +33,7 @@ export default function LoginForm() {
             </div>
             <div className="form-inner">
               {error !== '' ? <div className="error">{error}</div> : ''}
-              <div>
+              <div className="form-group">
                 <input
                   type="text"
                   name="E-mail"
@@ -46,7 +46,7 @@ export default function LoginForm() {
                   className="LogInput"
                 />
               </div>
-              <div>
+              <div className="form-group">
                 <input
                   type="password"
                   password="Password"
