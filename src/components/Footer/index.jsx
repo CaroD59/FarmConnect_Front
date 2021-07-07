@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import StyledFooter from './styles';
 
 function Footer() {
@@ -16,7 +17,7 @@ function Footer() {
             <li>Qui sommes-nous ?</li>
             <li>On parle de nous</li>
             <li>
-              <a href="http://localhost:3000/contact">Contactez-nous</a>
+              <NavLink to="/contact">Contactez-nous</NavLink>
             </li>
           </ul>
         </div>
