@@ -1,20 +1,12 @@
 import styled from 'styled-components';
 
 const LogForm = styled.div`
-  .title {
-    margin-top: 20px;
-    color: #223594;
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-    line-height: 0%;
-    text-align: center;
-  }
-  .loginPage {
+  .registrationPage {
     background-image: url(./img/welcomefont.png);
     background-size: cover;
     width: 100vw;
     height: 700px;
-    .registration {
+    .form {
       background-color: #fff;
       margin: 0;
       border-radius: 20px;
@@ -26,90 +18,65 @@ const LogForm = styled.div`
       top: 50px;
       background-color: white;
       margin-bottom: 150px;
+
+      .FarmConnectLogo {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .title {
+        margin-top: 20px;
+        color: #223594;
+        font-family: 'roboto', sans-serif;
+        font-weight: bold;
+        line-height: 0%;
+        text-align: center;
+      }
+      .form-inner {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .buttonRegistration {
+          margin-top: 10px;
+          background-color: #f78f21;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          font-weight: bold;
+          width: 350px;
+          height: 45px;
+        }
+
+        .buttonRegistration:hover,
+        .buttonRegistration:focus {
+          cursor: pointer;
+        }
+
+        .RegistrationInput {
+          border: none;
+          background-color: #ebecf0;
+          font-family: 'roboto', sans-serif;
+          letter-spacing: -0.2px;
+          font-size: 15px;
+          width: 350px;
+          height: 45px;
+          opacity: 0.5;
+        }
+
+        .RegistrationInput:focus,
+        .RegistrationInput:hover {
+          outline: none;
+        }
+
+        ::placeholder {
+          opacity: 1;
+        }
+      }
     }
-  }
-
-  .FarmConnectLogo {
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .buttonLogin {
-    margin-top: 10px;
-    background-color: #f78f21;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    width: 350px;
-    height: 45px;
-  }
-
-  .form {
-    margin-top: 20px;
-    color: #223594;
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-    line-height: 0%;
-    text-align: center;
-  }
-
-  .pForgottenPassword {
-    margin-top: 50px;
-    color: #223594;
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-    text-align: right;
-    font-size: 0.6em;
-  }
-
-  .pSignIn {
-    cursor: pointer;
-    border: none;
-    color: #223594;
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-    text-align: right;
-    font-size: 0.6em;
-  }
-
-  .BlocLoginSignIn {
-    text-align: right;
-  }
-
-  .buttonLogin:hover,
-  .buttonLogin:focus {
-    cursor: pointer;
-  }
-
-  .form-inner {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .LogInput {
-    border: none;
-    background-color: #ebecf0;
-    font-family: 'roboto', sans-serif;
-    letter-spacing: -0.2px;
-    font-size: 15px;
-    width: 350px;
-    height: 45px;
-    opacity: 0.5;
-  }
-
-  .LogInput:focus,
-  .LogInput:hover {
-    outline: none;
-  }
-
-  ::placeholder {
-    opacity: 1;
   }
 `;
 
