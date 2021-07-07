@@ -30,7 +30,7 @@ function Header() {
           </div>
           <div className="logoProfile">
             <a href="/myprofile">
-              <img src="img/Vector.png" alt="logoProfile" />
+              <img src="/img/Vector.png" alt="logoProfile" />
             </a>
           </div>
         </div>
