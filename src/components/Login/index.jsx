@@ -18,7 +18,7 @@ export default function LoginForm() {
     axios
       .post(`${process.env.REACT_APP_API_URL}/auth/login`, details)
       .then(({ data }) => {
-        history.push(`/home/${data.id}`);
+        history.push(`/myprofile/${data.id}`);
         setUser(data);
       })
       .catch(() => {
