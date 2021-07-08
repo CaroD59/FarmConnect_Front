@@ -20,7 +20,6 @@ export default function LoginForm() {
       .then(({ data }) => {
         history.push(`/home/${data.id}`);
         setUser(data);
-        console.log(setUser);
       })
       .catch(() => {
         setError('Details do not match ....');
