@@ -18,8 +18,8 @@ export default function LoginForm() {
     axios
       .post(`${process.env.REACT_APP_API_URL}/auth/login`, details)
       .then(({ data }) => {
-        history.push(`/myprofile/${data.id}`);
         setUser(data);
+        history.push(`/myprofile`);
       })
       .catch(() => {
         setError('Details do not match ....');

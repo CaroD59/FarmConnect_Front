@@ -29,9 +29,9 @@ function Header() {
             </ul>
           </div>
           <div className="logoProfile">
-            <a href="/myprofile">
+            <NavLink to="/myprofile">
               <img src="/img/Vector.png" alt="logoProfile" />
-            </a>
+            </NavLink>
           </div>
         </div>
       </nav>
