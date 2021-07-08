@@ -1,23 +1,23 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { useParams, useHistory } from 'react-router-dom';
-
+import { useContext, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import User from '../../contexts/User';
 import StyledMyProfile from './styles';
 
 function MyProfile() {
   const [infos, setInfos] = useState([]);
-  const { id } = useParams();
+  const { user } = useContext(User);
   const history = useHistory();
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/users/${id}`)
+      .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
       .then(({ data }) => {
         setInfos(data);
       });
   }, []);
 
   const submitHandler = () => {
-    history.push(`/home/${id}`);
+    history.push(`/home/${user.id}`);
   };
   return (
     <StyledMyProfile>

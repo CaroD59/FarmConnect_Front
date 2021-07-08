@@ -23,10 +23,10 @@ function App() {
       <User.Provider value={{ user, setUser }}>
         <Header />
         <Switch>
-          <Route path="/login" component={Login} />
+          <Route exact path="/" component={Login} />
           <Route path="/registration" component={Registration} />
-          <Route exact path="/" component={Cockpit} />
-          <Route path="/myprofile/:id" component={MyProfile} />
+          <Route path="/cockpit" component={Cockpit} />
+          <Route path="/myprofile" component={MyProfile} />
           <Route path="/myapps" component={MyApps} />
           <Route exact path="/apps" component={MarketPlace} />
           <Route path="/contact" component={Contact} />
