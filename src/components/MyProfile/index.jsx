@@ -2,9 +2,9 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import StyledHome from './styles';
+import StyledMyProfile from './styles';
 
-function Home() {
+function MyProfile() {
   const [infos, setInfos] = useState([]);
   const { id } = useParams();
 
@@ -17,7 +17,7 @@ function Home() {
       });
   }, []);
   return (
-    <StyledHome>
+    <StyledMyProfile>
       <div className="home">
         <h1 className="helloUser"> Bonjour {infos.firstname} ! </h1>
         <h2 className="welcomeProfil">Bienvenue sur votre profil.</h2>
@@ -155,13 +155,9 @@ function Home() {
             <p>Ici arrivera la carte de la parcelle de l&apos;exploitant.</p>
           </div>
         </div>
-        <div className="button">
-          <button type="button"> Contact </button>
-          <button type="button"> Market Place gt </button>
-        </div>
       </div>
-    </StyledHome>
+    </StyledMyProfile>
   );
 }
 
-export default Home;
+export default MyProfile;

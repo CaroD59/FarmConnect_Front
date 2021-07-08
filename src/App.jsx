@@ -4,7 +4,8 @@ import Header from './components/Header/index';
 import Footer from './components/Footer/index';
 import Login from './components/Login/index';
 import Registration from './components/Registration/index';
-import Home from './components/Home/index';
+import MyProfile from './components/MyProfile/index';
+import Cockpit from './components/Cockpit/index';
 import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
@@ -20,8 +21,8 @@ function App() {
       <Switch>
         <Route path="/login" component={Login} />
         <Route path="/registration" component={Registration} />
-        <Route exact path="/" component={Home} />
-        <Route path="/home/:id" component={Home} />
+        <Route exact path="/" component={Cockpit} />
+        <Route path="/myprofile" component={MyProfile} />
         <Route path="/myapps" component={MyApps} />
         <Route exact path="/apps" component={MarketPlace} />
         <Route path="/contact" component={Contact} />
