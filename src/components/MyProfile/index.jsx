@@ -10,9 +10,10 @@ function MyProfile() {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}users/${id}`)
+      .get(`${process.env.REACT_APP_API_URL}/users/${id}`)
       .then(({ data }) => {
-        setInfos(data[0]);
+        console.log(data);
+        setInfos(data);
       });
   }, []);
   return (
