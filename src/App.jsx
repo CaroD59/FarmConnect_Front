@@ -22,7 +22,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/registration" component={Registration} />
         <Route exact path="/" component={Cockpit} />
-        <Route path="/myprofile" component={MyProfile} />
+        <Route path="/myprofile/:id" component={MyProfile} />
         <Route path="/myapps" component={MyApps} />
         <Route exact path="/apps" component={MarketPlace} />
         <Route path="/contact" component={Contact} />
