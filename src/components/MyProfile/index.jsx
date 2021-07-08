@@ -16,7 +16,7 @@ function MyProfile() {
       });
   }, []);
   const submitHandler = () => {
-    history.push(`/home/${user.id}`);
+    history.push(`/updateprofile`);
   };
   return (
     <StyledMyProfile>
