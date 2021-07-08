@@ -15,7 +15,7 @@ function Header() {
           <div className="Pages">
             <ul>
               <li className="Cockpit">
-                <NavLink to="/">Cockpit</NavLink>
+                <NavLink to="/cockpit">Cockpit</NavLink>
               </li>
               <li className="MyApps">
                 <NavLink to="/myapps">Mes Services</NavLink>
