@@ -4,9 +4,9 @@ const StyledCockpit = styled.div`
   .cockpit {
     width: 100vw;
     height: 80vh;
-    border: black 1px solid;
+    padding-top: 5vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     background-color: rgba(218, 218, 218, 0.25);
@@ -14,35 +14,64 @@ const StyledCockpit = styled.div`
     .beta {
       display: flex;
       justify-content: center;
-      margin-bottom: 10vh;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 5vh;
+      padding-top: 20px;
       width: 80vw;
-      height: 10vh;
-      border: red 1px solid;
+      height: 100px;
+      border-radius: 3px;
+      background-color: #ffff;
+      p {
+        margin: 5px;
+      }
+      .contactButton {
+        width: 150px;
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        color: #ffff;
+        background-color: rgb(247, 143, 33, 0.75);
+        border: solid 1px rgb(247, 143, 33, 0.75);
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+      }
     }
     .container {
       display: flex;
-      justify-content: center;
-      margin-bottom: 25px;
-      width: 80vw;
+      justify-content: space-between;
       height: 40vh;
-      border: blue 1px solid;
       .profil {
-        border-radius: 3%;
-        margin: 25px;
         width: 20vw;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: yellowgreen 1px solid;
+        border-radius: 5px;
+        background-color: #ffff;
       }
       .myapps {
-        border-radius: 3%;
-        margin: 25px 0px 25px 0px;
         width: 20vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: orange 1px solid;
+        border-radius: 5px;
+        background-color: #ffff;
       }
       .soon {
-        border-radius: 3%;
-        margin: 25px 0px 25px 25px;
         width: 20vw;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: purple 1px solid;
+        border-radius: 5px;
+        background-color: #ffff;
       }
     }
   }

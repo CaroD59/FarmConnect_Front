@@ -10,12 +10,12 @@ function Cockpit() {
     <StyledCockpit>
       <div className="cockpit">
         <div className="beta">
+          <p>Farm Connect est actuellement en version &quot;BETA&quot;.</p>
           <p>
-            Farm Connect est en version &quot;bêta&quot; pour le moment.
             N’hésitez pas à nous contacter pour nous dire ce que vous pensez de
             l’application ou si vous avez trouvé des améliorations à effectuer.
           </p>
-          <button onClick={handleClick} type="button">
+          <button className="contactButton" onClick={handleClick} type="button">
             Nous contacter
           </button>
         </div>
