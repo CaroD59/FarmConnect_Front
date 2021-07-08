@@ -19,7 +19,7 @@ export default function LoginForm() {
       .post(`${process.env.REACT_APP_API_URL}/auth/login`, details)
       .then(({ data }) => {
         setUser(data);
-        history.push(`/myprofile`);
+        history.push(`/cockpit`);
       })
       .catch(() => {
         setError('Details do not match ....');
