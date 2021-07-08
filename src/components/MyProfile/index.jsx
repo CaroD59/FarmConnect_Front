@@ -12,7 +12,6 @@ function MyProfile() {
     axios
       .get(`${process.env.REACT_APP_API_URL}users/${id}`)
       .then(({ data }) => {
-        console.log(data[0]);
         setInfos(data[0]);
       });
   }, []);
