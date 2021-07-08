@@ -1,10 +1,24 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+
 import StyledMyProfile from './styles';
 
 function MyProfile() {
+  const [infos, setInfos] = useState([]);
+  const { id } = useParams();
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/users/${id}`)
+      .then(({ data }) => {
+        setInfos(data);
+      });
+  }, []);
   return (
     <StyledMyProfile>
       <div className="home">
-        <h1 className="helloUser"> Bonjour Jean Claude ! </h1>
+        <h1 className="helloUser"> Bonjour {infos.firstname} ! </h1>
         <h2 className="welcomeProfil">Bienvenue sur votre profil.</h2>
         <div className="profil">
           <div className="infos">
@@ -19,17 +33,17 @@ function MyProfile() {
               </div>
               <ul className="card">
                 <li>
-                  <h4>Nom :</h4> <p> Claude </p>
+                  <h4>Nom :</h4> <p> {infos.firstname} </p>
                 </li>
                 <li>
-                  <h4>Prenom :</h4> <p> Jean </p>
+                  <h4>Prenom :</h4> <p> {infos.lastname} </p>
                 </li>
                 <li>
-                  <h4>Telephone :</h4> <p> 06 89 67 45 67 </p>
+                  <h4>Telephone :</h4> <p> {infos.mobile} </p>
                 </li>
                 <li>
                   <h4>Mail :</h4>
-                  <p> contact@champagne-toto.fr </p>
+                  <p> {infos.email} </p>
                 </li>
                 <li>
                   <h4>Adresse :</h4> <p> 212 rue du bourg </p>
@@ -39,7 +53,7 @@ function MyProfile() {
                   <p> 57890 </p>
                 </li>
                 <li>
-                  <h4>Ville :</h4> <p> Roubaix </p>
+                  <h4>Ville :</h4> <p> {infos.city} </p>
                 </li>
               </ul>
             </div>

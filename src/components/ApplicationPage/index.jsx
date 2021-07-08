@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import StyledApplicationPage from './styles';
 
 function ApplicationPage() {
-  const [application, setApplication] = useState(null);
+  const [application, setApplication] = useState([]);
   const { id } = useParams();
   useEffect(() => {
     axios
