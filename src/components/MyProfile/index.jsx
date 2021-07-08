@@ -15,7 +15,6 @@ function MyProfile() {
         setInfos(data);
       });
   }, []);
-
   const submitHandler = () => {
     history.push(`/home/${user.id}`);
   };
