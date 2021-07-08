@@ -1,6 +1,6 @@
-import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import axios from 'axios';
 import User from '../../contexts/User';
 import StyledMyProfile from './styles';
 
