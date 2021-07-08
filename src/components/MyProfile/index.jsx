@@ -1,16 +1,15 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-
+import { useContext, useEffect, useState } from 'react';
+import User from '../../contexts/User';
 import StyledMyProfile from './styles';
 
 function MyProfile() {
   const [infos, setInfos] = useState([]);
-  const { id } = useParams();
+  const { user } = useContext(User);
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/users/${id}`)
+      .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
       .then(({ data }) => {
         setInfos(data);
       });
