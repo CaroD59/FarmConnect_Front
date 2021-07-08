@@ -41,21 +41,43 @@ const StyledCockpit = styled.div`
     .container {
       display: flex;
       justify-content: space-between;
+      width: 80vw;
       height: 40vh;
       .profil {
-        width: 20vw;
-        margin: 20px;
+        width: 25vw;
+        margin: 25px 0px 25px 0px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        border: yellowgreen 1px solid;
+        flex-direction: column;
         border-radius: 5px;
         background-color: #ffff;
+        .titleProfile {
+          color: #223594;
+          font-size: 30px;
+        }
+        .completed {
+          color: green;
+        }
+        .notCompleted {
+          color: red;
+        }
+        .contactButtonProfil {
+          width: 80%px;
+          height: 50px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+          color: #ffff;
+          background-color: rgb(247, 143, 33, 0.75);
+          border: solid 1px rgb(247, 143, 33, 0.75);
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 15px;
+        }
       }
       .myapps {
-        width: 20vw;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 25vw;
+        margin: 25px 0px 25px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,8 +86,8 @@ const StyledCockpit = styled.div`
         background-color: #ffff;
       }
       .soon {
-        width: 20vw;
-        margin: 20px;
+        width: 25vw;
+        margin: 25px 0px 25px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
