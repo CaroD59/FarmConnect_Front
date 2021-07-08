@@ -1,10 +1,35 @@
+import { useHistory } from 'react-router-dom';
 import StyledCockpit from './styles';
 
 function Cockpit() {
+  const history = useHistory();
+  const handleClick = () => {
+    history.push(`/contact`);
+  };
   return (
     <StyledCockpit>
       <div className="cockpit">
-        <h1> Cockpit Section </h1>
+        <div className="beta">
+          <p>
+            Farm Connect est en version &quot;bêta&quot; pour le moment.
+            N’hésitez pas à nous contacter pour nous dire ce que vous pensez de
+            l’application ou si vous avez trouvé des améliorations à effectuer.
+          </p>
+          <button onClick={handleClick} type="button">
+            Nous contacter
+          </button>
+        </div>
+        <div className="container">
+          <div className="profil">
+            <p>Profil</p>
+          </div>
+          <div className="myapps">
+            <p>Mes Apps</p>
+          </div>
+          <div className="soon">
+            <p>Bientôt disponible</p>
+          </div>
+        </div>
       </div>
     </StyledCockpit>
   );
