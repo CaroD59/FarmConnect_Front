@@ -18,6 +18,7 @@ const StyledMarketPlaceReco = styled.div`
 
   .card {
     margin: 0;
+    cursor: pointer;
     background-color: white;
     display: flex;
     flex-direction: column;

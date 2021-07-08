@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import LogForm from './styles';
+import User from '../../contexts/User';
 
 export default function LoginForm() {
+  const { setUser } = useContext(User);
   const history = useHistory();
   const [details, setDetails] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
@@ -17,6 +19,7 @@ export default function LoginForm() {
       .post(`${process.env.REACT_APP_API_URL}/auth/login`, details)
       .then(({ data }) => {
         history.push(`/home/${data.id}`);
+        setUser(data);
       })
       .catch(() => {
         setError('Details do not match ....');
