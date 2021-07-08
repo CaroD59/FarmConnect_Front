@@ -1,14 +1,12 @@
 import axios from 'axios';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import StyledMarketPlaceCatalog from './styles';
 
 export default function GeneralCatalogue() {
   const [generalCatalogue, setGeneralCatalogue] = useState([]);
-  const id = useParams();
   const history = useHistory();
-  const appHandler = (e) => {
-    e.preventDefault();
+  const appHandler = (id) => {
     history.push(`/apps/${id}`);
   };
   useEffect(() => {
@@ -25,7 +23,9 @@ export default function GeneralCatalogue() {
             return (
               <div
                 className="card"
-                onClick={appHandler}
+                onClick={() => {
+                  appHandler(catalogue.id);
+                }}
                 onKeyDown={appHandler}
                 aria-hidden="true"
                 key={catalogue.id}
