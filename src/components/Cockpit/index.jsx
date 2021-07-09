@@ -33,7 +33,7 @@ function Cockpit() {
           <p>Farm Connect est actuellement en version &quot;BETA&quot;.</p>
           <p>
             N’hésitez pas à nous contacter pour nous dire ce que vous pensez de
-            l’application ou si vous avez trouvé des améliorations à effectuer.
+            l’application ou si vous avez des idées d&apos;amélioration.
           </p>
           <button
             className="contactButton"
