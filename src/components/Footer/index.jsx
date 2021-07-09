@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import StyledFooter from './styles';
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
       <div className="Footer">
         <div className="Footer_informations">
           <ul className="LegalMentions">
-            <li>Politique de Confidientalité</li>
+            <li>Politique de Confidentialité</li>
             <li>Mentions Légales</li>
             <li>CGU</li>
           </ul>
@@ -15,7 +16,9 @@ function Footer() {
           <ul className="Informations">
             <li>Qui sommes-nous ?</li>
             <li>On parle de nous</li>
-            <li>Contactez-nous</li>
+            <li>
+              <NavLink to="/contact">Contactez-nous</NavLink>
+            </li>
           </ul>
         </div>
       </div>
