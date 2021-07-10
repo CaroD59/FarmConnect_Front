@@ -1,37 +1,41 @@
 import styled from 'styled-components';
 
 const StyledApplicationPage = styled.div`
-  .logoBanner {
-    position: relative;
-    width: 100vw;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    .logoApp {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 100px;
-    }
+  .appPage {
+    width: 85vw;
+    margin: auto;
     .banner {
-      width: 100%;
+      .banner {
+        width: 100%;
+        margin-top: 15vh;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(218, 218, 218, 0.5);
+      }
     }
-  }
-  .nameDesc {
-    width: 100vw;
-    height: 500px;
-    color: #223594;
-    font-family: 'roboto', sans-serif;
-    .name {
-      margin-top: 20px;
-      margin-left: 160px;
-      font-size: 45px;
-    }
-    .description {
-      margin-top: 20px;
-      margin-left: 300px;
-      margin-right: 300px;
+    .nameDesc {
+      color: #223594;
+      font-family: 'roboto', sans-serif;
+      .description {
+        padding: 5%;
+      }
+      .nameButton {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name {
+          padding: 3%;
+          font-size: 3em;
+        }
+        .button {
+          width: 100px;
+          height: 40px;
+          margin: 2%;
+          color: #ffff;
+          background-color: rgb(247, 143, 33, 0.75);
+          border: rgb(247, 143, 33, 0.75);
+          border-radius: 20px;
+      }
     }
   }
 `;
