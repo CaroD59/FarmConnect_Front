@@ -15,7 +15,7 @@ function Header() {
           <div className="Pages">
             <ul>
               <li className="Cockpit">
-                <NavLink to="/">Cockpit</NavLink>
+                <NavLink to="/cockpit">Cockpit</NavLink>
               </li>
               <li className="MyApps">
                 <NavLink to="/myapps">Mes Services</NavLink>
@@ -29,9 +29,9 @@ function Header() {
             </ul>
           </div>
           <div className="logoProfile">
-            <a href="/myprofile">
+            <NavLink to="/myprofile">
               <img src="/img/Vector.png" alt="logoProfile" />
-            </a>
+            </NavLink>
           </div>
         </div>
       </nav>

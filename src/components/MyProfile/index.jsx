@@ -1,20 +1,23 @@
+import { useContext, useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-
+import User from '../../contexts/User';
 import StyledMyProfile from './styles';
 
 function MyProfile() {
   const [infos, setInfos] = useState([]);
-  const { id } = useParams();
-
+  const { user } = useContext(User);
+  const history = useHistory();
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/users/${id}`)
+      .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
       .then(({ data }) => {
         setInfos(data);
       });
   }, []);
+  const submitHandler = () => {
+    history.push(`/updateprofile`);
+  };
   return (
     <StyledMyProfile>
       <div className="home">
@@ -42,20 +45,30 @@ function MyProfile() {
                   <h4>Telephone :</h4> <p> {infos.mobile} </p>
                 </li>
                 <li>
-                  <h4>Mail :</h4>
-                  <p> {infos.email} </p>
-                </li>
-                <li>
-                  <h4>Adresse :</h4> <p> 212 rue du bourg </p>
-                </li>
-                <li>
-                  <h4>Code Postal :</h4>
-                  <p> 57890 </p>
+                  <h4>Mail :</h4> <p> {infos.email} </p>
                 </li>
                 <li>
                   <h4>Ville :</h4> <p> {infos.city} </p>
                 </li>
+                <li>
+                  <h4>Code Postal :</h4> <p> {infos.zipcode} </p>
+                </li>
+                <li>
+                  <h4>Pays :</h4> <p> {infos.country} </p>
+                </li>
               </ul>
+              {(!infos.country ||
+                !infos.zipcode ||
+                !infos.city ||
+                !infos.mobile) && (
+                <form onSubmit={submitHandler}>
+                  <input
+                    type="submit"
+                    value="Compléter mon profil"
+                    className="buttonLogin"
+                  />
+                </form>
+              )}
             </div>
             <div className="containers">
               <div className="title">
