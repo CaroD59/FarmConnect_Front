@@ -26,6 +26,9 @@ const StyledCockpit = styled.div`
         margin: 5px;
       }
       .contactButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 150px;
         height: 50px;
         margin-top: 10px;
@@ -36,6 +39,7 @@ const StyledCockpit = styled.div`
         border-radius: 5px;
         cursor: pointer;
         font-size: 15px;
+        text-decoration: none;
       }
     }
     .container {
@@ -63,7 +67,10 @@ const StyledCockpit = styled.div`
           color: red;
         }
         .contactButtonProfil {
-          width: 80%px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
           height: 50px;
           margin-top: 10px;
           margin-bottom: 15px;
@@ -73,6 +80,7 @@ const StyledCockpit = styled.div`
           border-radius: 5px;
           cursor: pointer;
           font-size: 15px;
+          text-decoration: none;
         }
       }
       .myapps {

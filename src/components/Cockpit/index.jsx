@@ -1,19 +1,10 @@
 import { useEffect, useState, useContext } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import StyledCockpit from './styles';
 import User from '../../contexts/User';
 
 function Cockpit() {
-  const history = useHistory();
-  const handleClickContact = () => {
-    history.push(`/contact`);
-  };
-
-  const handleClickProfile = () => {
-    history.push(`/myprofile`);
-  };
-
   const [completed, setCompleted] = useState(true);
   const { user } = useContext(User);
 
@@ -35,13 +26,9 @@ function Cockpit() {
             N’hésitez pas à nous contacter pour nous dire ce que vous pensez de
             l’application ou si vous avez des idées d&apos;amélioration.
           </p>
-          <button
-            className="contactButton"
-            onClick={handleClickContact}
-            type="button"
-          >
+          <Link to="/contact" className="contactButton">
             Donner mon avis
-          </button>
+          </Link>
         </div>
         <div className="container">
           <div className="profil">
@@ -52,13 +39,9 @@ function Cockpit() {
             {!completed && (
               <p className="notCompleted">Votre profil est incomplet !</p>
             )}
-            <button
-              className="contactButtonProfil"
-              onClick={handleClickProfile}
-              type="button"
-            >
+            <Link to="/myprofile" className="contactButtonProfil">
               Cliquer ici pour accéder à mon profil
-            </button>
+            </Link>
           </div>
           <div className="myapps">
             <p>Mes Apps</p>
