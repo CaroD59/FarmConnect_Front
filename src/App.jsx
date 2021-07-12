@@ -12,7 +12,11 @@ import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
 import ApplicationPage from './components/ApplicationPage';
-import CGU from './components/CGU';
+import ConditionsOfUse from './components/ConditionsOfUse';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import AboutUs from './components/AboutUs';
+import SpeakingAboutUs from './components/SpeakingAboutUs';
+import LegalNotice from './components/LegalNotice';
 import './reset.css';
 import StyledApp from './styles';
 
@@ -34,7 +38,11 @@ function App() {
             <Route exact path="/apps" component={MarketPlace} />
             <Route path="/contact" component={Contact} />
             <Route path="/apps/:id" component={ApplicationPage} />
-            <Route path="/cgu" component={CGU} />
+            <Route path="/conditionsofuse" component={ConditionsOfUse} />
+            <Route path="/privacypolicy" component={PrivacyPolicy} />
+            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/speakingaboutus" component={SpeakingAboutUs} />
+            <Route path="/legalnotice" component={LegalNotice} />
           </Switch>
           <Footer />
         </User.Provider>
