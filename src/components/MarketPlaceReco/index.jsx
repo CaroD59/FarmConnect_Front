@@ -1,16 +1,12 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import StyledMarketPlaceReco from './styles';
 
 function MarketPlaceReco() {
   const [appli, setAppli] = useState([]);
-  const history = useHistory();
-  const appHandler = (id) => {
-    history.push(`/apps/${id}`);
-  };
 
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_URL}/apps`).then(({ data }) => {
@@ -72,27 +68,26 @@ function MarketPlaceReco() {
         >
           {appli.map((app) => {
             return (
-              <div className="AppGallery" key={app.id}>
-                <div
-                  className="card"
-                  onClick={() => {
-                    appHandler(app.id);
-                  }}
-                  onKeyDown={appHandler}
-                  aria-hidden="true"
-                >
-                  <div className="image">
-                    <img src={app.banner} alt="banner" className="imageSize" />
-                  </div>
-                  <div className="infos">
-                    <div className="societe">
-                      <p className="name">{app.name}</p>
-                      <p className="activite">{app.provider_app}</p>
+              <Link to={`/${app.id}/${app.name}`}>
+                <div className="AppGallery" key={app.id}>
+                  <div className="card" aria-hidden="true">
+                    <div className="image">
+                      <img
+                        src={app.banner}
+                        alt="banner"
+                        className="imageSize"
+                      />
                     </div>
-                    <div className="button">Infos</div>
+                    <div className="infos">
+                      <div className="societe">
+                        <p className="name">{app.name}</p>
+                        <p className="activite">{app.provider_app}</p>
+                      </div>
+                      <div className="button">Infos</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </Carousel>

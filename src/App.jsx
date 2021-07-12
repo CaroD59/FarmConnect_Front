@@ -18,6 +18,7 @@ dotenv.config();
 
 function App() {
   const [user, setUser] = useState(null);
+
   return (
     <div className="App">
       <User.Provider value={{ user, setUser }}>
@@ -28,9 +29,9 @@ function App() {
           <Route path="/cockpit" component={Cockpit} />
           <Route path="/myprofile" component={MyProfile} />
           <Route path="/myapps" component={MyApps} />
+          <Route path="/:id/:appname" component={ApplicationPage} />
           <Route exact path="/apps" component={MarketPlace} />
           <Route path="/contact" component={Contact} />
-          <Route path="/apps/:id" component={ApplicationPage} />
         </Switch>
         <Footer />
       </User.Provider>

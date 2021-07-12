@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom';
 import StyledApplicationPage from './styles';
 
 function ApplicationPage() {
-  const [application, setApplication] = useState([]);
   const { id } = useParams();
+  const [application, setApplication] = useState([]);
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/apps/${id}`)
