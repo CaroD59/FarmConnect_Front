@@ -34,6 +34,7 @@ function App() {
             <Route exact path="/apps" component={MarketPlace} />
             <Route path="/contact" component={Contact} />
             <Route path="/apps/:id" component={ApplicationPage} />
+            <Route path="/updateProfile" component={UpdateProfile} />
           </Switch>
           <Footer />
         </User.Provider>
