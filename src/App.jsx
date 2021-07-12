@@ -6,6 +6,7 @@ import Header from './components/Header/index';
 import Footer from './components/Footer/index';
 import Login from './components/Login/index';
 import Registration from './components/Registration/index';
+import UpdateProfile from './components/UpdateProfile/index';
 import MyProfile from './components/MyProfile/index';
 import Cockpit from './components/Cockpit/index';
 import MyApps from './components/MyApps/index';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/:id/:appname" component={ApplicationPage} />
           <Route exact path="/apps" component={MarketPlace} />
           <Route path="/contact" component={Contact} />
+          <Route path="/updateprofile" component={UpdateProfile} />
         </Switch>
         <Footer />
       </User.Provider>

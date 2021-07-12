@@ -17,13 +17,19 @@ function ApplicationPage() {
     <StyledApplicationPage>
       {application && (
         <>
-          <div className="logoBanner">
-            <img src={application.logo} alt="" className="logoApp" />
-            <img src={application.banner} alt="" className="banner" />
-          </div>
-          <div className="nameDesc">
-            <h2 className="name">{application.name}</h2>
-            <p className="description">{application.description}</p>
+          <div className="appPage">
+            <div className="banner">
+              <img src={application.banner} alt="" className="banner" />
+            </div>
+            <div className="nameDesc">
+              <div className="nameButton">
+                <h2 className="name">{application.name}</h2>
+                <button type="button" className="button">
+                  Ajouter
+                </button>
+              </div>
+              <p className="description">{application.description}</p>
+            </div>
           </div>
         </>
       )}
