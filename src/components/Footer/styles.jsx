@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.div`
   .Footer {
-    position: fixed;
     width: 100vw;
+    height: 200px;
     display: flex;
     border-top: rgba(220, 220, 220, 1) 1px solid;
     background-color: rgba(218, 218, 218, 0.25);
@@ -23,7 +23,6 @@ const StyledFooter = styled.div`
         li {
           list-style-type: none;
           padding: 3px;
-          font-style: italic;
           a {
             text-decoration: none;
           }
@@ -37,7 +36,6 @@ const StyledFooter = styled.div`
         li {
           list-style-type: none;
           padding: 3px;
-          font-style: italic;
           a {
             text-decoration: none;
             color: rgba(70, 70, 70, 1);

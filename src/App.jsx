@@ -6,13 +6,13 @@ import Header from './components/Header/index';
 import Footer from './components/Footer/index';
 import Login from './components/Login/index';
 import Registration from './components/Registration/index';
-import UpdateProfile from './components/UpdateProfile/index';
 import MyProfile from './components/MyProfile/index';
 import Cockpit from './components/Cockpit/index';
 import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
 import ApplicationPage from './components/ApplicationPage';
+import CGU from './components/CGU';
 import './reset.css';
 import StyledApp from './styles';
 
@@ -34,6 +34,7 @@ function App() {
             <Route exact path="/apps" component={MarketPlace} />
             <Route path="/contact" component={Contact} />
             <Route path="/apps/:id" component={ApplicationPage} />
+            <Route path="/cgu" component={CGU} />
           </Switch>
           <Footer />
         </User.Provider>
