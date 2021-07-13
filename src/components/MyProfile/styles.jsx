@@ -1,16 +1,22 @@
 import styled from 'styled-components';
 
 const StyledMyProfile = styled.section`
-  .home {
+  .myProfile {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     font-family: 'roboto', sans-serif;
-    background-color: rgba(218, 218, 218, 0.25);
+    .welcomeProfil {
+      color: #223594;
+      font-size: 44px;
+      font-weight: 300;
+      padding-top: 30px;
+      margin: 20px;
+    }
     .profil {
       display: flex;
-      width: 1000px;
       height: 350px;
       .infos {
         height: 300px;
@@ -20,30 +26,18 @@ const StyledMyProfile = styled.section`
         .containers {
           padding: 5px;
           margin: 20px;
-          width: 330px;
-          height: 280px;
+          width: 25vw;
+          height: 50vh;
           border-radius: 8px;
           background-color: #ffff;
           box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
           .title {
-            display: flex;
-            justify-content: space-between;
-            padding-right: 15px;
-            align-items: center;
-            .editor {
-              width: 20px;
-              height: 20px;
-            }
-            .editor:hover {
-              width: 22px;
-              height: 22px;
-              transition: 100ms;
-            }
+            color: #223594;
           }
           .picto {
             display: flex;
             justify-content: space-around;
-            align-items: flex-start;
+            align-items: center;
             padding-top: 55px;
             height: 200px;
             .pic {
@@ -65,11 +59,15 @@ const StyledMyProfile = styled.section`
           .cardName {
             font-size: 20px;
             padding: 15px;
-            margin: 0;
+            margin: auto;
             font-weight: normal;
           }
+          .cardExploitation {
+            color: black;
+            margin: auto;
+          }
           .card {
-            height: 200px;
+            height: 300px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -77,87 +75,17 @@ const StyledMyProfile = styled.section`
               li {
                 list-style: none;
                 display: flex;
-                font-size: 70%;
+                font-size: 15px;
                 h4 {
-                  width: 100px;
-                  padding-left: 10px;
+                  padding-left: 40px;
                   font-weight: bold;
                 }
-                
               }
             }
           }
         }
       }
     }
-  }
-  .parcelle {
-    width: 1000px;
-    height: 380px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    .infos-parcelle {
-      width: 200px;
-      border-radius: 8px;
-      background-color: #ffff;
-      box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
-      font-size: 70%;
-      height: 280px;
-      margin-left: 20px;
-      h3 {
-        font-size: 20px;
-        margin-top: 20px;
-        padding-left: 20px;
-      }
-      ul {
-        margin-top: 40px;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        li {
-          padding-left: 10px;
-          display: flex;
-          h4 {
-            width: 80px;
-            font-weight: bold;
-          }
-          em {
-            font-weight: normal;
-          }
-        }
-      }
-    }
-    .parcelleMap {
-      width: 700px;
-      border-radius: 8px;
-      background-color: #ffff;
-      box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
-      height: 280px;
-      margin-right: 20px;
-      p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;  
-      }
-    }
-  }
-  .helloUser {
-    color: rgba(70, 70, 70, 1);
-    text-align: center;
-    font-size: 15px;
-    margin: 30px;
-    padding: 10px;
-  }
-  .welcomeProfil {
-    color: rgba(70, 70, 70, 1);
-    text-align: center;
-    font-size: 40px;
-    margin: 30px;
-    padding: 10px;
   }
 `;
 

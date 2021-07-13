@@ -12,6 +12,7 @@ function Registration() {
     country: '',
     mobile: '',
     city: '',
+    isStaff: 0,
   });
 
   const submitHandler = (e) => {

@@ -35,6 +35,7 @@ const StyledApplicationPage = styled.div`
           background-color: rgb(247, 143, 33, 0.75);
           border: rgb(247, 143, 33, 0.75);
           border-radius: 20px;
+        }
       }
     }
   }

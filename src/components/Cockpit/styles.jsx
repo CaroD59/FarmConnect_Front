@@ -9,7 +9,6 @@ const StyledCockpit = styled.div`
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(218, 218, 218, 0.25);
     font-family: 'roboto', sans-serif;
     .beta {
       display: flex;

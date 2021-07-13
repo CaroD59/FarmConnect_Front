@@ -4,7 +4,6 @@ const StyledPrivacyPolicy = styled.div`
   .privacyPolicyPage {
     font-family: 'roboto', sans-serif;
     padding: 50px;
-    background-color: rgba(218, 218, 218, 0.25);
     .privacyPolicyContent {
       margin: auto;
       width: 80vw;
