@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const StyledMarketPlaceCatalog = styled.div`
+  a {
+    text-decoration: none;
+    color: #223594;
+  }
   .titre {
     color: #223594;
     font-family: 'roboto', sans-serif;

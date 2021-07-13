@@ -14,12 +14,12 @@ import Contact from './components/Contact';
 import ApplicationPage from './components/ApplicationPage';
 import CGU from './components/CGU';
 import './reset.css';
-import StyledApp from './styles';
 
 dotenv.config();
 
 function App() {
   const [user, setUser] = useState(null);
+
   return (
     <StyledApp>
       <div className="App">
@@ -34,6 +34,7 @@ function App() {
             <Route exact path="/apps" component={MarketPlace} />
             <Route path="/contact" component={Contact} />
             <Route path="/apps/:id" component={ApplicationPage} />
+             <Route path="/updateprofile" component={UpdateProfile} />
             <Route path="/cgu" component={CGU} />
           </Switch>
           <Footer />
