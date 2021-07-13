@@ -35,6 +35,34 @@ const StyledApplicationPage = styled.div`
           background-color: rgb(247, 143, 33, 0.75);
           border: rgb(247, 143, 33, 0.75);
           border-radius: 20px;
+        }
+        .buttonIsFav {
+          width: 100px;
+          height: 40px;
+          margin: 2%;
+          color: #ffff;
+          background-color: red;
+          border: rgb(247, 143, 33, 0.75);
+          border-radius: 20px;
+        }
+      }
+    }
+    .buttonlink {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      .linktoapp {
+        width: 200px;
+        height: 40px;
+        color: #ffff;
+        background-color: rgb(247, 143, 33, 0.75);
+        border: rgb(247, 143, 33, 0.75);
+        border-radius: 20px;
+        a {
+          color: #ffff;
+          text-decoration: none;
+          font-size: larger;
+        }
       }
     }
   }
