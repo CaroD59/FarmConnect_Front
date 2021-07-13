@@ -105,6 +105,22 @@ const StyledCockpit = styled.div`
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      width: 80vw;
+      height: 300vh;
+      .profil {
+        height: 200px;
+      }
+      .myapps {
+        height: 200px;
+      }
+    }
+  }
 `;
 
 export default StyledCockpit;
