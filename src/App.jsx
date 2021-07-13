@@ -13,13 +13,14 @@ import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
 import ApplicationPage from './components/ApplicationPage';
-import './reset.css';
 import StyledApp from './styles';
+import './reset.css';
 
 dotenv.config();
 
 function App() {
   const [user, setUser] = useState(null);
+
   return (
     <StyledApp>
       <div className="App">
