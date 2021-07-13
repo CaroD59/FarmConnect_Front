@@ -5,6 +5,7 @@ const StyledFooter = styled.div`
     width: 100vw;
     height: 200px;
     display: flex;
+    bottom: 0;
     border-top: rgba(220, 220, 220, 1) 1px solid;
     background-color: rgba(218, 218, 218, 0.25);
     .Footer_informations {
