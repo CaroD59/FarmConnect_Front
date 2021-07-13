@@ -1,24 +1,24 @@
 import styled from 'styled-components';
 
-const StyledAboutUs = styled.div`
-  .aboutUsPage {
+const StyledLegalNotice = styled.div`
+  .legalNoticePage {
     font-family: 'roboto', sans-serif;
     padding: 50px;
     background-color: rgba(218, 218, 218, 0.25);
-    .aboutUsContent {
+    .legalNoticeContent {
       margin: auto;
       width: 80vw;
       border-radius: 5px;
       padding-bottom: 20px;
       background-color: #ffff;
-      .aboutUsTitle {
+      .legalNoticeTitle {
         color: #223594;
         font-size: 44px;
         font-weight: 300;
         padding-top: 20px;
         margin: 20px;
       }
-      .aboutUsText {
+      .legalNoticeText {
         width: 90%;
         margin: auto;
         padding: 10px;
@@ -27,4 +27,4 @@ const StyledAboutUs = styled.div`
   }
 `;
 
-export default StyledAboutUs;
+export default StyledLegalNotice;
