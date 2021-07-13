@@ -7,15 +7,29 @@ function Footer() {
       <div className="Footer">
         <div className="Footer_informations">
           <ul className="LegalMentions">
-            <li>Politique de Confidentialité</li>
-            <li>Mentions Légales</li>
-            <li>CGU</li>
+            <li>
+              <NavLink to="/privacypolicy">
+                Politique de Confidentialité
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/legalnotice">Mentions Légales</NavLink>
+            </li>
+            <li>
+              <NavLink to="/conditionsofuse">
+                Conditions Générales d&apos;Utilisation
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="Footer_informations">
           <ul className="Informations">
-            <li>Qui sommes-nous ?</li>
-            <li>On parle de nous</li>
+            <li>
+              <NavLink to="/aboutus">Qui sommes-nous ?</NavLink>
+            </li>
+            <li>
+              <NavLink to="/speakingaboutus">On parle de nous !</NavLink>
+            </li>
             <li>
               <NavLink to="/contact">Contactez-nous</NavLink>
             </li>

@@ -37,7 +37,7 @@ const StyledHeader = styled.div`
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 100px;
+          width: 150px;
           height: 25px;
           a {
             font-family: 'roboto', sans-serif;

@@ -6,13 +6,18 @@ import Header from './components/Header/index';
 import Footer from './components/Footer/index';
 import Login from './components/Login/index';
 import Registration from './components/Registration/index';
-import UpdateProfile from './components/UpdateProfile/index';
 import MyProfile from './components/MyProfile/index';
+import UpdateProfile from './components/UpdateProfile/index';
 import Cockpit from './components/Cockpit/index';
 import MyApps from './components/MyApps/index';
 import MarketPlace from './components/MarketPlace';
 import Contact from './components/Contact';
 import ApplicationPage from './components/ApplicationPage';
+import ConditionsOfUse from './components/ConditionsOfUse';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import AboutUs from './components/AboutUs';
+import SpeakingAboutUs from './components/SpeakingAboutUs';
+import LegalNotice from './components/LegalNotice';
 import StyledApp from './styles';
 import './reset.css';
 
@@ -35,7 +40,12 @@ function App() {
             <Route exact path="/apps" component={MarketPlace} />
             <Route path="/contact" component={Contact} />
             <Route path="/apps/:id" component={ApplicationPage} />
-            <Route path="/updateProfile" component={UpdateProfile} />
+            <Route path="/conditionsofuse" component={ConditionsOfUse} />
+            <Route path="/privacypolicy" component={PrivacyPolicy} />
+            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/speakingaboutus" component={SpeakingAboutUs} />
+            <Route path="/legalnotice" component={LegalNotice} />
+            <Route path="/updateprofile" component={UpdateProfile} />
           </Switch>
           <Footer />
         </User.Provider>
