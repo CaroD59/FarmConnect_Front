@@ -28,6 +28,7 @@ const StyledApplicationPage = styled.div`
           font-size: 3em;
         }
         .button {
+          cursor: pointer;
           width: 100px;
           height: 40px;
           margin: 2%;
@@ -37,6 +38,7 @@ const StyledApplicationPage = styled.div`
           border-radius: 20px;
         }
         .buttonIsFav {
+          cursor: pointer;
           width: 100px;
           height: 40px;
           margin: 2%;
