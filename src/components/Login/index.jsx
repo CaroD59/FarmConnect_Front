@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import LogForm from './styles';
 import User from '../../contexts/User';
 
@@ -19,9 +20,11 @@ export default function LoginForm() {
       .post(`${process.env.REACT_APP_API_URL}/auth/login`, details)
       .then(({ data }) => {
         setUser(data);
-        history.push(`/myprofile`);
+        toast.info(`Vous êtes connecté ${details.email}`);
+        history.push(`/cockpit`);
       })
       .catch(() => {
+        toast.error(`E-mail ou mot de passe incorrect`);
         setError('Details do not match ....');
       });
   };

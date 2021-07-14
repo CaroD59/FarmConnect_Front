@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import { useHistory } from 'react-router-dom';
 import RegistrationForm from './styles';
 
 function Registration() {
+  const history = useHistory();
   const [users, setUsers] = useState({
     email: '',
     password: '',
@@ -12,11 +15,22 @@ function Registration() {
     country: '',
     mobile: '',
     city: '',
+    isStaff: 0,
   });
 
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.REACT_APP_API_URL}/auth/signup`, users);
+    axios
+      .post(`${process.env.REACT_APP_API_URL}/auth/signup`, users)
+      .then(() => {
+        toast.info(
+          `${users.firstname}, vous êtes maintenant inscrit à FARM CONNECT`
+        );
+        history.push(`/`);
+      })
+      .catch(() => {
+        toast.error(`Votre inscription a échoué`);
+      });
   };
   return (
     <RegistrationForm>

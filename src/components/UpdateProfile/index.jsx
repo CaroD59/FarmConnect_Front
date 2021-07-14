@@ -1,13 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import RegistrationForm from '../Registration/styles';
 import User from '../../contexts/User';
 
 function UpdateProfile() {
   const { user } = useContext(User);
   const history = useHistory();
-
   const [users, setUsers] = useState({});
 
   useEffect(() => {
@@ -20,8 +20,15 @@ function UpdateProfile() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.put(`${process.env.REACT_APP_API_URL}/users/${user.id}`, users);
-    history.push(`/myprofile`);
+    axios
+      .put(`${process.env.REACT_APP_API_URL}/users/${user.id}`, users)
+      .then(() => {
+        toast.info(`Profil complété !`);
+        history.push(`/cockpit`);
+      })
+      .catch(() => {
+        toast.error(`Erreur dans les informations renseignées`);
+      });
   };
   return (
     <RegistrationForm>
