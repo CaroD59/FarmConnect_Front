@@ -118,36 +118,36 @@ const StyledCockpit = styled.div`
           font-size: 15px;
           text-decoration: none;
         }
-        .soon {
-          width: 25vw;
-          margin: 25px 0px 25px 0px;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          flex-direction: column;
-          border-radius: 5px;
-          background-color: #ffff;
-          .titleMyApps {
-            color: #223594;
-            font-size: 30px;
-          }
+      }
+      .soon {
+        width: 25vw;
+        margin: 25px 0px 25px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: #ffff;
+        .titleMyApps {
+          color: #223594;
+          font-size: 30px;
+        }
 
-          .contactButtonApp {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
-            height: 50px;
-            margin-top: 10px;
-            margin-bottom: 15px;
-            color: #ffff;
-            background-color: rgb(247, 143, 33, 0.75);
-            border: solid 1px rgb(247, 143, 33, 0.75);
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 15px;
-            text-decoration: none;
-          }
+        .contactButtonApp {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          height: 50px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+          color: #ffff;
+          background-color: rgb(247, 143, 33, 0.75);
+          border: solid 1px rgb(247, 143, 33, 0.75);
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 15px;
+          text-decoration: none;
         }
       }
     }

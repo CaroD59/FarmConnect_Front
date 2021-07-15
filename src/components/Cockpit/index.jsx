@@ -8,7 +8,6 @@ function Cockpit() {
   const [completed, setCompleted] = useState(true);
   const { user } = useContext(User);
   const [myApps, setMyApps] = useState([]);
-  console.log(myApps);
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
@@ -61,19 +60,17 @@ function Cockpit() {
                 Vous n&apos;avez pas encore d&apos;applications
               </p>
             )}
-            <Link to="/myapps" className="contactButtonApp">
-              Cliquer ici pour accéder à vos applications
-            </Link>
+            {myApps.length !== 0 && (
+              <Link to="/myapps" className="contactButtonApp">
+                Cliquer ici pour accéder à vos applications
+              </Link>
+            )}
             <Link to="/apps" className="contactButtonApp">
               Cliquer ici pour accéder au catalogue d&apos;applications
             </Link>
           </div>
           <div className="soon">
-            <h2 className="titleProfile">PROFIL</h2>
-
-            <Link to="/myprofile" className="contactButtonProfil">
-              Cliquer ici pour accéder à mon profil
-            </Link>
+            <h2 className="titleProfile">Bientôt disponible</h2>
           </div>
         </div>
       </div>
