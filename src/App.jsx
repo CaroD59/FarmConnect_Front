@@ -39,7 +39,10 @@ function App() {
               <Route path="/myapps" component={MyApps} />
               <Route exact path="/apps" component={MarketPlace} />
               <Route path="/contact" component={Contact} />
-              <Route path="/apps/:id" component={ApplicationPage} />
+              <Route
+                path="/:applicationsId/:apps"
+                component={ApplicationPage}
+              />
               <Route path="/conditionsofuse" component={ConditionsOfUse} />
               <Route path="/privacypolicy" component={PrivacyPolicy} />
               <Route path="/aboutus" component={AboutUs} />
@@ -47,9 +50,9 @@ function App() {
               <Route path="/legalnotice" component={LegalNotice} />
               <Route path="/updateprofile" component={UpdateProfile} />
             </Switch>
+            <Footer />
+            <Header />
           </main>
-          <Header />
-          <Footer />
         </User.Provider>
       </div>
     </StyledApp>
