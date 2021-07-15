@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useContext, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import StyledApplicationPage from './styles';
 import User from '../../contexts/User';
 
@@ -35,12 +36,14 @@ function ApplicationPage() {
         )
         .then(() => {
           setFav(!isFav);
+          toast.info(`${application.name} a été supprimé de vos applications`);
         });
     } else {
       axios
         .post(`${process.env.REACT_APP_API_URL}/appfav/`, appFav)
         .then(() => {
           setFav(!isFav);
+          toast.info(`${application.name} a été ajouté à vos applications`);
         });
     }
   };

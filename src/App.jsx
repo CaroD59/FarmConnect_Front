@@ -1,6 +1,8 @@
 import dotenv from 'dotenv';
 import { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import User from './contexts/User';
 import Header from './components/Header/index';
 import Footer from './components/Footer/index';
@@ -31,6 +33,10 @@ function App() {
       <div className="App">
         <User.Provider value={{ user, setUser }}>
           <main>
+            <ToastContainer
+              position={toast.POSITION.TOP_CENTER}
+              autoClose={5000}
+            />
             <Switch>
               <Route exact path="/" component={Login} />
               <Route path="/registration" component={Registration} />
