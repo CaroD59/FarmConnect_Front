@@ -30,24 +30,29 @@ function App() {
     <StyledApp>
       <div className="App">
         <User.Provider value={{ user, setUser }}>
-          <Header />
-          <Switch>
-            <Route exact path="/" component={Login} />
-            <Route path="/registration" component={Registration} />
-            <Route path="/cockpit" component={Cockpit} />
-            <Route path="/myprofile" component={MyProfile} />
-            <Route path="/myapps" component={MyApps} />
-            <Route exact path="/apps" component={MarketPlace} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/:applicationsId/:apps" component={ApplicationPage} />
-            <Route path="/conditionsofuse" component={ConditionsOfUse} />
-            <Route path="/privacypolicy" component={PrivacyPolicy} />
-            <Route path="/aboutus" component={AboutUs} />
-            <Route path="/speakingaboutus" component={SpeakingAboutUs} />
-            <Route path="/legalnotice" component={LegalNotice} />
-            <Route path="/updateprofile" component={UpdateProfile} />
-          </Switch>
-          <Footer />
+          <main>
+            <Switch>
+              <Route exact path="/" component={Login} />
+              <Route path="/registration" component={Registration} />
+              <Route path="/cockpit" component={Cockpit} />
+              <Route path="/myprofile" component={MyProfile} />
+              <Route path="/myapps" component={MyApps} />
+              <Route exact path="/apps" component={MarketPlace} />
+              <Route path="/contact" component={Contact} />
+              <Route
+                path="/:applicationsId/:apps"
+                component={ApplicationPage}
+              />
+              <Route path="/conditionsofuse" component={ConditionsOfUse} />
+              <Route path="/privacypolicy" component={PrivacyPolicy} />
+              <Route path="/aboutus" component={AboutUs} />
+              <Route path="/speakingaboutus" component={SpeakingAboutUs} />
+              <Route path="/legalnotice" component={LegalNotice} />
+              <Route path="/updateprofile" component={UpdateProfile} />
+            </Switch>
+            <Footer />
+            <Header />
+          </main>
         </User.Provider>
       </div>
     </StyledApp>
