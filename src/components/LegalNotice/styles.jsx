@@ -4,7 +4,6 @@ const StyledLegalNotice = styled.div`
   .legalNoticePage {
     font-family: 'roboto', sans-serif;
     padding: 50px;
-    background-color: rgba(218, 218, 218, 0.25);
     .legalNoticeContent {
       margin: auto;
       width: 80vw;
