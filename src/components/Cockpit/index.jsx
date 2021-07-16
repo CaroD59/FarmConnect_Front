@@ -7,13 +7,18 @@ import User from '../../contexts/User';
 function Cockpit() {
   const [completed, setCompleted] = useState(true);
   const { user } = useContext(User);
-
+  const [myApps, setMyApps] = useState([]);
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
       .then(({ data }) => {
         if (!data.country || !data.zipcode || !data.city || !data.mobile)
           setCompleted(false);
+      });
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/appfav/${user.id}`)
+      .then(({ data }) => {
+        setMyApps(data);
       });
   }, []);
 
@@ -44,10 +49,28 @@ function Cockpit() {
             </Link>
           </div>
           <div className="myapps">
-            <p>Mes Apps</p>
+            <h2 className="titleMyApps">Applications</h2>
+            {myApps.length !== 0 && (
+              <p className="completed">
+                Vous avez {myApps.length} applications
+              </p>
+            )}
+            {myApps.length === 0 && (
+              <p className="notCompleted">
+                Vous n&apos;avez pas encore d&apos;applications
+              </p>
+            )}
+            {myApps.length !== 0 && (
+              <Link to="/myapps" className="contactButtonApp">
+                Cliquer ici pour accéder à vos applications
+              </Link>
+            )}
+            <Link to="/apps" className="contactButtonApp">
+              Cliquer ici pour accéder au catalogue d&apos;applications
+            </Link>
           </div>
           <div className="soon">
-            <p>Bientôt disponible</p>
+            <h2 className="titleProfile">Bientôt disponible</h2>
           </div>
         </div>
       </div>
