@@ -20,41 +20,37 @@ function MyProfile() {
   };
   return (
     <StyledMyProfile>
-      <div className="home">
-        <h1 className="helloUser"> Bonjour {infos.firstname} ! </h1>
-        <h2 className="welcomeProfil">Bienvenue sur votre profil.</h2>
+      <div className="myProfile">
+        <h1 className="welcomeProfil">
+          Bienvenue {infos.firstname} {infos.lastname} !
+        </h1>
         <div className="profil">
           <div className="infos">
             <div className="containers">
               <div className="title">
                 <h3 className="cardName">Mes coordonnées</h3>
-                <img
-                  className="editor"
-                  src="http://www.rhodo.ch/storage/app/media/inscription_picto.png"
-                  alt="editor"
-                />
               </div>
               <ul className="card">
                 <li>
-                  <h4>Nom :</h4> <p> {infos.firstname} </p>
+                  <h4>Nom : </h4> <p> {infos.firstname} </p>
                 </li>
                 <li>
-                  <h4>Prenom :</h4> <p> {infos.lastname} </p>
+                  <h4>Prenom : </h4> <p> {infos.lastname} </p>
                 </li>
                 <li>
-                  <h4>Telephone :</h4> <p> {infos.mobile} </p>
+                  <h4>Telephone : </h4> <p> {infos.mobile} </p>
                 </li>
                 <li>
-                  <h4>Mail :</h4> <p> {infos.email} </p>
+                  <h4>Mail : </h4> <p> {infos.email} </p>
                 </li>
                 <li>
-                  <h4>Ville :</h4> <p> {infos.city} </p>
+                  <h4>Ville : </h4> <p> {infos.city} </p>
                 </li>
                 <li>
-                  <h4>Code Postal :</h4> <p> {infos.zipcode} </p>
+                  <h4>Code Postal : </h4> <p> {infos.zipcode} </p>
                 </li>
                 <li>
-                  <h4>Pays :</h4> <p> {infos.country} </p>
+                  <h4>Pays : </h4> <p> {infos.country} </p>
                 </li>
               </ul>
               {(!infos.country ||
@@ -73,43 +69,12 @@ function MyProfile() {
             <div className="containers">
               <div className="title">
                 <h3 className="cardName">Mon exploitation</h3>
-                <img
-                  className="editor"
-                  src="http://www.rhodo.ch/storage/app/media/inscription_picto.png"
-                  alt="editor"
-                />
               </div>
-              <ul className="card">
-                <li>
-                  <h4>Forme juridique :</h4>
-                  <p>Lorem Ipsum is simply dummy text</p>
-                </li>
-                <li>
-                  <h4>Forme juridique :</h4>
-                  <p>Lorem Ipsum is simply dummy text</p>
-                </li>
-                <li>
-                  <h4>Forme juridique :</h4>
-                  <p>Lorem Ipsum is simply dummy text</p>
-                </li>
-                <li>
-                  <h4>Forme juridique :</h4>
-                  <p>Lorem Ipsum is simply dummy text</p>
-                </li>
-                <li>
-                  <h4>Forme juridique :</h4>
-                  <p>Lorem Ipsum is simply dummy text</p>
-                </li>
-              </ul>
+              <p className="cardExploitation">Bientôt disponible</p>
             </div>
             <div className="containers">
               <div className="title">
                 <h3 className="cardName">Mes activités</h3>
-                <img
-                  className="editor"
-                  src="http://www.rhodo.ch/storage/app/media/inscription_picto.png"
-                  alt="editor"
-                />
               </div>
               <div className="picto">
                 <div className="pic">
@@ -146,25 +111,6 @@ function MyProfile() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="parcelle">
-          <div className="infos-parcelle">
-            <h3> Parcelle </h3>
-            <ul>
-              <li>
-                <h4>Qté :</h4> <em> 12 </em>
-              </li>
-              <li>
-                <h4>Are :</h4> <em> 100 ha </em>
-              </li>
-              <li>
-                <h4>Periode :</h4> <em> Ebourgeonnade </em>
-              </li>
-            </ul>
-          </div>
-          <div className="parcelleMap">
-            <p>Ici arrivera la carte de la parcelle de l&apos;exploitant.</p>
           </div>
         </div>
       </div>
