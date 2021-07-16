@@ -107,7 +107,7 @@ const StyledCockpit = styled.div`
   }
   @media screen and (max-width: 768px) {
     .cockpit {
-      height: 90vh;
+      height: 100vh;
       .beta {
         text-align: center;
         height: 190px;
@@ -117,7 +117,7 @@ const StyledCockpit = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
+        width: 78vw;
         height: 300vh;
         .profil {
           height: 200px;
@@ -130,6 +130,47 @@ const StyledCockpit = styled.div`
         .myapps {
           height: 200px;
           width: 614.4px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 376px) {
+    .cockpit {
+      height: 130vh;
+      width: 100%;
+      .beta {
+        height: 150px;
+        margin-bottom: 26px;
+        font-size: 70%;
+        width: 250px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+        height: 100vh;
+
+        .profil {
+          height: 150px;
+          width: 250px;
+          font-size: 80%;
+          .titleProfile {
+            font-size: 18px;
+          }
+          .contactButtonProfil {
+            text-align: center;
+            font-size: 10px;
+            width: 152px;
+          }
+        }
+        .soon {
+          height: 150px;
+          width: 250px;
+        }
+        .myapps {
+          height: 150px;
+          width: 250px;
         }
       }
     }
