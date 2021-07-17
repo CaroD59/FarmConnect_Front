@@ -20,31 +20,33 @@ function MyApps() {
   return (
     <StyledMarketPlaceCatalog>
       {user ? (
-        <div className="AppGallery">
+        <>
           <h1 className="titre">Mes applications</h1>
-          {myApps.map((catalogue) => {
-            return (
-              <Link to={`/${catalogue.id}/${catalogue.name}`}>
-                <div className="card" aria-hidden="true" key={catalogue.id}>
-                  <div className="image">
-                    <img
-                      src={catalogue.banner}
-                      alt="banner"
-                      className="imageSize"
-                    />
-                  </div>
-                  <div className="infos">
-                    <div className="societe">
-                      <p className="name">{catalogue.name}</p>
-                      <p className="activite">{catalogue.provider_app}</p>
+          <div className="AppGallery">
+            {myApps.map((catalogue) => {
+              return (
+                <Link to={`/${catalogue.id}/${catalogue.name}`}>
+                  <div className="card" aria-hidden="true" key={catalogue.id}>
+                    <div className="image">
+                      <img
+                        src={catalogue.banner}
+                        alt="banner"
+                        className="imageSize"
+                      />
                     </div>
-                    <div className="button">Infos</div>
+                    <div className="infos">
+                      <div className="societe">
+                        <p className="name">{catalogue.name}</p>
+                        <p className="activite">{catalogue.provider_app}</p>
+                      </div>
+                      <div className="button">Infos</div>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
+                </Link>
+              );
+            })}
+          </div>
+        </>
       ) : (
         <div className="userOff">
           <div className="withoutUser">
