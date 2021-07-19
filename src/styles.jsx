@@ -4,7 +4,7 @@ const StyledApp = styled.div`
   .App {
     padding-top: 65px;
     main {
-      min-height: 72vh;
+      min-height: 75vh;
       background-color: rgba(218, 218, 218, 0.25);
     }
   }

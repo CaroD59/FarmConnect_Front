@@ -8,7 +8,7 @@ const StyledHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 10vh;
+    height: 80px;
     background-color: #ffff;
     border-bottom: rgb(247, 143, 33, 0.75) 1px solid;
     box-shadow: 0px 10px 10px rgba(218, 218, 218, 0.25);

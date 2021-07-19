@@ -17,8 +17,8 @@ export default function GeneralCatalogue() {
       <div className="AppGallery">
         {generalCatalogue.map((catalogue) => {
           return (
-            <Link to={`/${catalogue.id}/${catalogue.name}`}>
-              <div className="card" aria-hidden="true" key={catalogue.id}>
+            <Link to={`/${catalogue.id}/${catalogue.name}`} key={catalogue.id}>
+              <div className="card" aria-hidden="true">
                 <div className="image">
                   <img
                     src={catalogue.banner}
