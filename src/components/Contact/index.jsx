@@ -38,97 +38,90 @@ export default function ContactForm() {
   return (
     <StyledContact id="Contact">
       <div className="ContactPage">
-        <div className="form">
-          <img src="./img/FC.png" alt="" className="FarmConnectLogo" />
-          <form onSubmit={handleSubmit}>
-            <div className="pContact">
-              <p>Formulaire de contact</p>
-            </div>
-            <div className="form-inner">
+        <form onSubmit={handleSubmit}>
+          <h1 className="contactTitle">Formulaire de contact</h1>
+          <div className="form-inner">
+            <div className="form-groupe">
+              <input
+                type="text"
+                id="firstname"
+                placeholder="Prénom"
+                name="firstName"
+                value={details.firstName}
+                onChange={handleChange}
+                className="ContactInput"
+                required
+              />
               <div className="form-groupe">
                 <input
                   type="text"
-                  id="firstname"
-                  placeholder="Prénom"
-                  name="firstName"
-                  value={details.firstName}
+                  id="lastname"
+                  placeholder="Nom"
+                  name="lastName"
+                  value={details.lastName}
                   onChange={handleChange}
                   className="ContactInput"
                   required
                 />
-                <div className="form-groupe">
-                  <input
-                    type="text"
-                    id="lastname"
-                    placeholder="Nom"
-                    name="lastName"
-                    value={details.lastName}
-                    onChange={handleChange}
-                    className="ContactInput"
-                    required
-                  />
-                </div>
-                <div className="form-groupe">
-                  <input
-                    type="text"
-                    id="phoneNumber"
-                    placeholder="Numéro de téléphone"
-                    name="phoneNumber"
-                    value={details.phoneNumber}
-                    onChange={handleChange}
-                    className="ContactInput"
-                    required
-                  />
-                </div>
-                <div className="form-groupe">
-                  <input
-                    type="text"
-                    id="email"
-                    placeholder="E-mail"
-                    name="email"
-                    value={details.email}
-                    onChange={handleChange}
-                    className="ContactInput"
-                    required
-                  />
-                </div>
               </div>
-              <div className="secondBloc">
-                <div className="form-groupe">
-                  <textarea
-                    type="text"
-                    id="message"
-                    placeholder="Ecrivez votre message"
-                    name="message"
-                    value={details.message}
-                    onChange={handleChange}
-                    className="ContactMessage"
-                    required
-                  />
-                </div>
+              <div className="form-groupe">
+                <input
+                  type="text"
+                  id="phoneNumber"
+                  placeholder="Téléphone"
+                  name="phoneNumber"
+                  value={details.phoneNumber}
+                  onChange={handleChange}
+                  className="ContactInput"
+                  required
+                />
               </div>
-              <div className="RGPD">
-                <div>
-                  <input type="checkbox" required />
-                </div>
-                <div className="FarmConnectInfos">
-                  <p>
-                    J&apos;accepte de partager mes informations à FarmConnect
-                  </p>
-                </div>
-              </div>
-              <div className="Button">
-                <button
-                  type="submit"
-                  className="buttonContact"
-                  disabled={handleSubmit}
-                >
-                  Envoyer
-                </button>
+              <div className="form-groupe">
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Mail"
+                  name="email"
+                  value={details.email}
+                  onChange={handleChange}
+                  className="ContactInput"
+                  required
+                />
               </div>
             </div>
-          </form>
-        </div>
+            <div className="secondBloc">
+              <div className="form-groupe">
+                <textarea
+                  type="text"
+                  id="message"
+                  placeholder="Ecrivez votre message..."
+                  name="message"
+                  value={details.message}
+                  onChange={handleChange}
+                  className="ContactMessage"
+                  required
+                />
+              </div>
+            </div>
+            <div className="RGPD">
+              <div>
+                <input type="checkbox" required />
+              </div>
+              <div className="FarmConnectInfos">
+                <p>J&apos;accepte de partager mes informations à FarmConnect</p>
+              </div>
+            </div>
+            <div className="Button">
+              <button
+                type="submit"
+                className="buttonContact"
+                disabled={handleSubmit}
+              >
+                Envoyer
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </StyledContact>
   );

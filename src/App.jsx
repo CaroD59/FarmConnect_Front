@@ -56,9 +56,9 @@ function App() {
               <Route path="/legalnotice" component={LegalNotice} />
               <Route path="/updateprofile" component={UpdateProfile} />
             </Switch>
-            <Footer />
-            <Header />
           </main>
+          <Footer />
+          <Header />
         </User.Provider>
       </div>
     </StyledApp>

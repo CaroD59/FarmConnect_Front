@@ -1,106 +1,81 @@
 import styled from 'styled-components';
 
 const StyledContact = styled.div`
+  font-family: 'roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .ContactPage {
-    background-image: url(./img/welcomefont.png);
-    background-size: cover;
-    width: 100vw;
-    height: 780px;
-    .form {
-      background-color: #fff;
-      margin: 0;
-      border-radius: 20px;
-      width: 450px;
-      height: 690px;
-      display: block;
-      margin: auto;
-      position: relative;
-      top: 50px;
-      background-color: white;
-      margin-bottom: 150px;
-
-      .FarmConnectLogo {
-        width: 300px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    box-shadow: -1px -1px 21px 1px rgba(70, 70, 70, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffff;
+    .contactTitle {
+      color: #223594;
+      font-size: 44px;
+      font-weight: 300;
+      padding-bottom: 20px;
+    }
+    .form-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .form-groupe {
       }
-      .pContact {
-        margin-top: 20px;
-        color: #223594;
+      .ContactInput {
+        height: 30px;
+        width: 400px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        outline-color: rgba(218, 218, 218, 0.25);
+        :focus {
+          outline-color: rgb(247, 143, 33, 0.75);
+        }
+      }
+      .ContactMessage {
+        height: 200px;
+        width: 400px;
         font-family: 'roboto', sans-serif;
-        font-weight: bold;
-        line-height: 0%;
-        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-top: 10px;
+        outline-color: rgba(218, 218, 218, 0.25);
+        outline-width: 1px;
+        :focus {
+          outline-color: rgb(247, 143, 33, 0.75);
+        }
       }
-      .form-inner {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .form-groupe {
-          .ContactInput {
-            border: none;
-            background-color: #ebecf0;
-            font-family: 'roboto', sans-serif;
-            letter-spacing: -0.2px;
-            font-size: 15px;
-            width: 350px;
-            height: 45px;
-            opacity: 0.5;
-          }
-          .ContactMessage {
-            border: none;
-            background-color: #ebecf0;
-            font-family: 'roboto', sans-serif;
-            letter-spacing: -0.2px;
-            font-size: 15px;
-            width: 350px;
-            height: 100px;
-            opacity: 0.5;
-          }
-
-          .ContactInput:focus,
-          .ContactInput:hover {
-            outline: none;
-          }
-          .ContactMessage:focus,
-          .ContactMessage:hover {
-            outline: none;
-          }
-
-          ::placeholder {
-            opacity: 1;
-          }
-        }
-        .RGPD {
-          padding-top: 10px;
-          display: flex;
-          align-items: center;
-          .FarmConnectInfos {
-            color: #223594;
-            font-family: 'roboto', sans-serif;
-            font-size: 12px;
-          }
-        }
-        .Button {
-          button {
-            margin-top: 10px;
-            background-color: #f78f21;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-weight: bold;
-            width: 350px;
-            height: 45px;
-          }
-
-          button:hover,
-          button:focus {
-            cursor: pointer;
-          }
-        }
+    }
+    .secondBloc {
+    }
+    .RGPD {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      .FarmConnectInfos {
+        margin: auto;
+        font-size: 15px;
+        color: rgba(70, 70, 70, 1);
+      }
+    }
+    .Button {
+      margin: auto;
+      .buttonContact {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #f78f21;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        width: 400px;
+        height: 45px;
       }
     }
   }
