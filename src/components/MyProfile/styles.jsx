@@ -2,86 +2,65 @@ import styled from 'styled-components';
 
 const StyledMyProfile = styled.section`
   .myProfile {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'roboto', sans-serif;
-    .welcomeProfil {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    h1 {
       color: #223594;
-      font-size: 44px;
-      font-weight: 300;
-      padding-top: 30px;
-      margin: 20px;
+      font-family: 'roboto', sans-serif;
+      font-size: 40px;
     }
-    .profil {
+    .infos {
+      margin-top: 100px;
       display: flex;
-      height: 350px;
-      .infos {
-        height: 300px;
+      justify-content: space-around;
+      .containers {
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
         display: flex;
-        width: 100%;
-        justify-content: center;
-        .containers {
-          padding: 5px;
-          margin: 20px;
-          width: 25vw;
-          height: 50vh;
-          border-radius: 8px;
-          background-color: #ffff;
-          box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
-          .title {
-            color: #223594;
-          }
-          .picto {
+        flex-direction: column;
+        padding: 30px;
+        background-color: white;
+        width: 350px;
+        .card {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 300px;
+          label {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            width: 100%;
+            input {
+              width: 70%;
+            }
+          }
+        }
+        h3 {
+          font-weight: bold;
+          font-family: 'roboto', sans-serif;
+        }
+        .picto {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding-top: 55px;
+          height: 200px;
+          img {
+            margin: 5px;
+            box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
             align-items: center;
-            padding-top: 55px;
-            height: 200px;
-            .pic {
-              margin: 5px;
-              width: 70px;
-              height: 70px;
-              border-radius: 100%;
-              box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border: 2px solid rgba(0, 0, 0, 0.1);
-            }
-            .pic:hover{
-              border: 2px solid #f78f21;
-              transition: 100ms;
-            }
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
           }
-          .cardName {
-            font-size: 20px;
-            padding: 15px;
-            margin: auto;
-            font-weight: normal;
-          }
-          .cardExploitation {
-            color: black;
-            margin: auto;
-          }
-          .card {
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding-top: 20px;
-              li {
-                list-style: none;
-                display: flex;
-                font-size: 15px;
-                h4 {
-                  padding-left: 40px;
-                  font-weight: bold;
-                }
-              }
-            }
+          img:hover {
+            border: 2px solid #f78f21;
+            transition: 100ms;
           }
         }
       }
