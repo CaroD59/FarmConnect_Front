@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import StyledMarketPlaceCatalog from '../MarketPlaceCatalog/styles';
+import StyledMyApps from './styles';
 import User from '../../contexts/User';
 
 function MyApps() {
@@ -18,7 +18,7 @@ function MyApps() {
   }, []);
 
   return (
-    <StyledMarketPlaceCatalog>
+    <StyledMyApps>
       {user ? (
         <>
           <h1 className="titre">Mes applications</h1>
@@ -57,7 +57,7 @@ function MyApps() {
           </div>
         </div>
       )}
-    </StyledMarketPlaceCatalog>
+    </StyledMyApps>
   );
 }
 
