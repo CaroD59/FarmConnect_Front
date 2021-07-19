@@ -8,18 +8,21 @@ function Cockpit() {
   const [completed, setCompleted] = useState(true);
   const { user } = useContext(User);
   const [myApps, setMyApps] = useState([]);
+
   useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
-      .then(({ data }) => {
-        if (!data.country || !data.zipcode || !data.city || !data.mobile)
-          setCompleted(false);
-      });
-    axios
-      .get(`${process.env.REACT_APP_API_URL}/appfav/${user.id}`)
-      .then(({ data }) => {
-        setMyApps(data);
-      });
+    if (user !== null) {
+      axios
+        .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
+        .then(({ data }) => {
+          if (!data.country || !data.zipcode || !data.city || !data.mobile)
+            setCompleted(false);
+        });
+      axios
+        .get(`${process.env.REACT_APP_API_URL}/appfav/${user.id}`)
+        .then(({ data }) => {
+          setMyApps(data);
+        });
+    }
   }, []);
 
   return (
