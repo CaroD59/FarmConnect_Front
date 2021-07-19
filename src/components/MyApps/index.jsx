@@ -50,9 +50,9 @@ function MyApps() {
       ) : (
         <div className="userOff">
           <div className="withoutUser">
-            <h2 className="titleProfile">Vous n&apos;êtes pas connecté</h2>
+            <h2 className="titleProfile">Vous n&apos;êtes pas connecté(e).</h2>
             <Link to="/" className="buttonProfil">
-              se connecter
+              Me connecter
             </Link>
           </div>
         </div>
