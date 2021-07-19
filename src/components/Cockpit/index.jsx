@@ -9,8 +9,8 @@ function Cockpit() {
   const { user } = useContext(User);
   const [myApps, setMyApps] = useState([]);
 
-  if (user !== null) {
-    useEffect(() => {
+  useEffect(() => {
+    if (user !== null) {
       axios
         .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
         .then(({ data }) => {
@@ -22,8 +22,8 @@ function Cockpit() {
         .then(({ data }) => {
           setMyApps(data);
         });
-    }, []);
-  }
+    }
+  }, []);
 
   return (
     <StyledCockpit>

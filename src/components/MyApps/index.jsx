@@ -7,15 +7,15 @@ import User from '../../contexts/User';
 function MyApps() {
   const [myApps, setMyApps] = useState([]);
   const { user } = useContext(User);
-  if (user !== null) {
-    useEffect(() => {
+  useEffect(() => {
+    if (user !== null) {
       axios
         .get(`${process.env.REACT_APP_API_URL}/appfav/${user.id}`)
         .then(({ data }) => {
           setMyApps(data);
         });
-    }, []);
-  }
+    }
+  }, []);
 
   return (
     <StyledMarketPlaceCatalog>

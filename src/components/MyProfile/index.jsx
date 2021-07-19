@@ -9,15 +9,15 @@ function MyProfile() {
   const { user } = useContext(User);
   const history = useHistory();
 
-  if (user !== null) {
-    useEffect(() => {
+  useEffect(() => {
+    if (user !== null) {
       axios
         .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
         .then(({ data }) => {
           setInfos(data);
         });
-    }, []);
-  }
+    }
+  }, []);
   const submitHandler = () => {
     history.push(`/updateprofile`);
   };
@@ -85,32 +85,18 @@ function MyProfile() {
                     <img
                       src="https://img.icons8.com/cotton/452/grape.png"
                       alt=""
-                      style={{
-                        width: '60px',
-                        height: '60px',
-                      }}
                     />
                   </div>
                   <div className="pic">
                     <img
                       src="https://static.vecteezy.com/ti/vecteur-libre/p1/2136060-feuille-logo-bio-label-eco-icon-vector-isolated-background-gratuit-vectoriel.jpg"
                       alt=""
-                      style={{
-                        width: '60px',
-                        height: '60px',
-                        borderRadius: '100%',
-                      }}
                     />
                   </div>
                   <div className="pic">
                     <img
                       src="https://us.123rf.com/450wm/dstarky/dstarky1702/dstarky170200652/71441287-icône-de-vache-ou-d-un-logo-dans-le-style-de-ligne-moderne-haute-qualité-contour-noir-pictogramme-pour.jpg?ver=6"
                       alt=""
-                      style={{
-                        width: '70px',
-                        height: '70px',
-                        borderRadius: '100%',
-                      }}
                     />
                   </div>
                 </div>
