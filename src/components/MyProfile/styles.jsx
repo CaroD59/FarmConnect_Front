@@ -34,6 +34,21 @@ const StyledMyProfile = styled.section`
           cursor: pointer;
         }
       }
+      .cardCompany {
+        margin: 30px;
+        list-style: none;
+        border: solid 1px;
+        border-color: blue;
+        border-radius: 8px;
+        .titleCompany {
+          display: flex;
+          justify-content: space-around;
+        }
+        .cityZip {
+          margin-left: 10px;
+          display: flex;
+        }
+      }
       .picto {
         display: flex;
         justify-content: space-around;
@@ -68,23 +83,10 @@ const StyledMyProfile = styled.section`
         font-weight: normal;
       }
       .addExploit {
-        width: 100vw;
-        height: 20vh;
-        padding-top: 5vh;
         display: flex;
-        align-items: center;
-        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
         font-family: 'roboto', sans-serif;
-
-        flex-direction: column;
-        width: 25vw;
-        height: 40vh;
-
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 5px;
-        background-color: #ffff;
-        color: #3a52be;
         .buttonaddExploit {
           display: flex;
           justify-content: center;

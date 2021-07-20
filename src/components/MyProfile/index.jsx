@@ -8,7 +8,7 @@ function MyProfile() {
   const [infos, setInfos] = useState([]);
   const { user } = useContext(User);
   const [isEdit, setIsEdit] = useState(false);
-  // const [setExloitUser] = useState([]);
+  const [exploitUser, setExloitUser] = useState([]);
 
   useEffect(() => {
     if (user !== null) {
@@ -26,13 +26,16 @@ function MyProfile() {
     }
     setIsEdit(!isEdit);
   };
-  /*
+
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_API_URL}/apps`).then(({ data }) => {
-      setExloitUser(data);
-    });
+    axios
+      .get(`${process.env.REACT_APP_API_URL}/exploit/linkuser/${user.id}`)
+      .then(({ data }) => {
+        setExloitUser(data);
+        console.log(exploitUser);
+      });
   }, []);
-*/
+
   return (
     <StyledMyProfile>
       {user ? (
@@ -154,6 +157,22 @@ function MyProfile() {
               <div className="title">
                 <h3 className="cardName">MES EXPLOITATIONS</h3>
               </div>
+              {exploitUser.map((exploit) => {
+                return (
+                  <div className="cardCompany">
+                    <div className="titleCompany">
+                      <li>{exploit.companyName}</li>
+                      <li>IDNAT : {exploit.companyNationalID}</li>
+                    </div>
+                    <li>{exploit.address}</li>
+                    <div className="cityZip">
+                      <li>{exploit.zipCode}</li>
+                      <li>{exploit.city}</li>
+                    </div>
+                    <li>{exploit.country}</li>
+                  </div>
+                );
+              })}
               <div className="addExploit">
                 <Link to="/addExploitation" className="buttonaddExploit">
                   ajouter exploitation
