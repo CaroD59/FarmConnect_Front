@@ -8,6 +8,7 @@ function MyProfile() {
   const [infos, setInfos] = useState([]);
   const { user } = useContext(User);
   const [isEdit, setIsEdit] = useState(false);
+  // const [setExloitUser] = useState([]);
 
   useEffect(() => {
     if (user !== null) {
@@ -25,7 +26,13 @@ function MyProfile() {
     }
     setIsEdit(!isEdit);
   };
-
+  /*
+  useEffect(() => {
+    axios.get(`${process.env.REACT_APP_API_URL}/apps`).then(({ data }) => {
+      setExloitUser(data);
+    });
+  }, []);
+*/
   return (
     <StyledMyProfile>
       {user ? (
@@ -145,9 +152,13 @@ function MyProfile() {
             </div>
             <div className="containers">
               <div className="title">
-                <h3 className="cardName">Mon exploitation</h3>
+                <h3 className="cardName">MES EXPLOITATIONS</h3>
               </div>
-              <p className="cardExploitation">Bientôt disponible</p>
+              <div className="addExploit">
+                <Link to="/addExploitation" className="buttonaddExploit">
+                  ajouter exploitation
+                </Link>
+              </div>
             </div>
             <div className="containers">
               <div className="title">
