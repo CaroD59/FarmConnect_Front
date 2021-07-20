@@ -5,10 +5,12 @@ const StyledMyProfile = styled.section`
     color: #223594;
     font-size: 44px;
     font-weight: 300;
-    padding-top: 30px;
-    margin: 20px;
+    padding-top: 40px;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     text-align: center;
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
   }
   .myProfile {
     justify-content: center;
@@ -21,7 +23,7 @@ const StyledMyProfile = styled.section`
       margin: 20px;
       width: 450px;
       min-width: 20vw;
-      height: 50vh;
+      height: 390px;
       border-radius: 8px;
       background-color: #ffff;
       box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
@@ -32,6 +34,9 @@ const StyledMyProfile = styled.section`
           background-color: transparent;
           border: none;
           cursor: pointer;
+          .img {
+            width: 30px;
+          }
         }
       }
       .picto {
@@ -80,14 +85,40 @@ const StyledMyProfile = styled.section`
           flex-direction: column;
           justify-content: space-around;
           padding-top: 20px;
+          .idUser {
+            padding-bottom: 20px;
+            p {
+              font-weight: bold;
+            }
+          }
+          .noneEdit2 {
+            padding-bottom: 5px;
+          }
+          .edit1 {
+            margin-top: 10px;
+          }
           li {
             list-style: none;
             display: flex;
             justify-content: space-between;
-
             font-size: 15px;
-            h4 {
-              font-weight: bold;
+            height: 5vh;
+
+            .RegistrationInput {
+              border: none;
+              padding-right: 10px;
+              font-family: 'roboto', sans-serif;
+              font-size: 15px;
+              width: 50%;
+              height: 25px;
+              opacity: 10;
+              border: 1px solid grey;
+              box-shadow: grey;
+              text-align: right;
+              border-radius: 5px;
+              padding-left: 10px;
+              margin-bottom: 20px;
+              outline-color: rgba(153, 145, 145, 0.25);
             }
           }
         }
@@ -96,31 +127,31 @@ const StyledMyProfile = styled.section`
   }
 
   .userOff {
-    width: 100vw;
-    height: 20vh;
-    padding-top: 5vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-family: 'roboto', sans-serif;
     .withoutUser {
+      margin-top: 80px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      height: 20vh;
       flex-direction: column;
       width: 25vw;
-      height: 40vh;
       display: flex;
       align-items: center;
       justify-content: space-around;
       border-radius: 5px;
       background-color: #ffff;
-      color: #3a52be;
+      color: #223594;
+      box-shadow: -1px -1px 21px 1px rgba(70, 70, 70, 0.15);
       .buttonProfil {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 200px;
         height: 50px;
-        margin-top: 10px;
-        margin-bottom: 15px;
+        margin-top: 25px;
         color: #ffff;
         background-color: rgb(247, 143, 33, 0.75);
         border: solid 1px rgb(247, 143, 33, 0.75);

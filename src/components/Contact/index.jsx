@@ -115,7 +115,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 className="buttonContact"
-                disabled={handleSubmit}
+                disabled={!handleSubmit}
               >
                 Envoyer
               </button>

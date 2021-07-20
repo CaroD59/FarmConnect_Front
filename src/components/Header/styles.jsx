@@ -11,7 +11,7 @@ const StyledHeader = styled.div`
     height: 80px;
     background-color: #ffff;
     border-bottom: rgb(247, 143, 33, 0.75) 1px solid;
-    box-shadow: 0px 10px 10px rgba(218, 218, 218, 0.25);
+    box-shadow: -1px -1px 21px 1px rgba(70, 70, 70, 0.15);
     .logoContainer {
       a {
       }

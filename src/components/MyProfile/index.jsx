@@ -52,39 +52,33 @@ function MyProfile() {
 
               <fieldset className="form" disabled={isEdit ? '' : 'disabled'}>
                 <ul className="card">
-                  <li>
+                  <li className="idUser">
                     <h4>Identifiant / Mail :</h4> <p>{infos.email} </p>
                   </li>
 
-                  <li>
+                  <li className="noneEdit1">
                     <h4>Nom : </h4>
                     <input
                       type="text"
                       name="firstname"
                       id="firstname"
                       placeholder="Prénom"
-                      onChange={(e) =>
-                        setInfos({ ...infos, firstname: e.target.value })
-                      }
                       value={infos.firstname}
                       className="RegistrationInput"
                     />
                   </li>
-                  <li>
+                  <li className="noneEdit2">
                     <h4>Prenom : </h4>
                     <input
                       type="text"
                       name="lastname"
                       id="lastname"
                       placeholder="Nom"
-                      onChange={(e) =>
-                        setInfos({ ...infos, lastname: e.target.value })
-                      }
                       value={infos.lastname}
                       className="RegistrationInput"
                     />
                   </li>
-                  <li>
+                  <li className="edit1">
                     <h4>Telephone : </h4>
                     <input
                       type="text"
@@ -98,7 +92,7 @@ function MyProfile() {
                       className="RegistrationInput"
                     />
                   </li>
-                  <li>
+                  <li className="edit">
                     <h4>Ville : </h4>
                     <input
                       type="text"
@@ -112,7 +106,7 @@ function MyProfile() {
                       className="RegistrationInput"
                     />
                   </li>
-                  <li>
+                  <li className="edit">
                     <h4>Code Postal : </h4>
                     <input
                       type="text"
@@ -126,7 +120,7 @@ function MyProfile() {
                       className="RegistrationInput"
                     />
                   </li>
-                  <li>
+                  <li className="edit">
                     <h4>Pays : </h4>
                     <input
                       type="text"
@@ -182,9 +176,9 @@ function MyProfile() {
       ) : (
         <div className="userOff">
           <div className="withoutUser">
-            <h2 className="titleProfile">Vous n&apos;êtes pas connecté</h2>
+            <h2 className="titleProfile">Vous n&apos;êtes pas connecté(e).</h2>
             <Link to="/" className="buttonProfil">
-              se connecter
+              Me connecter
             </Link>
           </div>
         </div>

@@ -2,34 +2,30 @@ import styled from 'styled-components';
 
 const LogForm = styled.div`
   .loginPage {
-    background-image: url(./img/welcomefont.png);
+    background-image: url(./img/champ1.png);
     background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 200px;
+    height: 100vh;
     width: 100vw;
-    height: 780px;
     .form {
-      background-color: #fff;
-      margin: 0;
-      border-radius: 20px;
+      border-radius: 5px;
       width: 450px;
-      height: 550px;
-      display: block;
       margin: auto;
-      position: relative;
-      top: 50px;
-      background-color: white;
-      margin-bottom: 150px;
+      margin-bottom: 80px;
+      padding-bottom: 30px;
+      background-color: #fff;
+      box-shadow: -1px -1px 21px 1px rgba(70, 70, 70, 0.15);
       .FarmConnectLogo {
         width: 300px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        margin: auto;
       }
       .pLogin {
         margin-top: 20px;
         color: #223594;
         font-family: 'roboto', sans-serif;
-        font-weight: bold;
-        line-height: 0%;
         text-align: center;
       }
       .form-inner {
@@ -42,18 +38,17 @@ const LogForm = styled.div`
           border: none;
           background-color: #ebecf0;
           font-family: 'roboto', sans-serif;
-          letter-spacing: -0.2px;
           font-size: 15px;
           width: 350px;
           height: 45px;
-          opacity: 0.5;
-        }
-        .LogInput:focus,
-        .LogInput:hover {
-          outline: none;
-        }
-        ::placeholder {
-          opacity: 1;
+          opacity: 0.75;
+          border-radius: 5px;
+          padding-left: 10px;
+          margin-bottom: 20px;
+          outline-color: rgba(218, 218, 218, 0.25);
+          :focus {
+            outline-color: rgb(247, 143, 33, 0.75);
+          }
         }
       }
       .BlocLoginSignIn {
@@ -77,6 +72,7 @@ const LogForm = styled.div`
         }
         .buttonLogin {
           margin-top: 10px;
+          margin-bottom: 10px;
           background-color: #f78f21;
           border: none;
           border-radius: 5px;
