@@ -9,14 +9,14 @@ const StyledApplicationPage = styled.div`
         width: 100%;
         margin-top: 10vh;
         border-radius: 5px;
-        box-shadow: 0px 0px 10px rgba(218, 218, 218, 0.5);
+        box-shadow: -1px -1px 21px 1px rgba(70, 70, 70, 0.15);
       }
     }
     .nameDesc {
       color: #223594;
       font-family: 'roboto', sans-serif;
       .description {
-        padding: 5%;
+        padding: 0px 60px 30px 60px;
       }
       .nameButton {
         width: 100%;
@@ -24,7 +24,7 @@ const StyledApplicationPage = styled.div`
         align-items: center;
         justify-content: space-between;
         .name {
-          padding: 3%;
+          padding: 30px;
           font-size: 3em;
         }
         .button {
