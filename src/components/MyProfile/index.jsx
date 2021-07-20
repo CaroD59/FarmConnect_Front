@@ -36,7 +36,7 @@ function MyProfile() {
           <div className="myProfile">
             <div className="containers">
               <div className="title">
-                <h3 className="cardName">Mes coordonnées</h3>
+                <h3 className="cardName">MES COORDONNEES </h3>
                 <button
                   className="btn-edit"
                   type="button"
@@ -57,29 +57,29 @@ function MyProfile() {
                   </li>
 
                   <li className="noneEdit1">
-                    <h4>Nom : </h4>
+                    <h4>NOM : </h4>
                     <input
                       type="text"
                       name="firstname"
                       id="firstname"
                       placeholder="Prénom"
-                      value={infos.firstname}
+                      value={infos.lastname}
                       className="RegistrationInput"
                     />
                   </li>
                   <li className="noneEdit2">
-                    <h4>Prenom : </h4>
+                    <h4>PRENON : </h4>
                     <input
                       type="text"
                       name="lastname"
                       id="lastname"
                       placeholder="Nom"
-                      value={infos.lastname}
+                      value={infos.firstname}
                       className="RegistrationInput"
                     />
                   </li>
                   <li className="edit1">
-                    <h4>Telephone : </h4>
+                    <h4>TELEPHONE : </h4>
                     <input
                       type="text"
                       name="mobile"
@@ -93,7 +93,7 @@ function MyProfile() {
                     />
                   </li>
                   <li className="edit">
-                    <h4>Ville : </h4>
+                    <h4>VILLE : </h4>
                     <input
                       type="text"
                       name="city"
@@ -107,7 +107,7 @@ function MyProfile() {
                     />
                   </li>
                   <li className="edit">
-                    <h4>Code Postal : </h4>
+                    <h4>CODE POSTALE : </h4>
                     <input
                       type="text"
                       name="zipcode"
@@ -121,7 +121,7 @@ function MyProfile() {
                     />
                   </li>
                   <li className="edit">
-                    <h4>Pays : </h4>
+                    <h4>PAYS : </h4>
                     <input
                       type="text"
                       name="country"
@@ -139,7 +139,9 @@ function MyProfile() {
             </div>
             <div className="containers">
               <div className="title">
-                <h3 className="cardName">Mon exploitation</h3>
+                <h3 className="cardName" id="expl">
+                  Mon exploitation
+                </h3>
               </div>
               <p className="cardExploitation">Bientôt disponible</p>
             </div>

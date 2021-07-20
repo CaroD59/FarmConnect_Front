@@ -27,9 +27,19 @@ const StyledMyProfile = styled.section`
       border-radius: 8px;
       background-color: #ffff;
       box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+      .cardExploitation {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .title {
         display: flex;
         color: #223594;
+
+        h3 {
+          width: 100%;
+        }
         .btn-edit {
           background-color: transparent;
           border: none;
@@ -91,12 +101,7 @@ const StyledMyProfile = styled.section`
               font-weight: bold;
             }
           }
-          .noneEdit2 {
-            padding-bottom: 5px;
-          }
-          .edit1 {
-            margin-top: 10px;
-          }
+
           li {
             list-style: none;
             display: flex;
