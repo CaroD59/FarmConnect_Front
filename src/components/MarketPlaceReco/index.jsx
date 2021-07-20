@@ -68,8 +68,8 @@ function MarketPlaceReco() {
         >
           {appli.map((app) => {
             return (
-              <div className="AppGallery">
-                <Link to={`/${app.id}/${app.name}`} key={app.id}>
+              <div className="AppGallery" key={app.id}>
+                <Link to={`/${app.id}/${app.name}`}>
                   <div className="card" aria-hidden="true">
                     <img src={app.logo} alt="banner" className="imageSize" />
                     <p className="name">{app.name}</p>

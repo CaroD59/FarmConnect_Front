@@ -18,11 +18,8 @@ export default function GeneralCatalogue() {
         <div className="AppGallery">
           {generalCatalogue.map((catalogue) => {
             return (
-              <div className="AppGallery">
-                <Link
-                  to={`/${catalogue.id}/${catalogue.name}`}
-                  key={catalogue.id}
-                >
+              <div className="AppGallery" key={catalogue.id}>
+                <Link to={`/${catalogue.id}/${catalogue.name}`}>
                   <div className="card" aria-hidden="true">
                     <img
                       src={catalogue.logo}
