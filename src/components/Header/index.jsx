@@ -35,6 +35,24 @@ function Header() {
           </div>
         </div>
       </nav>
+      <nav className="Burger">
+        <div className="PagesBurger">
+          <ul>
+            <li className="Cockpit">
+              <NavLink to="/cockpit">Cockpit</NavLink>
+            </li>
+            <li className="MyApps">
+              <NavLink to="/myapps">Mes Services</NavLink>
+            </li>
+            <li className="Marketplace">
+              <NavLink to="/apps">Marketplace</NavLink>
+            </li>
+            <li className="Contact">
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </StyledHeader>
   );
 }
