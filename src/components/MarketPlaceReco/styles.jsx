@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledMarketPlaceReco = styled.div`
   .RecoPage {
-    width: 90vw;
+    width: 80vw;
     font-family: 'roboto', sans-serif;
     padding-top: 80px;
     margin-bottom: 30px;
@@ -12,18 +12,18 @@ const StyledMarketPlaceReco = styled.div`
       font-size: 44px;
       font-weight: 300;
       padding-bottom: 20px;
+      padding-left: 30px;
     }
-    a {
-      text-decoration: none;
-      color: #223594;
-      .AppGallery {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-        margin-bottom: 30px;
-        margin-top: 10px;
-
+    .AppGallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      margin-bottom: 30px;
+      margin-top: 10px;
+      a {
+        text-decoration: none;
+        color: #223594;
         .card {
           overflow: hidden;
           cursor: pointer;
@@ -52,6 +52,7 @@ const StyledMarketPlaceReco = styled.div`
             background-color: #ffff;
             width: 100%;
             border-top: rgba(70, 70, 70, 0.15) solid 1px;
+            text-transform: uppercase;
           }
         }
       }

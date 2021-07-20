@@ -13,30 +13,29 @@ export default function GeneralCatalogue() {
   }, []);
   return (
     <StyledMarketPlaceCatalog>
-      <h1 className="titre">Catalogue</h1>
-      <div className="AppGallery">
-        {generalCatalogue.map((catalogue) => {
-          return (
-            <Link to={`/${catalogue.id}/${catalogue.name}`} key={catalogue.id}>
-              <div className="card" aria-hidden="true">
-                <div className="image">
-                  <img
-                    src={catalogue.banner}
-                    alt="banner"
-                    className="imageSize"
-                  />
-                </div>
-                <div className="infos">
-                  <div className="societe">
+      <div className="CataPage">
+        <h1 className="titre">Catalogue</h1>
+        <div className="AppGallery">
+          {generalCatalogue.map((catalogue) => {
+            return (
+              <div className="AppGallery">
+                <Link
+                  to={`/${catalogue.id}/${catalogue.name}`}
+                  key={catalogue.id}
+                >
+                  <div className="card" aria-hidden="true">
+                    <img
+                      src={catalogue.logo}
+                      alt="banner"
+                      className="imageSize"
+                    />
                     <p className="name">{catalogue.name}</p>
-                    <p className="activite">{catalogue.provider_app}</p>
                   </div>
-                  <div className="button">Infos</div>
-                </div>
+                </Link>
               </div>
-            </Link>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </StyledMarketPlaceCatalog>
   );
