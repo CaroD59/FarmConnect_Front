@@ -68,7 +68,7 @@ function MyProfile() {
                     />
                   </li>
                   <li className="noneEdit2">
-                    <h4>PRENON : </h4>
+                    <h4>PRENOM : </h4>
                     <input
                       type="text"
                       name="lastname"
