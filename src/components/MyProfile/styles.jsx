@@ -38,8 +38,12 @@ const StyledMyProfile = styled.section`
         margin: 30px;
         list-style: none;
         border: solid 1px;
-        border-color: blue;
+        border-color: #f78f21;
         border-radius: 8px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .titleCompany {
           display: flex;
           justify-content: space-around;

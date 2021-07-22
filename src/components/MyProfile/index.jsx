@@ -162,14 +162,7 @@ function MyProfile() {
                   <div className="cardCompany">
                     <div className="titleCompany">
                       <li>{exploit.companyName}</li>
-                      <li>IDNAT : {exploit.companyNationalID}</li>
                     </div>
-                    <li>{exploit.address}</li>
-                    <div className="cityZip">
-                      <li>{exploit.zipCode}</li>
-                      <li>{exploit.city}</li>
-                    </div>
-                    <li>{exploit.country}</li>
                   </div>
                 );
               })}
