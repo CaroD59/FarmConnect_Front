@@ -56,24 +56,30 @@ function MyProfile() {
                     <h4>Identifiant / Mail :</h4> <p>{infos.email} </p>
                   </li>
 
-                  <li className="noneEdit1">
+                  <li>
                     <h4>NOM : </h4>
                     <input
                       type="text"
                       name="firstname"
                       id="firstname"
                       placeholder="Prénom"
+                      onChange={(e) =>
+                        setInfos({ ...infos, lastname: e.target.value })
+                      }
                       value={infos.lastname}
                       className="RegistrationInput"
                     />
                   </li>
-                  <li className="noneEdit2">
+                  <li>
                     <h4>PRENOM : </h4>
                     <input
                       type="text"
                       name="lastname"
                       id="lastname"
                       placeholder="Nom"
+                      onChange={(e) =>
+                        setInfos({ ...infos, firstname: e.target.value })
+                      }
                       value={infos.firstname}
                       className="RegistrationInput"
                     />
