@@ -112,11 +112,7 @@ export default function ContactForm() {
               </div>
             </div>
             <div className="Button">
-              <button
-                type="submit"
-                className="buttonContact"
-                disabled={!handleSubmit}
-              >
+              <button type="submit" className="buttonContact">
                 Envoyer
               </button>
             </div>

@@ -88,8 +88,9 @@ function Cockpit() {
             <div className="beta">
               <p>Farm Connect est actuellement en version &quot;BETA&quot;.</p>
               <p>
-                N’hésitez pas à nous contacter pour nous dire ce que vous pensez
-                de l’application ou si vous avez des idées d&apos;amélioration.
+                N&apos;hésitez pas à nous contacter pour nous dire ce que vous
+                pensez de l&apos;application ou si vous avez des idées
+                d&apos;amélioration.
               </p>
               <Link to="/contact" className="contactButton">
                 Donner mon avis
