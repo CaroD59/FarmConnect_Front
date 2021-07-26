@@ -3,10 +3,11 @@ import { NavLink } from 'react-router-dom';
 import StyledHeader from './styles';
 
 function Header() {
-  const [burger, setBurger] = useState(true);
+  const [burger, setBurger] = useState(false);
   const handleClick = () => {
     setBurger(!burger);
   };
+
   return (
     <StyledHeader>
       <nav className="NavBar">

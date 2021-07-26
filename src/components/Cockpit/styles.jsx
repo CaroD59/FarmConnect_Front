@@ -152,21 +152,6 @@ const StyledCockpit = styled.div`
       }
     }
   }
-<<<<<<< HEAD
-  @media screen and (max-width: 768px) {
-    .container {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      align-items: center;
-      width: 80vw;
-      height: 300vh;
-      .profil {
-        height: 200px;
-      }
-      .myapps {
-        height: 200px;
-=======
   .userOff {
     display: flex;
     align-items: center;
@@ -200,7 +185,6 @@ const StyledCockpit = styled.div`
         cursor: pointer;
         font-size: 15px;
         text-decoration: none;
->>>>>>> 514b9340e97399e414802e6e4fbefc16088ac006
       }
     }
   }
