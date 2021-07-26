@@ -11,7 +11,7 @@ function MyProfile() {
   const [exploitUser, setExloitUser] = useState([]);
 
   useEffect(() => {
-    if (user !== null) {
+    if (user) {
       axios
         .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
         .then(({ data }) => {
@@ -28,12 +28,13 @@ function MyProfile() {
   };
 
   useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}/exploit/linkuser/${user.id}`)
-      .then(({ data }) => {
-        setExloitUser(data);
-        console.log(exploitUser);
-      });
+    if (user) {
+      axios
+        .get(`${process.env.REACT_APP_API_URL}/exploit/linkuser/${user.id}`)
+        .then(({ data }) => {
+          setExloitUser(data);
+        });
+    }
   }, []);
 
   return (
@@ -159,7 +160,7 @@ function MyProfile() {
               </div>
               {exploitUser.map((exploit) => {
                 return (
-                  <div className="cardCompany">
+                  <div className="cardCompany" key={exploit.id}>
                     <div className="titleCompany">
                       <li>{exploit.companyName}</li>
                     </div>
