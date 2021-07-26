@@ -10,7 +10,7 @@ function ApplicationPage() {
   const [isFav, setFav] = useState(false);
   const { applicationsId } = useParams();
   const { user } = useContext(User);
-  const usersId = user.id;
+  const usersId = user?.id;
 
   useEffect(() => {
     axios
@@ -57,13 +57,17 @@ function ApplicationPage() {
         <div className="nameDesc">
           <div className="nameButton">
             <h2 className="name">{application.name}</h2>
-            <button
-              type="button"
-              className={isFav ? 'buttonIsFav' : 'button'}
-              onClick={appHandlerAddApp}
-            >
-              {isFav ? 'Supprimer' : 'Ajouter'}
-            </button>
+            {user?.id ? (
+              <button
+                type="button"
+                className={isFav ? 'buttonIsFav' : 'button'}
+                onClick={appHandlerAddApp}
+              >
+                {isFav ? 'Supprimer' : 'Ajouter'}
+              </button>
+            ) : (
+              <></>
+            )}
           </div>
           <p className="description">{application.description}</p>
         </div>
