@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import StyledMarketPlaceCatalog from '../MarketPlaceCatalog/styles';
+import StyledMyApps from './styles';
 import User from '../../contexts/User';
 
 function MyApps() {
@@ -18,7 +18,7 @@ function MyApps() {
   }, []);
 
   return (
-    <StyledMarketPlaceCatalog>
+    <StyledMyApps>
       {user ? (
         <>
           <h1 className="titre">Mes applications</h1>
@@ -50,14 +50,14 @@ function MyApps() {
       ) : (
         <div className="userOff">
           <div className="withoutUser">
-            <h2 className="titleProfile">Vous n&apos;êtes pas connecté</h2>
+            <h2 className="titleProfile">Vous n&apos;êtes pas connecté(e).</h2>
             <Link to="/" className="buttonProfil">
-              se connecter
+              Me connecter
             </Link>
           </div>
         </div>
       )}
-    </StyledMarketPlaceCatalog>
+    </StyledMyApps>
   );
 }
 

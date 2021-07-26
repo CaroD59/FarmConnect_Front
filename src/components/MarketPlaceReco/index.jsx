@@ -15,14 +15,14 @@ function MarketPlaceReco() {
   }, []);
 
   return (
-    <div>
-      <StyledMarketPlaceReco>
+    <StyledMarketPlaceReco>
+      <div className="RecoPage">
         <h1 className="titre">Recommandations</h1>
         <Carousel
           additionalTransfrom={0}
-          arrows
+          arrows={false}
           autoPlay
-          autoPlaySpeed={3000}
+          autoPlaySpeed={5000}
           centerMode={false}
           className="Carousel"
           containerClass="container"
@@ -41,7 +41,7 @@ function MarketPlaceReco() {
                 max: 3000,
                 min: 1024,
               },
-              items: 4,
+              items: 3,
               partialVisibilityGutter: 40,
             },
             mobile: {
@@ -68,31 +68,19 @@ function MarketPlaceReco() {
         >
           {appli.map((app) => {
             return (
-              <Link to={`/${app.id}/${app.name}`} key={app.id}>
-                <div className="AppGallery">
+              <div className="AppGallery" key={app.id}>
+                <Link to={`/${app.id}/${app.name}`}>
                   <div className="card" aria-hidden="true">
-                    <div className="image">
-                      <img
-                        src={app.banner}
-                        alt="banner"
-                        className="imageSize"
-                      />
-                    </div>
-                    <div className="infos">
-                      <div className="societe">
-                        <p className="name">{app.name}</p>
-                        <p className="activite">{app.provider_app}</p>
-                      </div>
-                      <div className="button">Infos</div>
-                    </div>
+                    <img src={app.logo} alt="banner" className="imageSize" />
+                    <p className="name">{app.name}</p>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             );
           })}
         </Carousel>
-      </StyledMarketPlaceReco>
-    </div>
+      </div>
+    </StyledMarketPlaceReco>
   );
 }
 

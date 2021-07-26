@@ -12,7 +12,7 @@ const StyledContact = styled.div`
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
-    padding: 20px;
+    padding: 50px;
     border-radius: 5px;
     background-color: #ffff;
     .contactTitle {
@@ -32,6 +32,10 @@ const StyledContact = styled.div`
         width: 400px;
         margin-bottom: 20px;
         padding-left: 10px;
+        border: none;
+        opacity: 0.75;
+        border-radius: 5px;
+        background-color: #ebecf0;
         outline-color: rgba(218, 218, 218, 0.25);
         :focus {
           outline-color: rgb(247, 143, 33, 0.75);
@@ -46,6 +50,10 @@ const StyledContact = styled.div`
         padding-top: 10px;
         outline-color: rgba(218, 218, 218, 0.25);
         outline-width: 1px;
+        border: none;
+        opacity: 0.75;
+        border-radius: 5px;
+        background-color: #ebecf0;
         :focus {
           outline-color: rgb(247, 143, 33, 0.75);
         }
@@ -76,6 +84,7 @@ const StyledContact = styled.div`
         font-weight: bold;
         width: 400px;
         height: 45px;
+        cursor: pointer;
       }
     }
   }

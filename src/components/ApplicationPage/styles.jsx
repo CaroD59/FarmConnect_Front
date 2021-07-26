@@ -7,7 +7,7 @@ const StyledApplicationPage = styled.div`
     .banner {
       .banner {
         width: 100%;
-        margin-top: 15vh;
+        margin-top: 10vh;
         border-radius: 5px;
         box-shadow: 0px 0px 10px rgba(218, 218, 218, 0.5);
       }
@@ -52,7 +52,6 @@ const StyledApplicationPage = styled.div`
     .buttonlink {
       display: flex;
       justify-content: center;
-      margin-bottom: 20px;
       .linktoapp {
         width: 200px;
         height: 40px;
@@ -60,6 +59,7 @@ const StyledApplicationPage = styled.div`
         background-color: rgb(247, 143, 33, 0.75);
         border: rgb(247, 143, 33, 0.75);
         border-radius: 20px;
+        margin-bottom: 50px;
         a {
           color: #ffff;
           text-decoration: none;
