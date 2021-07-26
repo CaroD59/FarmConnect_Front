@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledMarketPlaceCatalog = styled.div`
   .CataPage {
-    width: 80vw;
+    width: 90vw;
     font-family: 'roboto', sans-serif;
     padding-top: 80px;
     padding-bottom: 50px;
@@ -16,7 +16,7 @@ const StyledMarketPlaceCatalog = styled.div`
     }
     .AppGallery {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       flex-flow: row wrap;
       margin-bottom: 30px;

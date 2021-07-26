@@ -20,7 +20,7 @@ function MyApps() {
   return (
     <StyledMyApps>
       {user ? (
-        <>
+        <div className="MyAppsPage">
           <h1 className="titre">Mes applications</h1>
           <div className="AppGallery">
             {myApps.map((catalogue) => {
@@ -29,7 +29,7 @@ function MyApps() {
                   <div className="card" aria-hidden="true" key={catalogue.id}>
                     <div className="image">
                       <img
-                        src={catalogue.banner}
+                        src={catalogue.logo}
                         alt="banner"
                         className="imageSize"
                       />
@@ -39,14 +39,13 @@ function MyApps() {
                         <p className="name">{catalogue.name}</p>
                         <p className="activite">{catalogue.provider_app}</p>
                       </div>
-                      <div className="button">Infos</div>
                     </div>
                   </div>
                 </Link>
               );
             })}
           </div>
-        </>
+        </div>
       ) : (
         <div className="userOff">
           <div className="withoutUser">
