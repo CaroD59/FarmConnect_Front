@@ -137,7 +137,7 @@ function MyProfile() {
                   className="buttonEdit"
                   onClick={editMyprofil}
                 >
-                  {!isEdit ? 'éditer' : 'enregistrer'}
+                  {!isEdit ? 'Editer' : 'Enregistrer'}
                 </button>
               </div>
             </div>
