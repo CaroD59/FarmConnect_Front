@@ -104,7 +104,7 @@ const StyledHeader = styled.div`
             font-family: 'roboto', sans-serif;
             text-decoration: none;
             font-size: 15px;
-            color: rgba(70, 70, 70, 1);
+            color: rgb(247, 143, 33, 0.75);
             border-bottom: transparent solid 2px;
           }
         }
@@ -130,7 +130,7 @@ const StyledHeader = styled.div`
             font-family: 'roboto', sans-serif;
             text-decoration: none;
             font-size: 15px;
-            color: rgba(70, 70, 70, 1);
+            color: rgb(247, 143, 33, 0.75);
             border-bottom: transparent solid 2px;
             :hover {
               padding: 10px;
