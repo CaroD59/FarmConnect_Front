@@ -48,17 +48,6 @@ function MyProfile() {
             <div className="containers">
               <div className="title">
                 <h3 className="cardName">Mes coordonnées</h3>
-                <button
-                  className="btn-edit"
-                  type="button"
-                  onClick={editMyprofil}
-                >
-                  <img
-                    src={!isEdit ? '/img/pencilLogo.png' : '/img/saveLogo.png'}
-                    alt=""
-                    className="img"
-                  />
-                </button>
               </div>
 
               <fieldset className="form" disabled={isEdit ? '' : 'disabled'}>
@@ -153,6 +142,15 @@ function MyProfile() {
                   </li>
                 </ul>
               </fieldset>
+              <div className="buttonContainer">
+                <button
+                  type="submit"
+                  className="buttonEdit"
+                  onClick={editMyprofil}
+                >
+                  {!isEdit ? 'Editer' : 'Enregistrer'}
+                </button>
+              </div>
             </div>
             <div className="containers">
               <div className="title">
