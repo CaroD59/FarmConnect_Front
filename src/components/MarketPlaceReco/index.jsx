@@ -20,7 +20,7 @@ function MarketPlaceReco() {
         <h1 className="titre">Recommandations</h1>
         <Carousel
           additionalTransfrom={0}
-          arrows={false}
+          arrows
           autoPlay
           autoPlaySpeed={5000}
           centerMode={false}
