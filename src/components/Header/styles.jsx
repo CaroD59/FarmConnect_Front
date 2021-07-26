@@ -18,14 +18,8 @@ const StyledHeader = styled.div`
     background-color: #ffff;
     border-bottom: rgb(247, 143, 33, 0.75) 1px solid;
     box-shadow: -1px -1px 21px 1px rgba(70, 70, 70, 0.15);
-<<<<<<< HEAD
     .btn-navigation {
       display: none;
-=======
-    .logoContainer {
-      a {
-      }
->>>>>>> dev
     }
     .container {
       display: flex;
