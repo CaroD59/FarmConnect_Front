@@ -1,10 +1,12 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import StyledHeader from './styles';
 
 function Header() {
-  const handleClick = true;
-  const burger = true;
+  const [burger, setBurger] = useState(true);
+  const handleClick = () => {
+    setBurger(!burger);
+  };
   return (
     <StyledHeader>
       <nav className="NavBar">
@@ -65,12 +67,12 @@ function Header() {
                 <p>Contact</p>
               </NavLink>
             </li>
+            <li className="Profile">
+              <NavLink to="/myprofile">
+                <p> My profile </p>
+              </NavLink>
+            </li>
           </ul>
-          <div className="logoProfile">
-            <NavLink to="/myprofile">
-              <img src="/img/Vector.png" alt="logoProfile" />
-            </NavLink>
-          </div>
         </div>
       </div>
     </StyledHeader>
