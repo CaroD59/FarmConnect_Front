@@ -6,7 +6,6 @@ const StyledMyProfile = styled.section`
     font-size: 44px;
     font-weight: 300;
     padding-top: 30px;
-    margin: 20px;
     padding-bottom: 20px;
     text-align: center;
   }
@@ -90,6 +89,21 @@ const StyledMyProfile = styled.section`
               font-weight: bold;
             }
           }
+        }
+      }
+      .buttonContainer {
+        display: flex;
+        justify-content: center;
+        .buttonEdit {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          background-color: #f78f21;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          font-weight: bold;
+          width: 200px;
+          height: 45px;
         }
       }
     }
