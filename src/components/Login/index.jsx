@@ -35,7 +35,7 @@ export default function LoginForm() {
           <img src="./img/FC.png" alt="" className="FarmConnectLogo" />
           <form onSubmit={submitHandler}>
             <div className="pLogin">
-              <p>Connectez-vous pour accéder</p>
+              <p>Connectez-vous pour accéder à Farm Connect</p>
             </div>
             <div className="form-inner">
               {error !== '' ? <div className="error">{error}</div> : ''}
@@ -44,7 +44,7 @@ export default function LoginForm() {
                   type="text"
                   name="E-mail"
                   id="E-mail"
-                  placeholder="E-mail"
+                  placeholder="Mail"
                   onChange={(e) =>
                     setDetails({ ...details, email: e.target.value })
                   }
