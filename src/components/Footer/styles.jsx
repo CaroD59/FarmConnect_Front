@@ -28,6 +28,9 @@ const StyledFooter = styled.div`
           a {
             text-decoration: none;
             color: rgba(70, 70, 70, 1);
+            :hover {
+              color: rgb(247, 143, 33, 0.75);
+            }
           }
         }
       }
@@ -42,6 +45,9 @@ const StyledFooter = styled.div`
           a {
             text-decoration: none;
             color: rgba(70, 70, 70, 1);
+            :hover {
+              color: rgb(247, 143, 33, 0.75);
+            }
           }
         }
       }
