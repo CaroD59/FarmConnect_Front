@@ -16,7 +16,7 @@ const StyledMarketPlaceCatalog = styled.div`
     }
     .AppGallery {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       flex-flow: row wrap;
       margin-bottom: 30px;
