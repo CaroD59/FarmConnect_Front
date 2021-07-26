@@ -59,6 +59,7 @@ const StyledHeader = styled.div`
     }
   @media screen and (max-width: 920px) {
     .NavBar {
+      width: 100%;
       display: flex;
       align-items: center;
       .btn-navigation {
@@ -104,20 +105,20 @@ const StyledHeader = styled.div`
           height: 100%;
      
           .logoProfile {
-       position: absolute;
-       top: 40%;
-      }
+             position: absolute;
+            top: 40%;
+             }
 
             .btn-navigation1 {
               position: absolute;
             }
           ul {
-    
             height: 70%;
 
               li {
                margin: 50px 0;
                font-style: bold;
+               width: 30px;
                p {
                  color: rgb(247, 143, 33, 0.75);
                  font-family: 'roboto', sans-serif;
@@ -163,7 +164,6 @@ const StyledHeader = styled.div`
             height: 70%;
               li {
                margin: 50px 0;
-              
                p {
                  color: rgb(247, 143, 33, 0.75);
                  font-family: 'roboto', sans-serif;
