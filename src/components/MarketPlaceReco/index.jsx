@@ -41,6 +41,14 @@ function MarketPlaceReco() {
                 max: 3000,
                 min: 1024,
               },
+              items: 4,
+              partialVisibilityGutter: 40,
+            },
+            desktopsmall: {
+              breakpoint: {
+                max: 1500,
+                min: 1024,
+              },
               items: 3,
               partialVisibilityGutter: 40,
             },

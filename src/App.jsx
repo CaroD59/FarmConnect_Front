@@ -34,8 +34,8 @@ function App() {
         <User.Provider value={{ user, setUser }}>
           <main>
             <ToastContainer
-              position={toast.POSITION.TOP_CENTER}
-              autoClose={5000}
+              position={toast.POSITION.TOP_RIGHT}
+              autoClose={3000}
             />
             <Switch>
               <Route exact path="/" component={Login} />

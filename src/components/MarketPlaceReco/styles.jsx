@@ -11,6 +11,13 @@ const StyledMarketPlaceReco = styled.div`
     .Carousel {
       width: 100%;
     }
+    @media screen and (max-width: 1500px) {
+      .RecoPage {
+        .Carousel {
+          items: 3;
+        }
+      }
+    }
     .titre {
       font-size: 44px;
       font-weight: 300;

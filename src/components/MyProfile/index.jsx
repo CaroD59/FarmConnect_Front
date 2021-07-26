@@ -154,7 +154,7 @@ function MyProfile() {
             </div>
             <div className="containers">
               <div className="title">
-                <h3 className="cardName">MES EXPLOITATIONS</h3>
+                <h3 className="cardName">Mes exploitations</h3>
               </div>
               {exploitUser.map((exploit) => {
                 return (
