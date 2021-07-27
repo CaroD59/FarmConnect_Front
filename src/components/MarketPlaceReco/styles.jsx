@@ -2,12 +2,15 @@ import styled from 'styled-components';
 
 const StyledMarketPlaceReco = styled.div`
   .RecoPage {
-    width: 80vw;
+    width: 90vw;
     font-family: 'roboto', sans-serif;
     padding-top: 80px;
     margin-bottom: 30px;
     margin: auto;
     color: #223594;
+    .Carousel {
+      width: 100%;
+    }
     .titre {
       font-size: 44px;
       font-weight: 300;

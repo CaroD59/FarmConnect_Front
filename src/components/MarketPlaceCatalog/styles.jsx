@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledMarketPlaceCatalog = styled.div`
   .CataPage {
-    width: 80vw;
+    width: 90vw;
     font-family: 'roboto', sans-serif;
     padding-top: 80px;
     padding-bottom: 50px;
