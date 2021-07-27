@@ -19,6 +19,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import AboutUs from './components/AboutUs';
 import SpeakingAboutUs from './components/SpeakingAboutUs';
 import LegalNotice from './components/LegalNotice';
+import AddExploitation from './components/AddExploitation';
 import StyledApp from './styles';
 import './reset.css';
 
@@ -53,6 +54,7 @@ function App() {
               <Route path="/aboutus" component={AboutUs} />
               <Route path="/speakingaboutus" component={SpeakingAboutUs} />
               <Route path="/legalnotice" component={LegalNotice} />
+              <Route path="/addExploitation" component={AddExploitation} />
             </Switch>
           </main>
           <Footer />

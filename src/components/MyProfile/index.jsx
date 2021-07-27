@@ -8,9 +8,10 @@ function MyProfile() {
   const [infos, setInfos] = useState([]);
   const { user } = useContext(User);
   const [isEdit, setIsEdit] = useState(false);
+  const [exploitUser, setExloitUser] = useState([]);
 
   useEffect(() => {
-    if (user !== null) {
+    if (user) {
       axios
         .get(`${process.env.REACT_APP_API_URL}/users/${user.id}`)
         .then(({ data }) => {
@@ -25,6 +26,16 @@ function MyProfile() {
     }
     setIsEdit(!isEdit);
   };
+
+  useEffect(() => {
+    if (user) {
+      axios
+        .get(`${process.env.REACT_APP_API_URL}/exploit/linkuser/${user.id}`)
+        .then(({ data }) => {
+          setExloitUser(data);
+        });
+    }
+  }, []);
 
   return (
     <StyledMyProfile>
@@ -145,9 +156,22 @@ function MyProfile() {
             </div>
             <div className="containers">
               <div className="title">
-                <h3 className="cardName">Mon exploitation</h3>
+                <h3 className="cardName">MES EXPLOITATIONS</h3>
               </div>
-              <p className="cardExploitation">Bientôt disponible</p>
+              {exploitUser.map((exploit) => {
+                return (
+                  <div className="cardCompany" key={exploit.id}>
+                    <div className="titleCompany">
+                      <li>{exploit.companyName}</li>
+                    </div>
+                  </div>
+                );
+              })}
+              <div className="addExploit">
+                <Link to="/addExploitation" className="buttonaddExploit">
+                  ajouter exploitation
+                </Link>
+              </div>
             </div>
             <div className="containers">
               <div className="title">

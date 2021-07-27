@@ -34,6 +34,25 @@ const StyledMyProfile = styled.section`
           cursor: pointer;
         }
       }
+      .cardCompany {
+        margin: 30px;
+        list-style: none;
+        border: solid 1px;
+        border-color: #f78f21;
+        border-radius: 8px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .titleCompany {
+          display: flex;
+          justify-content: space-around;
+        }
+        .cityZip {
+          margin-left: 10px;
+          display: flex;
+        }
+      }
       .picto {
         display: flex;
         justify-content: space-around;
@@ -67,9 +86,27 @@ const StyledMyProfile = styled.section`
         margin: auto;
         font-weight: normal;
       }
-      .cardExploitation {
-        color: black;
-        margin: auto;
+      .addExploit {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        font-family: 'roboto', sans-serif;
+        .buttonaddExploit {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 50px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+          color: #ffff;
+          background-color: rgb(247, 143, 33, 0.75);
+          border: solid 1px rgb(247, 143, 33, 0.75);
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 15px;
+          text-decoration: none;
+        }
       }
       .form {
         .card {
